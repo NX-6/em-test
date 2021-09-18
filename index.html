@@ -16,7 +16,13 @@
       var Module = {
         print: text => stdoutTextarea.value += text,
         printErr: text => stdoutTextarea.value += text,
-        locateFile: file => "js/" + file
+        locateFile: file => "js/" + file,
+        preRun: [
+          ({FS}) => {
+            FS.init();
+            FS.createPreloadedFile(FS.cwd(), "message.txt", "message.txt", true, false);
+          }
+        ]
       }
       test(Module).then(mod => console.log("module ready", mod))
     </script>
