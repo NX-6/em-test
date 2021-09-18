@@ -289,7 +289,7 @@ Module['ready'] = new Promise(function(resolve, reject) {
     }
   
    }
-   loadPackage({"files": [{"filename": "/essage.txt", "start": 0, "end": 16}], "remote_package_size": 16, "package_uuid": "c5abc422-9d0a-431c-9d92-6f95a1cc4eff"});
+   loadPackage({"files": [{"filename": "/essage.txt", "start": 0, "end": 8}], "remote_package_size": 8, "package_uuid": "d1aa84b8-a824-4412-a596-97cbec260eca"});
   
   })();
   
