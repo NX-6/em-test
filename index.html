@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <title>привет</title>
+  </head>
+  <body>
+    <div id="app_root">
+      <textarea id="stdout" rows="8" cols="80"></textarea>
+    </div>
+    <script src="js/test.js"></script>
+    <script type="text/javascript">
+      const stdoutTextarea = document.getElementById('stdout');
+      var Module = {
+        print: text => stdoutTextarea.value += text,
+        printErr: text => stdoutTextarea.value += text,
+        locateFile: file => "js/" + file
+      }
+      test(Module).then(mod => console.log("module ready", mod))
+    </script>
+  </body>
+</html>
