@@ -14,17 +14,22 @@
     <script type="text/javascript">
       const stdoutTextarea = document.getElementById('stdout');
       var Module = {
-        print: text => stdoutTextarea.value += text,
-        printErr: text => stdoutTextarea.value += text,
+        print: text => stdoutTextarea.value += text + "\n",
+        printErr: text => stdoutTextarea.value += text + "\n",
         locateFile: file => "js/" + file,
         preRun: [
           ({FS}) => {
             FS.init();
-            FS.createPreloadedFile(FS.cwd(), "message.txt", "message.txt", true, false);
+            FS.createPreloadedFile(FS.cwd(), "message.txt", "js/message.txt", true, false);
           }
         ]
       }
-      test(Module).then(mod => console.log("module ready", mod))
+      test(Module).then(mod => console.log("module ready", mod));
     </script>
+
+
+    <!-- <script type="text/javascript">
+      const ww = new Worker("js/worker.js");
+    </script> -->
   </body>
 </html>
