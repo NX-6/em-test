@@ -83,81 +83,6 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "_main")) {
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_stack_get_base")) {
- Object.defineProperty(Module["ready"], "_emscripten_stack_get_base", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_stack_get_base on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_stack_get_base", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_stack_get_base on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_stack_get_end")) {
- Object.defineProperty(Module["ready"], "_emscripten_stack_get_end", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_stack_get_end on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_stack_get_end", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_stack_get_end on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_stack_set_limits")) {
- Object.defineProperty(Module["ready"], "_emscripten_stack_set_limits", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_stack_set_limits on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_stack_set_limits", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_stack_set_limits on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_stack_get_free")) {
- Object.defineProperty(Module["ready"], "_emscripten_stack_get_free", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_stack_get_free on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_stack_get_free", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_stack_get_free on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_stack_init")) {
- Object.defineProperty(Module["ready"], "_emscripten_stack_init", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_stack_init on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_stack_init", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_stack_init on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
 if (!Object.getOwnPropertyDescriptor(Module["ready"], "___cxa_demangle")) {
  Object.defineProperty(Module["ready"], "___cxa_demangle", {
   configurable: true,
@@ -218,6 +143,21 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "_stackAlloc")) {
  });
 }
 
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "___data_end")) {
+ Object.defineProperty(Module["ready"], "___data_end", {
+  configurable: true,
+  get: function() {
+   abort("You are getting ___data_end on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+ Object.defineProperty(Module["ready"], "___data_end", {
+  configurable: true,
+  set: function() {
+   abort("You are setting ___data_end on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+}
+
 if (!Object.getOwnPropertyDescriptor(Module["ready"], "___wasm_call_ctors")) {
  Object.defineProperty(Module["ready"], "___wasm_call_ctors", {
   configurable: true,
@@ -263,126 +203,6 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "___errno_location")) {
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "___emscripten_pthread_data_constructor")) {
- Object.defineProperty(Module["ready"], "___emscripten_pthread_data_constructor", {
-  configurable: true,
-  get: function() {
-   abort("You are getting ___emscripten_pthread_data_constructor on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "___emscripten_pthread_data_constructor", {
-  configurable: true,
-  set: function() {
-   abort("You are setting ___emscripten_pthread_data_constructor on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "__emscripten_call_on_thread")) {
- Object.defineProperty(Module["ready"], "__emscripten_call_on_thread", {
-  configurable: true,
-  get: function() {
-   abort("You are getting __emscripten_call_on_thread on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "__emscripten_call_on_thread", {
-  configurable: true,
-  set: function() {
-   abort("You are setting __emscripten_call_on_thread on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "__emscripten_main_thread_futex")) {
- Object.defineProperty(Module["ready"], "__emscripten_main_thread_futex", {
-  configurable: true,
-  get: function() {
-   abort("You are getting __emscripten_main_thread_futex on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "__emscripten_main_thread_futex", {
-  configurable: true,
-  set: function() {
-   abort("You are setting __emscripten_main_thread_futex on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "__emscripten_thread_init")) {
- Object.defineProperty(Module["ready"], "__emscripten_thread_init", {
-  configurable: true,
-  get: function() {
-   abort("You are getting __emscripten_thread_init on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "__emscripten_thread_init", {
-  configurable: true,
-  set: function() {
-   abort("You are setting __emscripten_thread_init on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "__emscripten_thread_exit")) {
- Object.defineProperty(Module["ready"], "__emscripten_thread_exit", {
-  configurable: true,
-  get: function() {
-   abort("You are getting __emscripten_thread_exit on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "__emscripten_thread_exit", {
-  configurable: true,
-  set: function() {
-   abort("You are setting __emscripten_thread_exit on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_current_thread_process_queued_calls")) {
- Object.defineProperty(Module["ready"], "_emscripten_current_thread_process_queued_calls", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_current_thread_process_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_current_thread_process_queued_calls", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_current_thread_process_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "__emscripten_allow_main_runtime_queued_calls")) {
- Object.defineProperty(Module["ready"], "__emscripten_allow_main_runtime_queued_calls", {
-  configurable: true,
-  get: function() {
-   abort("You are getting __emscripten_allow_main_runtime_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "__emscripten_allow_main_runtime_queued_calls", {
-  configurable: true,
-  set: function() {
-   abort("You are setting __emscripten_allow_main_runtime_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_futex_wake")) {
- Object.defineProperty(Module["ready"], "_emscripten_futex_wake", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_futex_wake on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_futex_wake", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_futex_wake on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
 if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_get_global_libc")) {
  Object.defineProperty(Module["ready"], "_emscripten_get_global_libc", {
   configurable: true,
@@ -398,92 +218,32 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_get_global_li
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_main_browser_thread_id")) {
- Object.defineProperty(Module["ready"], "_emscripten_main_browser_thread_id", {
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "___pthread_tsd_run_dtors")) {
+ Object.defineProperty(Module["ready"], "___pthread_tsd_run_dtors", {
   configurable: true,
   get: function() {
-   abort("You are getting _emscripten_main_browser_thread_id on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are getting ___pthread_tsd_run_dtors on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
- Object.defineProperty(Module["ready"], "_emscripten_main_browser_thread_id", {
+ Object.defineProperty(Module["ready"], "___pthread_tsd_run_dtors", {
   configurable: true,
   set: function() {
-   abort("You are setting _emscripten_main_browser_thread_id on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are setting ___pthread_tsd_run_dtors on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_main_thread_process_queued_calls")) {
- Object.defineProperty(Module["ready"], "_emscripten_main_thread_process_queued_calls", {
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "registerPthreadPtr")) {
+ Object.defineProperty(Module["ready"], "registerPthreadPtr", {
   configurable: true,
   get: function() {
-   abort("You are getting _emscripten_main_thread_process_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are getting registerPthreadPtr on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
- Object.defineProperty(Module["ready"], "_emscripten_main_thread_process_queued_calls", {
+ Object.defineProperty(Module["ready"], "registerPthreadPtr", {
   configurable: true,
   set: function() {
-   abort("You are setting _emscripten_main_thread_process_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_run_in_main_runtime_thread_js")) {
- Object.defineProperty(Module["ready"], "_emscripten_run_in_main_runtime_thread_js", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_run_in_main_runtime_thread_js on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_run_in_main_runtime_thread_js", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_run_in_main_runtime_thread_js on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_sync_run_in_main_thread_2")) {
- Object.defineProperty(Module["ready"], "_emscripten_sync_run_in_main_thread_2", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_sync_run_in_main_thread_2 on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_sync_run_in_main_thread_2", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_sync_run_in_main_thread_2 on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_sync_run_in_main_thread_4")) {
- Object.defineProperty(Module["ready"], "_emscripten_sync_run_in_main_thread_4", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_sync_run_in_main_thread_4 on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_sync_run_in_main_thread_4", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_sync_run_in_main_thread_4 on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
-}
-
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_tls_init")) {
- Object.defineProperty(Module["ready"], "_emscripten_tls_init", {
-  configurable: true,
-  get: function() {
-   abort("You are getting _emscripten_tls_init on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
-  }
- });
- Object.defineProperty(Module["ready"], "_emscripten_tls_init", {
-  configurable: true,
-  set: function() {
-   abort("You are setting _emscripten_tls_init on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are setting registerPthreadPtr on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
 }
@@ -503,32 +263,32 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "_pthread_self")) {
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_pthread_testcancel")) {
- Object.defineProperty(Module["ready"], "_pthread_testcancel", {
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "___emscripten_pthread_data_constructor")) {
+ Object.defineProperty(Module["ready"], "___emscripten_pthread_data_constructor", {
   configurable: true,
   get: function() {
-   abort("You are getting _pthread_testcancel on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are getting ___emscripten_pthread_data_constructor on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
- Object.defineProperty(Module["ready"], "_pthread_testcancel", {
+ Object.defineProperty(Module["ready"], "___emscripten_pthread_data_constructor", {
   configurable: true,
   set: function() {
-   abort("You are setting _pthread_testcancel on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are setting ___emscripten_pthread_data_constructor on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "_exit")) {
- Object.defineProperty(Module["ready"], "_exit", {
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_futex_wake")) {
+ Object.defineProperty(Module["ready"], "_emscripten_futex_wake", {
   configurable: true,
   get: function() {
-   abort("You are getting _exit on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are getting _emscripten_futex_wake on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
- Object.defineProperty(Module["ready"], "_exit", {
+ Object.defineProperty(Module["ready"], "_emscripten_futex_wake", {
   configurable: true,
   set: function() {
-   abort("You are setting _exit on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are setting _emscripten_futex_wake on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
 }
@@ -548,6 +308,21 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "_memalign")) {
  });
 }
 
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "dynCall")) {
+ Object.defineProperty(Module["ready"], "dynCall", {
+  configurable: true,
+  get: function() {
+   abort("You are getting dynCall on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+ Object.defineProperty(Module["ready"], "dynCall", {
+  configurable: true,
+  set: function() {
+   abort("You are setting dynCall on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+}
+
 if (!Object.getOwnPropertyDescriptor(Module["ready"], "establishStackSpace")) {
  Object.defineProperty(Module["ready"], "establishStackSpace", {
   configurable: true,
@@ -563,17 +338,17 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "establishStackSpace")) {
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "invokeEntryPoint")) {
- Object.defineProperty(Module["ready"], "invokeEntryPoint", {
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "getNoExitRuntime")) {
+ Object.defineProperty(Module["ready"], "getNoExitRuntime", {
   configurable: true,
   get: function() {
-   abort("You are getting invokeEntryPoint on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are getting getNoExitRuntime on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
- Object.defineProperty(Module["ready"], "invokeEntryPoint", {
+ Object.defineProperty(Module["ready"], "getNoExitRuntime", {
   configurable: true,
   set: function() {
-   abort("You are setting invokeEntryPoint on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are setting getNoExitRuntime on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
 }
@@ -638,6 +413,21 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "___cxa_can_catch")) {
  });
 }
 
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "__ZSt18uncaught_exceptionv")) {
+ Object.defineProperty(Module["ready"], "__ZSt18uncaught_exceptionv", {
+  configurable: true,
+  get: function() {
+   abort("You are getting __ZSt18uncaught_exceptionv on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+ Object.defineProperty(Module["ready"], "__ZSt18uncaught_exceptionv", {
+  configurable: true,
+  set: function() {
+   abort("You are setting __ZSt18uncaught_exceptionv on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+}
+
 if (!Object.getOwnPropertyDescriptor(Module["ready"], "_setThrew")) {
  Object.defineProperty(Module["ready"], "_setThrew", {
   configurable: true,
@@ -653,17 +443,32 @@ if (!Object.getOwnPropertyDescriptor(Module["ready"], "_setThrew")) {
  });
 }
 
-if (!Object.getOwnPropertyDescriptor(Module["ready"], "___pthread_tsd_run_dtors")) {
- Object.defineProperty(Module["ready"], "___pthread_tsd_run_dtors", {
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "_emscripten_main_thread_process_queued_calls")) {
+ Object.defineProperty(Module["ready"], "_emscripten_main_thread_process_queued_calls", {
   configurable: true,
   get: function() {
-   abort("You are getting ___pthread_tsd_run_dtors on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are getting _emscripten_main_thread_process_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
- Object.defineProperty(Module["ready"], "___pthread_tsd_run_dtors", {
+ Object.defineProperty(Module["ready"], "_emscripten_main_thread_process_queued_calls", {
   configurable: true,
   set: function() {
-   abort("You are setting ___pthread_tsd_run_dtors on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+   abort("You are setting _emscripten_main_thread_process_queued_calls on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+}
+
+if (!Object.getOwnPropertyDescriptor(Module["ready"], "__emscripten_call_on_thread")) {
+ Object.defineProperty(Module["ready"], "__emscripten_call_on_thread", {
+  configurable: true,
+  get: function() {
+   abort("You are getting __emscripten_call_on_thread on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
+  }
+ });
+ Object.defineProperty(Module["ready"], "__emscripten_call_on_thread", {
+  configurable: true,
+  set: function() {
+   abort("You are setting __emscripten_call_on_thread on the Promise object, instead of the instance. Use .then() to get called back with the instance, see the MODULARIZE docs in src/settings.js");
   }
  });
 }
@@ -701,19 +506,32 @@ var quit_ = function(status, toThrow) {
  throw toThrow;
 };
 
-var ENVIRONMENT_IS_WEB = typeof window === "object";
+var ENVIRONMENT_IS_WEB = false;
 
-var ENVIRONMENT_IS_WORKER = typeof importScripts === "function";
+var ENVIRONMENT_IS_WORKER = false;
 
-var ENVIRONMENT_IS_NODE = typeof process === "object" && typeof process.versions === "object" && typeof process.versions.node === "string";
+var ENVIRONMENT_IS_NODE = false;
 
-var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIRONMENT_IS_WORKER;
+var ENVIRONMENT_IS_SHELL = false;
+
+ENVIRONMENT_IS_WEB = typeof window === "object";
+
+ENVIRONMENT_IS_WORKER = typeof importScripts === "function";
+
+ENVIRONMENT_IS_NODE = typeof process === "object" && typeof process.versions === "object" && typeof process.versions.node === "string";
+
+ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIRONMENT_IS_WORKER;
 
 if (Module["ENVIRONMENT"]) {
  throw new Error("Module.ENVIRONMENT has been deprecated. To force the environment, use the ENVIRONMENT compile-time option (for example, -s ENVIRONMENT=web or -s ENVIRONMENT=node)");
 }
 
 var ENVIRONMENT_IS_PTHREAD = Module["ENVIRONMENT_IS_PTHREAD"] || false;
+
+if (ENVIRONMENT_IS_PTHREAD) {
+ buffer = Module["buffer"];
+ DYNAMIC_BASE = Module["DYNAMIC_BASE"];
+}
 
 var scriptDirectory = "";
 
@@ -726,46 +544,10 @@ function locateFile(path) {
 
 var read_, readAsync, readBinary, setWindowTitle;
 
-if (ENVIRONMENT_IS_SHELL) {
- if (typeof process === "object" && typeof require === "function" || typeof window === "object" || typeof importScripts === "function") throw new Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
- if (typeof read != "undefined") {
-  read_ = function shell_read(f) {
-   return read(f);
-  };
- }
- readBinary = function readBinary(f) {
-  var data;
-  if (typeof readbuffer === "function") {
-   return new Uint8Array(readbuffer(f));
-  }
-  data = read(f, "binary");
-  assert(typeof data === "object");
-  return data;
- };
- readAsync = function readAsync(f, onload, onerror) {
-  setTimeout(function() {
-   onload(readBinary(f));
-  }, 0);
- };
- if (typeof scriptArgs != "undefined") {
-  arguments_ = scriptArgs;
- } else if (typeof arguments != "undefined") {
-  arguments_ = arguments;
- }
- if (typeof quit === "function") {
-  quit_ = function(status) {
-   quit(status);
-  };
- }
- if (typeof print !== "undefined") {
-  if (typeof console === "undefined") console = {};
-  console.log = print;
-  console.warn = console.error = typeof printErr !== "undefined" ? printErr : print;
- }
-} else if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
+if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
  if (ENVIRONMENT_IS_WORKER) {
   scriptDirectory = self.location.href;
- } else if (typeof document !== "undefined" && document.currentScript) {
+ } else if (document.currentScript) {
   scriptDirectory = document.currentScript.src;
  }
  if (_scriptDir) {
@@ -778,14 +560,14 @@ if (ENVIRONMENT_IS_SHELL) {
  }
  if (!(typeof window === "object" || typeof importScripts === "function")) throw new Error("not compiled for this environment (did you build to HTML and try to run it not on the web, or set ENVIRONMENT to something - like node - and run it someplace else - like on the web?)");
  {
-  read_ = function(url) {
+  read_ = function shell_read(url) {
    var xhr = new XMLHttpRequest();
    xhr.open("GET", url, false);
    xhr.send(null);
    return xhr.responseText;
   };
   if (ENVIRONMENT_IS_WORKER) {
-   readBinary = function(url) {
+   readBinary = function readBinary(url) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, false);
     xhr.responseType = "arraybuffer";
@@ -793,11 +575,11 @@ if (ENVIRONMENT_IS_SHELL) {
     return new Uint8Array(xhr.response);
    };
   }
-  readAsync = function(url, onload, onerror) {
+  readAsync = function readAsync(url, onload, onerror) {
    var xhr = new XMLHttpRequest();
    xhr.open("GET", url, true);
    xhr.responseType = "arraybuffer";
-   xhr.onload = function() {
+   xhr.onload = function xhr_onload() {
     if (xhr.status == 200 || xhr.status == 0 && xhr.response) {
      onload(xhr.response);
      return;
@@ -829,36 +611,30 @@ moduleOverrides = null;
 
 if (Module["arguments"]) arguments_ = Module["arguments"];
 
-if (!Object.getOwnPropertyDescriptor(Module, "arguments")) {
- Object.defineProperty(Module, "arguments", {
-  configurable: true,
-  get: function() {
-   abort("Module.arguments has been replaced with plain arguments_ (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "arguments")) Object.defineProperty(Module, "arguments", {
+ configurable: true,
+ get: function() {
+  abort("Module.arguments has been replaced with plain arguments_ (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
 if (Module["thisProgram"]) thisProgram = Module["thisProgram"];
 
-if (!Object.getOwnPropertyDescriptor(Module, "thisProgram")) {
- Object.defineProperty(Module, "thisProgram", {
-  configurable: true,
-  get: function() {
-   abort("Module.thisProgram has been replaced with plain thisProgram (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "thisProgram")) Object.defineProperty(Module, "thisProgram", {
+ configurable: true,
+ get: function() {
+  abort("Module.thisProgram has been replaced with plain thisProgram (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
 if (Module["quit"]) quit_ = Module["quit"];
 
-if (!Object.getOwnPropertyDescriptor(Module, "quit")) {
- Object.defineProperty(Module, "quit", {
-  configurable: true,
-  get: function() {
-   abort("Module.quit has been replaced with plain quit_ (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "quit")) Object.defineProperty(Module, "quit", {
+ configurable: true,
+ get: function() {
+  abort("Module.quit has been replaced with plain quit_ (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
 assert(typeof Module["memoryInitializerPrefixURL"] === "undefined", "Module.memoryInitializerPrefixURL option was removed, use Module.locateFile instead");
 
@@ -878,41 +654,33 @@ assert(typeof Module["setWindowTitle"] === "undefined", "Module.setWindowTitle o
 
 assert(typeof Module["TOTAL_MEMORY"] === "undefined", "Module.TOTAL_MEMORY has been renamed Module.INITIAL_MEMORY");
 
-if (!Object.getOwnPropertyDescriptor(Module, "read")) {
- Object.defineProperty(Module, "read", {
-  configurable: true,
-  get: function() {
-   abort("Module.read has been replaced with plain read_ (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "read")) Object.defineProperty(Module, "read", {
+ configurable: true,
+ get: function() {
+  abort("Module.read has been replaced with plain read_ (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
-if (!Object.getOwnPropertyDescriptor(Module, "readAsync")) {
- Object.defineProperty(Module, "readAsync", {
-  configurable: true,
-  get: function() {
-   abort("Module.readAsync has been replaced with plain readAsync (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "readAsync")) Object.defineProperty(Module, "readAsync", {
+ configurable: true,
+ get: function() {
+  abort("Module.readAsync has been replaced with plain readAsync (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
-if (!Object.getOwnPropertyDescriptor(Module, "readBinary")) {
- Object.defineProperty(Module, "readBinary", {
-  configurable: true,
-  get: function() {
-   abort("Module.readBinary has been replaced with plain readBinary (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "readBinary")) Object.defineProperty(Module, "readBinary", {
+ configurable: true,
+ get: function() {
+  abort("Module.readBinary has been replaced with plain readBinary (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
-if (!Object.getOwnPropertyDescriptor(Module, "setWindowTitle")) {
- Object.defineProperty(Module, "setWindowTitle", {
-  configurable: true,
-  get: function() {
-   abort("Module.setWindowTitle has been replaced with plain setWindowTitle (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "setWindowTitle")) Object.defineProperty(Module, "setWindowTitle", {
+ configurable: true,
+ get: function() {
+  abort("Module.setWindowTitle has been replaced with plain setWindowTitle (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
 var IDBFS = "IDBFS is no longer included by default; build with -lidbfs.js";
 
@@ -924,11 +692,12 @@ var NODEFS = "NODEFS is no longer included by default; build with -lnodefs.js";
 
 assert(ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER || ENVIRONMENT_IS_NODE, "Pthreads do not work in this environment yet (need Web Workers, or an alternative to them)");
 
-assert(!ENVIRONMENT_IS_NODE, "node environment detected but not enabled at build time.  Add 'node' to `-s ENVIRONMENT` to enable.");
-
-assert(!ENVIRONMENT_IS_SHELL, "shell environment detected but not enabled at build time.  Add 'shell' to `-s ENVIRONMENT` to enable.");
-
 var STACK_ALIGN = 16;
+
+function alignMemory(size, factor) {
+ if (!factor) factor = STACK_ALIGN;
+ return Math.ceil(size / factor) * factor;
+}
 
 function getNativeTypeSize(type) {
  switch (type) {
@@ -1025,26 +794,12 @@ var freeTableIndexes = [];
 
 var functionsInTableMap;
 
-function getEmptyTableSlot() {
- if (freeTableIndexes.length) {
-  return freeTableIndexes.pop();
- }
- try {
-  wasmTable.grow(1);
- } catch (err) {
-  if (!(err instanceof RangeError)) {
-   throw err;
-  }
-  throw "Unable to grow wasm table. Set ALLOW_TABLE_GROWTH.";
- }
- return wasmTable.length - 1;
-}
-
 function addFunctionWasm(func, sig) {
+ var table = wasmTable;
  if (!functionsInTableMap) {
   functionsInTableMap = new WeakMap();
-  for (var i = 0; i < wasmTable.length; i++) {
-   var item = wasmTable.get(i);
+  for (var i = 0; i < table.length; i++) {
+   var item = table.get(i);
    if (item) {
     functionsInTableMap.set(item, i);
    }
@@ -1053,22 +808,35 @@ function addFunctionWasm(func, sig) {
  if (functionsInTableMap.has(func)) {
   return functionsInTableMap.get(func);
  }
- var ret = getEmptyTableSlot();
+ var ret;
+ if (freeTableIndexes.length) {
+  ret = freeTableIndexes.pop();
+ } else {
+  ret = table.length;
+  try {
+   table.grow(1);
+  } catch (err) {
+   if (!(err instanceof RangeError)) {
+    throw err;
+   }
+   throw "Unable to grow wasm table. Set ALLOW_TABLE_GROWTH.";
+  }
+ }
  try {
-  wasmTable.set(ret, func);
+  table.set(ret, func);
  } catch (err) {
   if (!(err instanceof TypeError)) {
    throw err;
   }
-  assert(typeof sig !== "undefined", "Missing signature argument to addFunction: " + func);
+  assert(typeof sig !== "undefined", "Missing signature argument to addFunction");
   var wrapped = convertJsFunctionToWasm(func, sig);
-  wasmTable.set(ret, wrapped);
+  table.set(ret, wrapped);
  }
  functionsInTableMap.set(func, ret);
  return ret;
 }
 
-function removeFunction(index) {
+function removeFunctionWasm(index) {
  functionsInTableMap.delete(wasmTable.get(index));
  freeTableIndexes.push(index);
 }
@@ -1076,6 +844,14 @@ function removeFunction(index) {
 function addFunction(func, sig) {
  assert(typeof func !== "undefined");
  return addFunctionWasm(func, sig);
+}
+
+function removeFunction(index) {
+ removeFunctionWasm(index);
+}
+
+function makeBigInt(low, high, unsigned) {
+ return unsigned ? +(low >>> 0) + +(high >>> 0) * 4294967296 : +(low >>> 0) + +(high | 0) * 4294967296;
 }
 
 var tempRet0 = 0;
@@ -1088,6 +864,12 @@ var getTempRet0 = function() {
  return tempRet0;
 };
 
+function getCompilerSetting(name) {
+ throw "You must build with -s RETAIN_COMPILER_SETTINGS=1 for getCompilerSetting or emscripten_get_compiler_setting to work";
+}
+
+var GLOBAL_BASE = 1024;
+
 var Atomics_load = Atomics.load;
 
 var Atomics_store = Atomics.store;
@@ -1098,25 +880,23 @@ var wasmBinary;
 
 if (Module["wasmBinary"]) wasmBinary = Module["wasmBinary"];
 
-if (!Object.getOwnPropertyDescriptor(Module, "wasmBinary")) {
- Object.defineProperty(Module, "wasmBinary", {
-  configurable: true,
-  get: function() {
-   abort("Module.wasmBinary has been replaced with plain wasmBinary (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "wasmBinary")) Object.defineProperty(Module, "wasmBinary", {
+ configurable: true,
+ get: function() {
+  abort("Module.wasmBinary has been replaced with plain wasmBinary (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
-var noExitRuntime = Module["noExitRuntime"] || true;
+var noExitRuntime;
 
-if (!Object.getOwnPropertyDescriptor(Module, "noExitRuntime")) {
- Object.defineProperty(Module, "noExitRuntime", {
-  configurable: true,
-  get: function() {
-   abort("Module.noExitRuntime has been replaced with plain noExitRuntime (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (Module["noExitRuntime"]) noExitRuntime = Module["noExitRuntime"];
+
+if (!Object.getOwnPropertyDescriptor(Module, "noExitRuntime")) Object.defineProperty(Module, "noExitRuntime", {
+ configurable: true,
+ get: function() {
+  abort("Module.noExitRuntime has been replaced with plain noExitRuntime (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
 if (typeof WebAssembly !== "object") {
  abort("no native wasm support detected");
@@ -1143,7 +923,7 @@ function setValue(ptr, value, type, noSafe) {
   break;
 
  case "i64":
-  tempI64 = [ value >>> 0, (tempDouble = value, +Math.abs(tempDouble) >= 1 ? tempDouble > 0 ? (Math.min(+Math.floor(tempDouble / 4294967296), 4294967295) | 0) >>> 0 : ~~+Math.ceil((tempDouble - +(~~tempDouble >>> 0)) / 4294967296) >>> 0 : 0) ], 
+  tempI64 = [ value >>> 0, (tempDouble = value, +Math_abs(tempDouble) >= 1 ? tempDouble > 0 ? (Math_min(+Math_floor(tempDouble / 4294967296), 4294967295) | 0) >>> 0 : ~~+Math_ceil((tempDouble - +(~~tempDouble >>> 0)) / 4294967296) >>> 0 : 0) ], 
   GROWABLE_HEAP_I32()[ptr >> 2] = tempI64[0], GROWABLE_HEAP_I32()[ptr + 4 >> 2] = tempI64[1];
   break;
 
@@ -1193,11 +973,21 @@ function getValue(ptr, type, noSafe) {
 
 var wasmMemory;
 
+var wasmTable = new WebAssembly.Table({
+ "initial": 296,
+ "maximum": 296,
+ "element": "anyfunc"
+});
+
 var wasmModule;
+
+var threadInfoStruct = 0;
+
+var selfThreadId = 0;
 
 var ABORT = false;
 
-var EXITSTATUS;
+var EXITSTATUS = 0;
 
 function assert(condition, text) {
  if (!condition) {
@@ -1249,17 +1039,22 @@ function ccall(ident, returnType, argTypes, args, opts) {
   }
  }
  var ret = func.apply(null, cArgs);
- function onDone(ret) {
-  if (stack !== 0) stackRestore(stack);
-  return convertReturnValue(ret);
- }
  var asyncMode = opts && opts.async;
- if (Asyncify.currData) {
+ var runningAsync = typeof Asyncify === "object" && Asyncify.currData;
+ var prevRunningAsync = typeof Asyncify === "object" && Asyncify.asyncFinalizers.length > 0;
+ assert(!asyncMode || !prevRunningAsync, "Cannot have multiple async ccalls in flight at once");
+ if (runningAsync && !prevRunningAsync) {
   assert(asyncMode, "The call to " + ident + " is running asynchronously. If this was intended, add the async option to the ccall/cwrap call.");
-  return Asyncify.whenDone().then(onDone);
+  return new Promise(function(resolve) {
+   Asyncify.asyncFinalizers.push(function(ret) {
+    if (stack !== 0) stackRestore(stack);
+    resolve(convertReturnValue(ret));
+   });
+  });
  }
- ret = onDone(ret);
- if (asyncMode) return Promise.resolve(ret);
+ ret = convertReturnValue(ret);
+ if (stack !== 0) stackRestore(stack);
+ if (opts && opts.async) return Promise.resolve(ret);
  return ret;
 }
 
@@ -1273,68 +1068,93 @@ var ALLOC_NORMAL = 0;
 
 var ALLOC_STACK = 1;
 
-function allocate(slab, allocator) {
- var ret;
- assert(typeof allocator === "number", "allocate no longer takes a type argument");
- assert(typeof slab !== "number", "allocate no longer takes a number as arg0");
- if (allocator == ALLOC_STACK) {
-  ret = stackAlloc(slab.length);
+var ALLOC_NONE = 2;
+
+function allocate(slab, types, allocator, ptr) {
+ var zeroinit, size;
+ if (typeof slab === "number") {
+  zeroinit = true;
+  size = slab;
  } else {
-  ret = _malloc(slab.length);
+  zeroinit = false;
+  size = slab.length;
  }
- if (slab.subarray || slab.slice) {
-  GROWABLE_HEAP_U8().set(slab, ret);
+ var singleType = typeof types === "string" ? types : null;
+ var ret;
+ if (allocator == ALLOC_NONE) {
+  ret = ptr;
  } else {
-  GROWABLE_HEAP_U8().set(new Uint8Array(slab), ret);
+  ret = [ _malloc, stackAlloc ][allocator](Math.max(size, singleType ? 1 : types.length));
+ }
+ if (zeroinit) {
+  var stop;
+  ptr = ret;
+  assert((ret & 3) == 0);
+  stop = ret + (size & ~3);
+  for (;ptr < stop; ptr += 4) {
+   GROWABLE_HEAP_I32()[ptr >> 2] = 0;
+  }
+  stop = ret + size;
+  while (ptr < stop) {
+   GROWABLE_HEAP_I8()[ptr++ >> 0] = 0;
+  }
+  return ret;
+ }
+ if (singleType === "i8") {
+  if (slab.subarray || slab.slice) {
+   GROWABLE_HEAP_U8().set(slab, ret);
+  } else {
+   GROWABLE_HEAP_U8().set(new Uint8Array(slab), ret);
+  }
+  return ret;
+ }
+ var i = 0, type, typeSize, previousType;
+ while (i < size) {
+  var curr = slab[i];
+  type = singleType || types[i];
+  if (type === 0) {
+   i++;
+   continue;
+  }
+  assert(type, "Must know what type to store in allocate!");
+  if (type == "i64") type = "i32";
+  setValue(ret + i, curr, type);
+  if (previousType !== type) {
+   typeSize = getNativeTypeSize(type);
+   previousType = type;
+  }
+  i += typeSize;
  }
  return ret;
 }
 
-function TextDecoderWrapper(encoding) {
- var textDecoder = new TextDecoder(encoding);
- this.decode = function(data) {
-  assert(data instanceof Uint8Array);
-  if (data.buffer instanceof SharedArrayBuffer) {
-   data = new Uint8Array(data);
-  }
-  return textDecoder.decode.call(textDecoder, data);
- };
-}
-
-var UTF8Decoder = typeof TextDecoder !== "undefined" ? new TextDecoderWrapper("utf8") : undefined;
-
 function UTF8ArrayToString(heap, idx, maxBytesToRead) {
  var endIdx = idx + maxBytesToRead;
- var endPtr = idx;
- while (heap[endPtr] && !(endPtr >= endIdx)) ++endPtr;
- if (endPtr - idx > 16 && heap.subarray && UTF8Decoder) {
-  return UTF8Decoder.decode(heap.subarray(idx, endPtr));
- } else {
-  var str = "";
-  while (idx < endPtr) {
-   var u0 = heap[idx++];
-   if (!(u0 & 128)) {
-    str += String.fromCharCode(u0);
-    continue;
-   }
-   var u1 = heap[idx++] & 63;
-   if ((u0 & 224) == 192) {
-    str += String.fromCharCode((u0 & 31) << 6 | u1);
-    continue;
-   }
-   var u2 = heap[idx++] & 63;
-   if ((u0 & 240) == 224) {
-    u0 = (u0 & 15) << 12 | u1 << 6 | u2;
-   } else {
-    if ((u0 & 248) != 240) warnOnce("Invalid UTF-8 leading byte 0x" + u0.toString(16) + " encountered when deserializing a UTF-8 string in wasm memory to a JS string!");
-    u0 = (u0 & 7) << 18 | u1 << 12 | u2 << 6 | heap[idx++] & 63;
-   }
-   if (u0 < 65536) {
-    str += String.fromCharCode(u0);
-   } else {
-    var ch = u0 - 65536;
-    str += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
-   }
+ var str = "";
+ while (!(idx >= endIdx)) {
+  var u0 = heap[idx++];
+  if (!u0) return str;
+  if (!(u0 & 128)) {
+   str += String.fromCharCode(u0);
+   continue;
+  }
+  var u1 = heap[idx++] & 63;
+  if ((u0 & 224) == 192) {
+   str += String.fromCharCode((u0 & 31) << 6 | u1);
+   continue;
+  }
+  var u2 = heap[idx++] & 63;
+  if ((u0 & 240) == 224) {
+   u0 = (u0 & 15) << 12 | u1 << 6 | u2;
+  } else {
+   if ((u0 & 248) != 240) warnOnce("Invalid UTF-8 leading byte 0x" + u0.toString(16) + " encountered when deserializing a UTF-8 string on the asm.js/wasm heap to a JS string!");
+   u0 = (u0 & 7) << 18 | u1 << 12 | u2 << 6 | heap[idx++] & 63;
+  }
+  if (u0 < 65536) {
+   str += String.fromCharCode(u0);
+  } else {
+   var ch = u0 - 65536;
+   str += String.fromCharCode(55296 | ch >> 10, 56320 | ch & 1023);
   }
  }
  return str;
@@ -1368,7 +1188,7 @@ function stringToUTF8Array(str, heap, outIdx, maxBytesToWrite) {
    heap[outIdx++] = 128 | u & 63;
   } else {
    if (outIdx + 3 >= endIdx) break;
-   if (u >= 2097152) warnOnce("Invalid Unicode code point 0x" + u.toString(16) + " encountered when serializing a JS string to a UTF-8 string in wasm memory! (Valid unicode code points should be in range 0-0x1FFFFF).");
+   if (u >= 2097152) warnOnce("Invalid Unicode code point 0x" + u.toString(16) + " encountered when serializing a JS string to an UTF-8 string on the asm.js/wasm heap! (Valid unicode code points should be in range 0-0x1FFFFF).");
    heap[outIdx++] = 240 | u >> 18;
    heap[outIdx++] = 128 | u >> 12 & 63;
    heap[outIdx++] = 128 | u >> 6 & 63;
@@ -1407,25 +1227,15 @@ function stringToAscii(str, outPtr) {
  return writeAsciiToMemory(str, outPtr, false);
 }
 
-var UTF16Decoder = typeof TextDecoder !== "undefined" ? new TextDecoderWrapper("utf-16le") : undefined;
-
 function UTF16ToString(ptr, maxBytesToRead) {
  assert(ptr % 2 == 0, "Pointer passed to UTF16ToString must be aligned to two bytes!");
- var endPtr = ptr;
- var idx = endPtr >> 1;
- var maxIdx = idx + maxBytesToRead / 2;
- while (!(idx >= maxIdx) && GROWABLE_HEAP_U16()[idx]) ++idx;
- endPtr = idx << 1;
- if (endPtr - ptr > 32 && UTF16Decoder) {
-  return UTF16Decoder.decode(GROWABLE_HEAP_U8().subarray(ptr, endPtr));
- } else {
-  var str = "";
-  for (var i = 0; !(i >= maxBytesToRead / 2); ++i) {
-   var codeUnit = GROWABLE_HEAP_I16()[ptr + i * 2 >> 1];
-   if (codeUnit == 0) break;
-   str += String.fromCharCode(codeUnit);
-  }
-  return str;
+ var i = 0;
+ var str = "";
+ while (1) {
+  var codeUnit = GROWABLE_HEAP_I16()[ptr + i * 2 >> 1];
+  if (codeUnit == 0 || i == maxBytesToRead / 2) return str;
+  ++i;
+  str += String.fromCharCode(codeUnit);
  }
 }
 
@@ -1541,6 +1351,10 @@ function writeAsciiToMemory(str, buffer, dontAddNull) {
  if (!dontAddNull) GROWABLE_HEAP_I8()[buffer >> 0] = 0;
 }
 
+var PAGE_SIZE = 16384;
+
+var WASM_PAGE_SIZE = 65536;
+
 function alignUp(x, multiple) {
  if (x % multiple > 0) {
   x += multiple - x % multiple;
@@ -1549,10 +1363,6 @@ function alignUp(x, multiple) {
 }
 
 var HEAP, buffer, HEAP8, HEAPU8, HEAP16, HEAPU16, HEAP32, HEAPU32, HEAPF32, HEAPF64;
-
-if (ENVIRONMENT_IS_PTHREAD) {
- buffer = Module["buffer"];
-}
 
 function updateGlobalBufferAndViews(buf) {
  buffer = buf;
@@ -1566,22 +1376,30 @@ function updateGlobalBufferAndViews(buf) {
  Module["HEAPF64"] = HEAPF64 = new Float64Array(buf);
 }
 
+var STACK_BASE = 5263520, STACKTOP = STACK_BASE, STACK_MAX = 20640, DYNAMIC_BASE = 5263520;
+
+assert(STACK_BASE % 16 === 0, "stack must start aligned");
+
+assert(DYNAMIC_BASE % 16 === 0, "heap must start aligned");
+
+if (ENVIRONMENT_IS_PTHREAD) {
+ STACK_MAX = STACKTOP = STACK_MAX = 2147483647;
+}
+
 var TOTAL_STACK = 5242880;
 
 if (Module["TOTAL_STACK"]) assert(TOTAL_STACK === Module["TOTAL_STACK"], "the stack size can no longer be determined at runtime");
 
-var INITIAL_MEMORY = Module["INITIAL_MEMORY"] || 16777216;
+var INITIAL_INITIAL_MEMORY = Module["INITIAL_MEMORY"] || 16777216;
 
-if (!Object.getOwnPropertyDescriptor(Module, "INITIAL_MEMORY")) {
- Object.defineProperty(Module, "INITIAL_MEMORY", {
-  configurable: true,
-  get: function() {
-   abort("Module.INITIAL_MEMORY has been replaced with plain INITIAL_MEMORY (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
-  }
- });
-}
+if (!Object.getOwnPropertyDescriptor(Module, "INITIAL_MEMORY")) Object.defineProperty(Module, "INITIAL_MEMORY", {
+ configurable: true,
+ get: function() {
+  abort("Module.INITIAL_MEMORY has been replaced with plain INITIAL_INITIAL_MEMORY (the initial value can be provided on Module, but after startup the value is only looked for on a local variable of that name)");
+ }
+});
 
-assert(INITIAL_MEMORY >= TOTAL_STACK, "INITIAL_MEMORY should be larger than TOTAL_STACK, was " + INITIAL_MEMORY + "! (TOTAL_STACK=" + TOTAL_STACK + ")");
+assert(INITIAL_INITIAL_MEMORY >= TOTAL_STACK, "INITIAL_MEMORY should be larger than TOTAL_STACK, was " + INITIAL_INITIAL_MEMORY + "! (TOTAL_STACK=" + TOTAL_STACK + ")");
 
 assert(typeof Int32Array !== "undefined" && typeof Float64Array !== "undefined" && Int32Array.prototype.subarray !== undefined && Int32Array.prototype.set !== undefined, "JS engine does not provide full typed array support");
 
@@ -1593,8 +1411,8 @@ if (ENVIRONMENT_IS_PTHREAD) {
   wasmMemory = Module["wasmMemory"];
  } else {
   wasmMemory = new WebAssembly.Memory({
-   "initial": INITIAL_MEMORY / 65536,
-   "maximum": 2096103424 / 65536,
+   "initial": INITIAL_INITIAL_MEMORY / WASM_PAGE_SIZE,
+   "maximum": 2096103424 / WASM_PAGE_SIZE,
    "shared": true
   });
   if (!(wasmMemory.buffer instanceof SharedArrayBuffer)) {
@@ -1611,27 +1429,26 @@ if (wasmMemory) {
  buffer = wasmMemory.buffer;
 }
 
-INITIAL_MEMORY = buffer.byteLength;
+INITIAL_INITIAL_MEMORY = buffer.byteLength;
 
-assert(INITIAL_MEMORY % 65536 === 0);
+assert(INITIAL_INITIAL_MEMORY % WASM_PAGE_SIZE === 0);
+
+assert(65536 % WASM_PAGE_SIZE === 0);
 
 updateGlobalBufferAndViews(buffer);
 
-var wasmTable;
+if (!ENVIRONMENT_IS_PTHREAD) {}
 
 function writeStackCookie() {
- var max = _emscripten_stack_get_end();
- assert((max & 3) == 0);
- GROWABLE_HEAP_U32()[(max >> 2) + 1] = 34821223;
- GROWABLE_HEAP_U32()[(max >> 2) + 2] = 2310721022;
+ assert((STACK_MAX & 3) == 0);
+ GROWABLE_HEAP_U32()[(STACK_MAX >> 2) + 1] = 34821223;
+ GROWABLE_HEAP_U32()[(STACK_MAX >> 2) + 2] = 2310721022;
  GROWABLE_HEAP_I32()[0] = 1668509029;
 }
 
 function checkStackCookie() {
- if (ABORT) return;
- var max = _emscripten_stack_get_end();
- var cookie1 = GROWABLE_HEAP_U32()[(max >> 2) + 1];
- var cookie2 = GROWABLE_HEAP_U32()[(max >> 2) + 2];
+ var cookie1 = GROWABLE_HEAP_U32()[(STACK_MAX >> 2) + 1];
+ var cookie2 = GROWABLE_HEAP_U32()[(STACK_MAX >> 2) + 2];
  if (cookie1 != 34821223 || cookie2 != 2310721022) {
   abort("Stack overflow! Stack cookie has been overwritten, expected hex dwords 0x89BACDFE and 0x2135467, but received 0x" + cookie2.toString(16) + " " + cookie1.toString(16));
  }
@@ -1642,8 +1459,12 @@ function checkStackCookie() {
  var h16 = new Int16Array(1);
  var h8 = new Int8Array(h16.buffer);
  h16[0] = 25459;
- if (h8[0] !== 115 || h8[1] !== 99) throw "Runtime error: expected the system to be little-endian! (Run with -s SUPPORT_BIG_ENDIAN=1 to bypass)";
+ if (h8[0] !== 115 || h8[1] !== 99) throw "Runtime error: expected the system to be little-endian!";
 })();
+
+function abortFnPtrError(ptr, sig) {
+ abort("Invalid function pointer " + ptr + " called with signature '" + sig + "'. Perhaps this is an invalid value (e.g. caused by calling a virtual method on a NULL pointer)? Or calling a function with an incorrect type, which will fail? (it is worth building your source files with -Werror (warnings are errors), as warnings can indicate undefined behavior which can cause this). Build with ASSERTIONS=2 for more info.");
+}
 
 var __ATPRERUN__ = [];
 
@@ -1659,11 +1480,7 @@ var runtimeInitialized = false;
 
 var runtimeExited = false;
 
-var runtimeKeepaliveCounter = 0;
-
-function keepRuntimeAlive() {
- return noExitRuntime || runtimeKeepaliveCounter > 0;
-}
+if (ENVIRONMENT_IS_PTHREAD) runtimeInitialized = true;
 
 function preRun() {
  if (ENVIRONMENT_IS_PTHREAD) return;
@@ -1680,9 +1497,7 @@ function initRuntime() {
  checkStackCookie();
  assert(!runtimeInitialized);
  runtimeInitialized = true;
- if (ENVIRONMENT_IS_PTHREAD) return;
  if (!Module["noFSInit"] && !FS.init.initialized) FS.init();
- FS.ignorePermissions = false;
  TTY.init();
  callRuntimeCallbacks(__ATINIT__);
 }
@@ -1690,11 +1505,11 @@ function initRuntime() {
 function preMain() {
  checkStackCookie();
  if (ENVIRONMENT_IS_PTHREAD) return;
+ FS.ignorePermissions = false;
  callRuntimeCallbacks(__ATMAIN__);
 }
 
 function exitRuntime() {
- Asyncify.state = Asyncify.State.Disabled;
  checkStackCookie();
  if (ENVIRONMENT_IS_PTHREAD) return;
  runtimeExited = true;
@@ -1738,6 +1553,48 @@ assert(Math.clz32, "This browser does not support Math.clz32(), build with LEGAC
 
 assert(Math.trunc, "This browser does not support Math.trunc(), build with LEGACY_VM_SUPPORT or POLYFILL_OLD_MATH_FUNCTIONS to add in a polyfill");
 
+var Math_abs = Math.abs;
+
+var Math_cos = Math.cos;
+
+var Math_sin = Math.sin;
+
+var Math_tan = Math.tan;
+
+var Math_acos = Math.acos;
+
+var Math_asin = Math.asin;
+
+var Math_atan = Math.atan;
+
+var Math_atan2 = Math.atan2;
+
+var Math_exp = Math.exp;
+
+var Math_log = Math.log;
+
+var Math_sqrt = Math.sqrt;
+
+var Math_ceil = Math.ceil;
+
+var Math_floor = Math.floor;
+
+var Math_pow = Math.pow;
+
+var Math_imul = Math.imul;
+
+var Math_fround = Math.fround;
+
+var Math_round = Math.round;
+
+var Math_min = Math.min;
+
+var Math_max = Math.max;
+
+var Math_clz32 = Math.clz32;
+
+var Math_trunc = Math.trunc;
+
 var runDependencies = 0;
 
 var runDependencyWatcher = null;
@@ -1755,6 +1612,7 @@ function getUniqueRunDependency(id) {
 }
 
 function addRunDependency(id) {
+ assert(!ENVIRONMENT_IS_PTHREAD, "addRunDependency cannot be used in a pthread worker");
  runDependencies++;
  if (Module["monitorRunDependencies"]) {
   Module["monitorRunDependencies"](runDependencies);
@@ -1816,16 +1674,10 @@ Module["preloadedImages"] = {};
 Module["preloadedAudios"] = {};
 
 function abort(what) {
- if (ENVIRONMENT_IS_PTHREAD) {
-  postMessage({
-   "cmd": "onAbort",
-   "arg": what
-  });
- } else {
-  if (Module["onAbort"]) {
-   Module["onAbort"](what);
-  }
+ if (Module["onAbort"]) {
+  Module["onAbort"](what);
  }
+ if (ENVIRONMENT_IS_PTHREAD) console.error("Pthread aborting at " + new Error().stack);
  what += "";
  err(what);
  ABORT = true;
@@ -1837,14 +1689,22 @@ function abort(what) {
  throw e;
 }
 
+var memoryInitializer = null;
+
+function hasPrefix(str, prefix) {
+ return String.prototype.startsWith ? str.startsWith(prefix) : str.indexOf(prefix) === 0;
+}
+
 var dataURIPrefix = "data:application/octet-stream;base64,";
 
 function isDataURI(filename) {
- return filename.startsWith(dataURIPrefix);
+ return hasPrefix(filename, dataURIPrefix);
 }
 
+var fileURIPrefix = "file://";
+
 function isFileURI(filename) {
- return filename.startsWith("file://");
+ return hasPrefix(filename, fileURIPrefix);
 }
 
 function createExportWrapper(name, fixedasm) {
@@ -1863,21 +1723,19 @@ function createExportWrapper(name, fixedasm) {
  };
 }
 
-var wasmBinaryFile;
-
-wasmBinaryFile = "test.wasm";
+var wasmBinaryFile = "test.wasm";
 
 if (!isDataURI(wasmBinaryFile)) {
  wasmBinaryFile = locateFile(wasmBinaryFile);
 }
 
-function getBinary(file) {
+function getBinary() {
  try {
-  if (file == wasmBinaryFile && wasmBinary) {
+  if (wasmBinary) {
    return new Uint8Array(wasmBinary);
   }
   if (readBinary) {
-   return readBinary(file);
+   return readBinary(wasmBinaryFile);
   } else {
    throw "both async and sync fetching of the wasm failed";
   }
@@ -1887,23 +1745,19 @@ function getBinary(file) {
 }
 
 function getBinaryPromise() {
- if (!wasmBinary && (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER)) {
-  if (typeof fetch === "function") {
-   return fetch(wasmBinaryFile, {
-    credentials: "same-origin"
-   }).then(function(response) {
-    if (!response["ok"]) {
-     throw "failed to load wasm binary file at '" + wasmBinaryFile + "'";
-    }
-    return response["arrayBuffer"]();
-   }).catch(function() {
-    return getBinary(wasmBinaryFile);
-   });
-  }
+ if (!wasmBinary && (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) && typeof fetch === "function") {
+  return fetch(wasmBinaryFile, {
+   credentials: "same-origin"
+  }).then(function(response) {
+   if (!response["ok"]) {
+    throw "failed to load wasm binary file at '" + wasmBinaryFile + "'";
+   }
+   return response["arrayBuffer"]();
+  }).catch(function() {
+   return getBinary();
+  });
  }
- return Promise.resolve().then(function() {
-  return getBinary(wasmBinaryFile);
- });
+ return Promise.resolve().then(getBinary);
 }
 
 function createWasm() {
@@ -1915,10 +1769,6 @@ function createWasm() {
   var exports = instance.exports;
   exports = Asyncify.instrumentWasmExports(exports);
   Module["asm"] = exports;
-  wasmTable = Module["asm"]["__indirect_function_table"];
-  assert(wasmTable, "table not found in wasm exports");
-  addOnInit(Module["asm"]["__wasm_call_ctors"]);
-  PThread.tlsInitFunctions.push(Module["asm"]["emscripten_tls_init"]);
   wasmModule = module;
   if (!ENVIRONMENT_IS_PTHREAD) {
    var numWorkersToLoad = PThread.unusedWorkers.length;
@@ -1933,38 +1783,33 @@ function createWasm() {
   addRunDependency("wasm-instantiate");
  }
  var trueModule = Module;
- function receiveInstantiationResult(result) {
+ function receiveInstantiatedSource(output) {
   assert(Module === trueModule, "the Module object should not be replaced during async compilation - perhaps the order of HTML elements is wrong?");
   trueModule = null;
-  receiveInstance(result["instance"], result["module"]);
+  receiveInstance(output["instance"], output["module"]);
  }
  function instantiateArrayBuffer(receiver) {
   return getBinaryPromise().then(function(binary) {
    return WebAssembly.instantiate(binary, info);
-  }).then(function(instance) {
-   return instance;
   }).then(receiver, function(reason) {
    err("failed to asynchronously prepare wasm: " + reason);
-   if (isFileURI(wasmBinaryFile)) {
-    err("warning: Loading from a file URI (" + wasmBinaryFile + ") is not supported in most browsers. See https://emscripten.org/docs/getting_started/FAQ.html#how-do-i-run-a-local-webserver-for-testing-why-does-my-program-stall-in-downloading-or-preparing");
-   }
    abort(reason);
   });
  }
  function instantiateAsync() {
   if (!wasmBinary && typeof WebAssembly.instantiateStreaming === "function" && !isDataURI(wasmBinaryFile) && typeof fetch === "function") {
-   return fetch(wasmBinaryFile, {
+   fetch(wasmBinaryFile, {
     credentials: "same-origin"
    }).then(function(response) {
     var result = WebAssembly.instantiateStreaming(response, info);
-    return result.then(receiveInstantiationResult, function(reason) {
+    return result.then(receiveInstantiatedSource, function(reason) {
      err("wasm streaming compile failed: " + reason);
      err("falling back to ArrayBuffer instantiation");
-     return instantiateArrayBuffer(receiveInstantiationResult);
+     return instantiateArrayBuffer(receiveInstantiatedSource);
     });
    });
   } else {
-   return instantiateArrayBuffer(receiveInstantiationResult);
+   return instantiateArrayBuffer(receiveInstantiatedSource);
   }
  }
  if (Module["instantiateWasm"]) {
@@ -1977,7 +1822,7 @@ function createWasm() {
    return false;
   }
  }
- instantiateAsync().catch(readyPromiseReject);
+ instantiateAsync();
  return {};
 }
 
@@ -1985,34 +1830,37 @@ var tempDouble;
 
 var tempI64;
 
-var ASM_CONSTS = {};
+var ASM_CONSTS = {
+ 5636: function() {
+  throw "Canceled!";
+ },
+ 5856: function($0, $1) {
+  setTimeout(function() {
+   _do_emscripten_dispatch_to_thread($0, $1);
+  }, 0);
+ }
+};
 
-function __asyncjs__await_something() {
- return Asyncify.handleAsync(async () => {
-  out("waiting for a fetch");
-  await new Promise((res, rej) => {
-   setTimeout(_ => res(), 1e3);
-  }).then(_ => {
-   console.log("resolved!");
-  });
-  return 42;
+function await_something() {
+ return Asyncify.handleSleep(function(wakeUp) {
+  console.log("waiting...");
+  setTimeout(_ => {
+   console.log("wake up!");
+   wakeUp();
+  }, 1e3);
  });
 }
 
-function initPthreadsJS(tb) {
- PThread.initRuntime(tb);
+function initPthreadsJS() {
+ PThread.initRuntime();
 }
 
 function _emscripten_set_main_loop_timing(mode, value) {
  Browser.mainLoop.timingMode = mode;
  Browser.mainLoop.timingValue = value;
  if (!Browser.mainLoop.func) {
-  err("emscripten_set_main_loop_timing: Cannot set timing mode for main loop since a main loop does not exist! Call emscripten_set_main_loop first to set one up.");
+  console.error("emscripten_set_main_loop_timing: Cannot set timing mode for main loop since a main loop does not exist! Call emscripten_set_main_loop first to set one up.");
   return 1;
- }
- if (!Browser.mainLoop.running) {
-  runtimeKeepalivePush();
-  Browser.mainLoop.running = true;
  }
  if (mode == 0) {
   Browser.mainLoop.scheduler = function Browser_mainLoop_scheduler_setTimeout() {
@@ -2065,52 +1913,12 @@ if (ENVIRONMENT_IS_PTHREAD) {
  return performance.now();
 };
 
-function runtimeKeepalivePush() {
- runtimeKeepaliveCounter += 1;
-}
-
-function _exit(status) {
- exit(status);
-}
-
-Module["_exit"] = _exit;
-
-function handleException(e) {
- if (e instanceof ExitStatus || e == "unwind") {
-  return EXITSTATUS;
- }
- var toLog = e;
- if (e && typeof e === "object" && e.stack) {
-  toLog = [ e, e.stack ];
- }
- err("exception thrown: " + toLog);
- quit_(1, e);
-}
-
-function maybeExit() {
- if (!keepRuntimeAlive()) {
-  try {
-   if (ENVIRONMENT_IS_PTHREAD) __emscripten_thread_exit(EXITSTATUS); else _exit(EXITSTATUS);
-  } catch (e) {
-   handleException(e);
-  }
- }
-}
-
 function setMainLoop(browserIterationFunc, fps, simulateInfiniteLoop, arg, noSetTiming) {
+ noExitRuntime = true;
  assert(!Browser.mainLoop.func, "emscripten_set_main_loop: there can only be one main loop function at once: call emscripten_cancel_main_loop to cancel the previous one before setting a new one with different parameters.");
  Browser.mainLoop.func = browserIterationFunc;
  Browser.mainLoop.arg = arg;
  var thisMainLoopId = Browser.mainLoop.currentlyRunningMainloop;
- function checkIsRunning() {
-  if (thisMainLoopId < Browser.mainLoop.currentlyRunningMainloop) {
-   runtimeKeepalivePop();
-   maybeExit();
-   return false;
-  }
-  return true;
- }
- Browser.mainLoop.running = false;
  Browser.mainLoop.runner = function Browser_mainLoop_runner() {
   if (ABORT) return;
   if (Browser.mainLoop.queue.length > 0) {
@@ -2127,13 +1935,13 @@ function setMainLoop(browserIterationFunc, fps, simulateInfiniteLoop, arg, noSet
      Browser.mainLoop.remainingBlockers = (8 * remaining + next) / 9;
     }
    }
-   out('main loop blocker "' + blocker.name + '" took ' + (Date.now() - start) + " ms");
+   console.log('main loop blocker "' + blocker.name + '" took ' + (Date.now() - start) + " ms");
    Browser.mainLoop.updateStatus();
-   if (!checkIsRunning()) return;
+   if (thisMainLoopId < Browser.mainLoop.currentlyRunningMainloop) return;
    setTimeout(Browser.mainLoop.runner, 0);
    return;
   }
-  if (!checkIsRunning()) return;
+  if (thisMainLoopId < Browser.mainLoop.currentlyRunningMainloop) return;
   Browser.mainLoop.currentFrameNumber = Browser.mainLoop.currentFrameNumber + 1 | 0;
   if (Browser.mainLoop.timingMode == 1 && Browser.mainLoop.timingValue > 1 && Browser.mainLoop.currentFrameNumber % Browser.mainLoop.timingValue != 0) {
    Browser.mainLoop.scheduler();
@@ -2147,7 +1955,7 @@ function setMainLoop(browserIterationFunc, fps, simulateInfiniteLoop, arg, noSet
   }
   Browser.mainLoop.runIter(browserIterationFunc);
   checkStackCookie();
-  if (!checkIsRunning()) return;
+  if (thisMainLoopId < Browser.mainLoop.currentlyRunningMainloop) return;
   if (typeof SDL === "object" && SDL.audio && SDL.audio.queueNewAudioData) SDL.audio.queueNewAudioData();
   Browser.mainLoop.scheduler();
  };
@@ -2160,39 +1968,8 @@ function setMainLoop(browserIterationFunc, fps, simulateInfiniteLoop, arg, noSet
  }
 }
 
-function callUserCallback(func, synchronous) {
- if (ABORT) {
-  err("user callback triggered after application aborted.  Ignoring.");
-  return;
- }
- if (synchronous) {
-  func();
-  return;
- }
- try {
-  func();
-  if (ENVIRONMENT_IS_PTHREAD) maybeExit();
- } catch (e) {
-  handleException(e);
- }
-}
-
-function runtimeKeepalivePop() {
- assert(runtimeKeepaliveCounter > 0);
- runtimeKeepaliveCounter -= 1;
-}
-
-function safeSetTimeout(func, timeout) {
- runtimeKeepalivePush();
- return setTimeout(function() {
-  runtimeKeepalivePop();
-  callUserCallback(func);
- }, timeout);
-}
-
 var Browser = {
  mainLoop: {
-  running: false,
   scheduler: null,
   method: "",
   currentlyRunningMainloop: 0,
@@ -2240,7 +2017,18 @@ var Browser = {
      return;
     }
    }
-   callUserCallback(func);
+   try {
+    func();
+   } catch (e) {
+    if (e instanceof ExitStatus) {
+     return;
+    } else if (e == "unwind") {
+     return;
+    } else {
+     if (e && typeof e === "object" && e.stack) err("exception thrown: " + [ e, e.stack ]);
+     throw e;
+    }
+   }
    if (Module["postMainLoop"]) Module["postMainLoop"]();
   }
  },
@@ -2257,12 +2045,12 @@ var Browser = {
    Browser.hasBlobConstructor = true;
   } catch (e) {
    Browser.hasBlobConstructor = false;
-   out("warning: no blob constructor, cannot create blobs with mimetypes");
+   console.log("warning: no blob constructor, cannot create blobs with mimetypes");
   }
-  Browser.BlobBuilder = typeof MozBlobBuilder != "undefined" ? MozBlobBuilder : typeof WebKitBlobBuilder != "undefined" ? WebKitBlobBuilder : !Browser.hasBlobConstructor ? out("warning: no BlobBuilder") : null;
+  Browser.BlobBuilder = typeof MozBlobBuilder != "undefined" ? MozBlobBuilder : typeof WebKitBlobBuilder != "undefined" ? WebKitBlobBuilder : !Browser.hasBlobConstructor ? console.log("warning: no BlobBuilder") : null;
   Browser.URLObject = typeof window != "undefined" ? window.URL ? window.URL : window.webkitURL : undefined;
   if (!Module.noImageDecoding && typeof Browser.URLObject === "undefined") {
-   out("warning: Browser does not support creating object URLs. Built-in browser image decoding will not be available.");
+   console.log("warning: Browser does not support creating object URLs. Built-in browser image decoding will not be available.");
    Module.noImageDecoding = true;
   }
   var imagePlugin = {};
@@ -2305,7 +2093,7 @@ var Browser = {
     if (onload) onload(byteArray);
    };
    img.onerror = function img_onerror(event) {
-    out("Image " + url + " could not be decoded");
+    console.log("Image " + url + " could not be decoded");
     if (onerror) onerror();
    };
    img.src = url;
@@ -2349,7 +2137,7 @@ var Browser = {
     }, false);
     audio.onerror = function audio_onerror(event) {
      if (done) return;
-     out("warning: browser could not fully decode audio " + name + ", trying slower base64 approach");
+     console.log("warning: browser could not fully decode audio " + name + ", trying slower base64 approach");
      function encode64(data) {
       var BASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
       var PAD = "=";
@@ -2378,7 +2166,7 @@ var Browser = {
      finish(audio);
     };
     audio.src = url;
-    safeSetTimeout(function() {
+    Browser.safeSetTimeout(function() {
      finish(audio);
     }, 1e4);
    } else {
@@ -2528,15 +2316,55 @@ var Browser = {
   var RAF = Browser.fakeRequestAnimationFrame;
   RAF(func);
  },
- safeSetTimeout: function(func) {
-  return safeSetTimeout(func);
+ safeCallback: function(func) {
+  return function() {
+   if (!ABORT) return func.apply(null, arguments);
+  };
+ },
+ allowAsyncCallbacks: true,
+ queuedAsyncCallbacks: [],
+ pauseAsyncCallbacks: function() {
+  Browser.allowAsyncCallbacks = false;
+ },
+ resumeAsyncCallbacks: function() {
+  Browser.allowAsyncCallbacks = true;
+  if (Browser.queuedAsyncCallbacks.length > 0) {
+   var callbacks = Browser.queuedAsyncCallbacks;
+   Browser.queuedAsyncCallbacks = [];
+   callbacks.forEach(function(func) {
+    func();
+   });
+  }
  },
  safeRequestAnimationFrame: function(func) {
-  runtimeKeepalivePush();
   return Browser.requestAnimationFrame(function() {
-   runtimeKeepalivePop();
-   callUserCallback(func);
+   if (ABORT) return;
+   if (Browser.allowAsyncCallbacks) {
+    func();
+   } else {
+    Browser.queuedAsyncCallbacks.push(func);
+   }
   });
+ },
+ safeSetTimeout: function(func, timeout) {
+  noExitRuntime = true;
+  return setTimeout(function() {
+   if (ABORT) return;
+   if (Browser.allowAsyncCallbacks) {
+    func();
+   } else {
+    Browser.queuedAsyncCallbacks.push(func);
+   }
+  }, timeout);
+ },
+ safeSetInterval: function(func, timeout) {
+  noExitRuntime = true;
+  return setInterval(function() {
+   if (ABORT) return;
+   if (Browser.allowAsyncCallbacks) {
+    func();
+   }
+  }, timeout);
  },
  getMimetype: function(name) {
   return {
@@ -2659,6 +2487,21 @@ var Browser = {
    Browser.mouseY = y;
   }
  },
+ asyncLoad: function(url, onload, onerror, noRunDep) {
+  var dep = !noRunDep ? getUniqueRunDependency("al " + url) : "";
+  readAsync(url, function(arrayBuffer) {
+   assert(arrayBuffer, 'Loading data file "' + url + '" failed (no arrayBuffer).');
+   onload(new Uint8Array(arrayBuffer));
+   if (dep) removeRunDependency(dep);
+  }, function(event) {
+   if (onerror) {
+    onerror();
+   } else {
+    throw 'Loading data file "' + url + '" failed.';
+   }
+  });
+  if (dep) addRunDependency(dep);
+ },
  resizeListeners: [],
  updateResizeListeners: function() {
   var canvas = Module["canvas"];
@@ -2733,8 +2576,19 @@ var Browser = {
     }
    }
   }
+ },
+ wgetRequests: {},
+ nextWgetRequestHandle: 0,
+ getNextWgetRequestHandle: function() {
+  var handle = Browser.nextWgetRequestHandle;
+  Browser.nextWgetRequestHandle++;
+  return handle;
  }
 };
+
+function abortStackOverflow(allocSize) {
+ abort("Stack overflow! Attempted to allocate " + allocSize + " bytes on the stack, but stack has only " + (STACK_MAX - stackSave() + allocSize) + " bytes available!");
+}
 
 function callRuntimeCallbacks(callbacks) {
  while (callbacks.length > 0) {
@@ -2746,13 +2600,9 @@ function callRuntimeCallbacks(callbacks) {
   var func = callback.func;
   if (typeof func === "number") {
    if (callback.arg === undefined) {
-    (function() {
-     dynCall_v.call(null, func);
-    })();
+    getDynCaller("v", func)();
    } else {
-    (function(a1) {
-     dynCall_vi.apply(null, [ func, a1 ]);
-    })(callback.arg);
+    getDynCaller("vi", func)(callback.arg);
    }
   } else {
    func(callback.arg === undefined ? null : callback.arg);
@@ -2793,16 +2643,176 @@ function demangleAll(text) {
  });
 }
 
+function dynCallLegacy(sig, ptr, args) {
+ assert("dynCall_" + sig in Module, "bad function pointer type - no table for sig '" + sig + "'");
+ if (args && args.length) {
+  assert(args.length === sig.substring(1).replace(/j/g, "--").length);
+ } else {
+  assert(sig.length == 1);
+ }
+ if (args && args.length) {
+  return Module["dynCall_" + sig].apply(null, [ ptr ].concat(args));
+ }
+ return Module["dynCall_" + sig].call(null, ptr);
+}
+
+function dynCall(sig, ptr, args) {
+ return dynCallLegacy(sig, ptr, args);
+}
+
+Module["dynCall"] = dynCall;
+
+var __pthread_ptr = 0;
+
+var __pthread_is_main_runtime_thread = 0;
+
+var __pthread_is_main_browser_thread = 0;
+
+function registerPthreadPtr(pthreadPtr, isMainBrowserThread, isMainRuntimeThread) {
+ pthreadPtr = pthreadPtr | 0;
+ isMainBrowserThread = isMainBrowserThread | 0;
+ isMainRuntimeThread = isMainRuntimeThread | 0;
+ __pthread_ptr = pthreadPtr;
+ __pthread_is_main_browser_thread = isMainBrowserThread;
+ __pthread_is_main_runtime_thread = isMainRuntimeThread;
+}
+
+Module["registerPthreadPtr"] = registerPthreadPtr;
+
+var ERRNO_CODES = {
+ EPERM: 63,
+ ENOENT: 44,
+ ESRCH: 71,
+ EINTR: 27,
+ EIO: 29,
+ ENXIO: 60,
+ E2BIG: 1,
+ ENOEXEC: 45,
+ EBADF: 8,
+ ECHILD: 12,
+ EAGAIN: 6,
+ EWOULDBLOCK: 6,
+ ENOMEM: 48,
+ EACCES: 2,
+ EFAULT: 21,
+ ENOTBLK: 105,
+ EBUSY: 10,
+ EEXIST: 20,
+ EXDEV: 75,
+ ENODEV: 43,
+ ENOTDIR: 54,
+ EISDIR: 31,
+ EINVAL: 28,
+ ENFILE: 41,
+ EMFILE: 33,
+ ENOTTY: 59,
+ ETXTBSY: 74,
+ EFBIG: 22,
+ ENOSPC: 51,
+ ESPIPE: 70,
+ EROFS: 69,
+ EMLINK: 34,
+ EPIPE: 64,
+ EDOM: 18,
+ ERANGE: 68,
+ ENOMSG: 49,
+ EIDRM: 24,
+ ECHRNG: 106,
+ EL2NSYNC: 156,
+ EL3HLT: 107,
+ EL3RST: 108,
+ ELNRNG: 109,
+ EUNATCH: 110,
+ ENOCSI: 111,
+ EL2HLT: 112,
+ EDEADLK: 16,
+ ENOLCK: 46,
+ EBADE: 113,
+ EBADR: 114,
+ EXFULL: 115,
+ ENOANO: 104,
+ EBADRQC: 103,
+ EBADSLT: 102,
+ EDEADLOCK: 16,
+ EBFONT: 101,
+ ENOSTR: 100,
+ ENODATA: 116,
+ ETIME: 117,
+ ENOSR: 118,
+ ENONET: 119,
+ ENOPKG: 120,
+ EREMOTE: 121,
+ ENOLINK: 47,
+ EADV: 122,
+ ESRMNT: 123,
+ ECOMM: 124,
+ EPROTO: 65,
+ EMULTIHOP: 36,
+ EDOTDOT: 125,
+ EBADMSG: 9,
+ ENOTUNIQ: 126,
+ EBADFD: 127,
+ EREMCHG: 128,
+ ELIBACC: 129,
+ ELIBBAD: 130,
+ ELIBSCN: 131,
+ ELIBMAX: 132,
+ ELIBEXEC: 133,
+ ENOSYS: 52,
+ ENOTEMPTY: 55,
+ ENAMETOOLONG: 37,
+ ELOOP: 32,
+ EOPNOTSUPP: 138,
+ EPFNOSUPPORT: 139,
+ ECONNRESET: 15,
+ ENOBUFS: 42,
+ EAFNOSUPPORT: 5,
+ EPROTOTYPE: 67,
+ ENOTSOCK: 57,
+ ENOPROTOOPT: 50,
+ ESHUTDOWN: 140,
+ ECONNREFUSED: 14,
+ EADDRINUSE: 3,
+ ECONNABORTED: 13,
+ ENETUNREACH: 40,
+ ENETDOWN: 38,
+ ETIMEDOUT: 73,
+ EHOSTDOWN: 142,
+ EHOSTUNREACH: 23,
+ EINPROGRESS: 26,
+ EALREADY: 7,
+ EDESTADDRREQ: 17,
+ EMSGSIZE: 35,
+ EPROTONOSUPPORT: 66,
+ ESOCKTNOSUPPORT: 137,
+ EADDRNOTAVAIL: 4,
+ ENETRESET: 39,
+ EISCONN: 30,
+ ENOTCONN: 53,
+ ETOOMANYREFS: 141,
+ EUSERS: 136,
+ EDQUOT: 19,
+ ESTALE: 72,
+ ENOTSUP: 138,
+ ENOMEDIUM: 148,
+ EILSEQ: 25,
+ EOVERFLOW: 61,
+ ECANCELED: 11,
+ ENOTRECOVERABLE: 56,
+ EOWNERDEAD: 62,
+ ESTRPIPE: 135
+};
+
+var __main_thread_futex_wait_address = 0;
+
 function _emscripten_futex_wake(addr, count) {
  if (addr <= 0 || addr > GROWABLE_HEAP_I8().length || addr & 3 != 0 || count < 0) return -28;
  if (count == 0) return 0;
  if (count >= 2147483647) count = Infinity;
- assert(__emscripten_main_thread_futex > 0);
- var mainThreadWaitAddress = Atomics.load(GROWABLE_HEAP_I32(), __emscripten_main_thread_futex >> 2);
+ var mainThreadWaitAddress = Atomics.load(GROWABLE_HEAP_I32(), __main_thread_futex_wait_address >> 2);
  var mainThreadWoken = 0;
  if (mainThreadWaitAddress == addr) {
-  assert(!ENVIRONMENT_IS_WEB);
-  var loadedAddr = Atomics.compareExchange(GROWABLE_HEAP_I32(), __emscripten_main_thread_futex >> 2, mainThreadWaitAddress, 0);
+  var loadedAddr = Atomics.compareExchange(GROWABLE_HEAP_I32(), __main_thread_futex_wait_address >> 2, mainThreadWaitAddress, 0);
   if (loadedAddr == mainThreadWaitAddress) {
    --count;
    mainThreadWoken = 1;
@@ -2819,9 +2829,8 @@ Module["_emscripten_futex_wake"] = _emscripten_futex_wake;
 function killThread(pthread_ptr) {
  if (ENVIRONMENT_IS_PTHREAD) throw "Internal Error! killThread() can only ever be called from main application thread!";
  if (!pthread_ptr) throw "Internal Error! Null pthread_ptr in killThread!";
- GROWABLE_HEAP_I32()[pthread_ptr + 8 >> 2] = 0;
+ GROWABLE_HEAP_I32()[pthread_ptr + 12 >> 2] = 0;
  var pthread = PThread.pthreads[pthread_ptr];
- delete PThread.pthreads[pthread_ptr];
  pthread.worker.terminate();
  PThread.freeThreadData(pthread);
  PThread.runningWorkers.splice(PThread.runningWorkers.indexOf(pthread.worker), 1);
@@ -2840,18 +2849,22 @@ function cancelThread(pthread_ptr) {
 function cleanupThread(pthread_ptr) {
  if (ENVIRONMENT_IS_PTHREAD) throw "Internal Error! cleanupThread() can only ever be called from main application thread!";
  if (!pthread_ptr) throw "Internal Error! Null pthread_ptr in cleanupThread!";
+ GROWABLE_HEAP_I32()[pthread_ptr + 12 >> 2] = 0;
  var pthread = PThread.pthreads[pthread_ptr];
  if (pthread) {
-  GROWABLE_HEAP_I32()[pthread_ptr + 8 >> 2] = 0;
   var worker = pthread.worker;
   PThread.returnWorkerToPool(worker);
  }
 }
 
 var PThread = {
+ MAIN_THREAD_ID: 1,
+ mainThreadInfo: {
+  schedPolicy: 0,
+  schedPrio: 0
+ },
  unusedWorkers: [],
  runningWorkers: [],
- tlsInitFunctions: [],
  initMainThreadBlock: function() {
   assert(!ENVIRONMENT_IS_PTHREAD);
   var pthreadPoolSize = 2;
@@ -2859,15 +2872,60 @@ var PThread = {
    PThread.allocateUnusedWorker();
   }
  },
- initRuntime: function(tb) {
-  __emscripten_thread_init(tb, !ENVIRONMENT_IS_WORKER, 1);
-  PThread.mainRuntimeThread = true;
+ initRuntime: function() {
+  PThread.mainThreadBlock = _malloc(232);
+  for (var i = 0; i < 232 / 4; ++i) GROWABLE_HEAP_U32()[PThread.mainThreadBlock / 4 + i] = 0;
+  GROWABLE_HEAP_I32()[PThread.mainThreadBlock + 12 >> 2] = PThread.mainThreadBlock;
+  var headPtr = PThread.mainThreadBlock + 156;
+  GROWABLE_HEAP_I32()[headPtr >> 2] = headPtr;
+  var tlsMemory = _malloc(512);
+  for (var i = 0; i < 128; ++i) GROWABLE_HEAP_U32()[tlsMemory / 4 + i] = 0;
+  Atomics.store(GROWABLE_HEAP_U32(), PThread.mainThreadBlock + 104 >> 2, tlsMemory);
+  Atomics.store(GROWABLE_HEAP_U32(), PThread.mainThreadBlock + 40 >> 2, PThread.mainThreadBlock);
+  Atomics.store(GROWABLE_HEAP_U32(), PThread.mainThreadBlock + 44 >> 2, 42);
+  __main_thread_futex_wait_address = _malloc(4);
+  registerPthreadPtr(PThread.mainThreadBlock, !ENVIRONMENT_IS_WORKER, 1);
+  _emscripten_register_main_browser_thread_id(PThread.mainThreadBlock);
  },
  initWorker: function() {},
  pthreads: {},
  threadExitHandlers: [],
- setExitStatus: function(status) {
-  EXITSTATUS = status;
+ setThreadStatus: function() {},
+ runExitHandlers: function() {
+  while (PThread.threadExitHandlers.length > 0) {
+   PThread.threadExitHandlers.pop()();
+  }
+  if (ENVIRONMENT_IS_PTHREAD && threadInfoStruct) ___pthread_tsd_run_dtors();
+ },
+ threadExit: function(exitCode) {
+  var tb = _pthread_self();
+  if (tb) {
+   err("Pthread 0x" + tb.toString(16) + " exited.");
+   Atomics.store(GROWABLE_HEAP_U32(), tb + 4 >> 2, exitCode);
+   Atomics.store(GROWABLE_HEAP_U32(), tb + 0 >> 2, 1);
+   Atomics.store(GROWABLE_HEAP_U32(), tb + 60 >> 2, 1);
+   Atomics.store(GROWABLE_HEAP_U32(), tb + 64 >> 2, 0);
+   PThread.runExitHandlers();
+   _emscripten_futex_wake(tb + 0, 2147483647);
+   registerPthreadPtr(0, 0, 0);
+   threadInfoStruct = 0;
+   if (ENVIRONMENT_IS_PTHREAD) {
+    postMessage({
+     "cmd": "exit"
+    });
+   }
+  }
+ },
+ threadCancel: function() {
+  PThread.runExitHandlers();
+  Atomics.store(GROWABLE_HEAP_U32(), threadInfoStruct + 4 >> 2, -1);
+  Atomics.store(GROWABLE_HEAP_U32(), threadInfoStruct + 0 >> 2, 1);
+  _emscripten_futex_wake(threadInfoStruct + 0, 2147483647);
+  threadInfoStruct = selfThreadId = 0;
+  registerPthreadPtr(0, 0, 0);
+  postMessage({
+   "cmd": "cancelDone"
+  });
  },
  terminateAllThreads: function() {
   for (var t in PThread.pthreads) {
@@ -2887,14 +2945,17 @@ var PThread = {
    var worker = PThread.runningWorkers[i];
    var pthread = worker.pthread;
    assert(pthread, "This Worker should have a pthread it is executing");
-   worker.terminate();
    PThread.freeThreadData(pthread);
+   worker.terminate();
   }
   PThread.runningWorkers = [];
  },
  freeThreadData: function(pthread) {
   if (!pthread) return;
   if (pthread.threadInfoStruct) {
+   var tlsMemory = GROWABLE_HEAP_I32()[pthread.threadInfoStruct + 104 >> 2];
+   GROWABLE_HEAP_I32()[pthread.threadInfoStruct + 104 >> 2] = 0;
+   _free(tlsMemory);
    _free(pthread.threadInfoStruct);
   }
   pthread.threadInfoStruct = 0;
@@ -2903,31 +2964,13 @@ var PThread = {
   if (pthread.worker) pthread.worker.pthread = null;
  },
  returnWorkerToPool: function(worker) {
-  PThread.runWithoutMainThreadQueuedCalls(function() {
-   delete PThread.pthreads[worker.pthread.threadInfoStruct];
-   PThread.unusedWorkers.push(worker);
-   PThread.runningWorkers.splice(PThread.runningWorkers.indexOf(worker), 1);
-   PThread.freeThreadData(worker.pthread);
-   worker.pthread = undefined;
-  });
- },
- runWithoutMainThreadQueuedCalls: function(func) {
-  assert(PThread.mainRuntimeThread, "runWithoutMainThreadQueuedCalls must be done on the main runtime thread");
-  assert(__emscripten_allow_main_runtime_queued_calls);
-  GROWABLE_HEAP_I32()[__emscripten_allow_main_runtime_queued_calls >> 2] = 0;
-  try {
-   func();
-  } finally {
-   GROWABLE_HEAP_I32()[__emscripten_allow_main_runtime_queued_calls >> 2] = 1;
-  }
+  delete PThread.pthreads[worker.pthread.thread];
+  PThread.unusedWorkers.push(worker);
+  PThread.runningWorkers.splice(PThread.runningWorkers.indexOf(worker), 1);
+  PThread.freeThreadData(worker.pthread);
+  worker.pthread = undefined;
  },
  receiveObjectTransfer: function(data) {},
- threadInit: function() {
-  out("threadInit");
-  for (var i in PThread.tlsInitFunctions) {
-   PThread.tlsInitFunctions[i]();
-  }
- },
  loadWasmModuleToWorker: function(worker, onFinishedLoading) {
   worker.onmessage = function(e) {
    var d = e["data"];
@@ -2938,7 +2981,7 @@ var PThread = {
     if (thread) {
      thread.worker.postMessage(e.data, d["transferList"]);
     } else {
-     err('Internal error! Worker sent a message "' + cmd + '" to target pthread ' + d["targetThread"] + ", but that thread no longer exists!");
+     console.error('Internal error! Worker sent a message "' + cmd + '" to target pthread ' + d["targetThread"] + ", but that thread no longer exists!");
     }
     PThread.currentProxiedOperationCallerThread = undefined;
     return;
@@ -2967,25 +3010,16 @@ var PThread = {
    } else if (cmd === "alert") {
     alert("Thread " + d["threadId"] + ": " + d["text"]);
    } else if (cmd === "exit") {
-    var detached = worker.pthread && Atomics.load(GROWABLE_HEAP_U32(), worker.pthread.threadInfoStruct + 60 >> 2);
+    var detached = worker.pthread && Atomics.load(GROWABLE_HEAP_U32(), worker.pthread.thread + 68 >> 2);
     if (detached) {
      PThread.returnWorkerToPool(worker);
     }
-   } else if (cmd === "exitProcess") {
-    err("exitProcess requested by worker");
-    try {
-     _exit(d["returnCode"]);
-    } catch (e) {
-     handleException(e);
-    }
    } else if (cmd === "cancelDone") {
     PThread.returnWorkerToPool(worker);
+   } else if (cmd === "objectTransfer") {
+    PThread.receiveObjectTransfer(e.data);
    } else if (e.data.target === "setimmediate") {
     worker.postMessage(e.data);
-   } else if (cmd === "onAbort") {
-    if (Module["onAbort"]) {
-     Module["onAbort"](d["arg"]);
-    }
    } else {
     err("worker sent an unknown command " + cmd);
    }
@@ -2993,7 +3027,6 @@ var PThread = {
   };
   worker.onerror = function(e) {
    err("pthread sent an error! " + e.filename + ":" + e.lineno + ": " + e.message);
-   throw e;
   };
   assert(wasmMemory instanceof WebAssembly.Memory, "WebAssembly memory should have been loaded by now!");
   assert(wasmModule instanceof WebAssembly.Module, "WebAssembly Module should have been loaded by now!");
@@ -3001,7 +3034,8 @@ var PThread = {
    "cmd": "load",
    "urlOrBlob": Module["mainScriptUrlOrBlob"] || _scriptDir,
    "wasmMemory": wasmMemory,
-   "wasmModule": wasmModule
+   "wasmModule": wasmModule,
+   "DYNAMIC_BASE": DYNAMIC_BASE
   });
  },
  allocateUnusedWorker: function() {
@@ -3011,29 +3045,43 @@ var PThread = {
  },
  getNewWorker: function() {
   if (PThread.unusedWorkers.length == 0) {
-   err("Tried to spawn a new thread, but the thread pool is exhausted.\n" + "This might result in a deadlock unless some threads eventually exit or the code explicitly breaks out to the event loop.\n" + "If you want to increase the pool size, use setting `-s PTHREAD_POOL_SIZE=...`." + "\nIf you want to throw an explicit error instead of the risk of deadlocking in those cases, use setting `-s PTHREAD_POOL_SIZE_STRICT=2`.");
    PThread.allocateUnusedWorker();
    PThread.loadWasmModuleToWorker(PThread.unusedWorkers[0]);
   }
-  return PThread.unusedWorkers.pop();
+  if (PThread.unusedWorkers.length > 0) return PThread.unusedWorkers.pop(); else return null;
+ },
+ busySpinWait: function(msecs) {
+  var t = performance.now() + msecs;
+  while (performance.now() < t) {
+  }
  }
 };
 
 function establishStackSpace(stackTop, stackMax) {
- _emscripten_stack_set_limits(stackTop, stackMax);
+ STACK_BASE = STACKTOP = stackTop;
+ STACK_MAX = stackMax;
  stackRestore(stackTop);
  writeStackCookie();
 }
 
 Module["establishStackSpace"] = establishStackSpace;
 
-function invokeEntryPoint(ptr, arg) {
- return function(a1) {
-  return dynCall_ii.apply(null, [ ptr, a1 ]);
- }(arg);
+function getDynCaller(sig, ptr) {
+ var argCache = [];
+ return function() {
+  argCache.length = arguments.length;
+  for (var i = 0; i < arguments.length; i++) {
+   argCache[i] = arguments[i];
+  }
+  return dynCall(sig, ptr, argCache);
+ };
 }
 
-Module["invokeEntryPoint"] = invokeEntryPoint;
+function getNoExitRuntime() {
+ return noExitRuntime;
+}
+
+Module["getNoExitRuntime"] = getNoExitRuntime;
 
 function jsStackTrace() {
  var error = new Error();
@@ -3086,8 +3134,17 @@ function ___clock_gettime(a0, a1) {
  return _clock_gettime(a0, a1);
 }
 
+var ExceptionInfoAttrs = {
+ DESTRUCTOR_OFFSET: 0,
+ REFCOUNT_OFFSET: 4,
+ TYPE_OFFSET: 8,
+ CAUGHT_OFFSET: 12,
+ RETHROWN_OFFSET: 13,
+ SIZE: 16
+};
+
 function ___cxa_allocate_exception(size) {
- return _malloc(size + 16) + 16;
+ return _malloc(size + ExceptionInfoAttrs.SIZE) + ExceptionInfoAttrs.SIZE;
 }
 
 function _atexit(func, arg) {
@@ -3100,35 +3157,35 @@ function ___cxa_atexit(a0, a1) {
 
 function ExceptionInfo(excPtr) {
  this.excPtr = excPtr;
- this.ptr = excPtr - 16;
+ this.ptr = excPtr - ExceptionInfoAttrs.SIZE;
  this.set_type = function(type) {
-  GROWABLE_HEAP_I32()[this.ptr + 4 >> 2] = type;
+  GROWABLE_HEAP_I32()[this.ptr + ExceptionInfoAttrs.TYPE_OFFSET >> 2] = type;
  };
  this.get_type = function() {
-  return GROWABLE_HEAP_I32()[this.ptr + 4 >> 2];
+  return GROWABLE_HEAP_I32()[this.ptr + ExceptionInfoAttrs.TYPE_OFFSET >> 2];
  };
  this.set_destructor = function(destructor) {
-  GROWABLE_HEAP_I32()[this.ptr + 8 >> 2] = destructor;
+  GROWABLE_HEAP_I32()[this.ptr + ExceptionInfoAttrs.DESTRUCTOR_OFFSET >> 2] = destructor;
  };
  this.get_destructor = function() {
-  return GROWABLE_HEAP_I32()[this.ptr + 8 >> 2];
+  return GROWABLE_HEAP_I32()[this.ptr + ExceptionInfoAttrs.DESTRUCTOR_OFFSET >> 2];
  };
  this.set_refcount = function(refcount) {
-  GROWABLE_HEAP_I32()[this.ptr >> 2] = refcount;
+  GROWABLE_HEAP_I32()[this.ptr + ExceptionInfoAttrs.REFCOUNT_OFFSET >> 2] = refcount;
  };
  this.set_caught = function(caught) {
   caught = caught ? 1 : 0;
-  GROWABLE_HEAP_I8()[this.ptr + 12 >> 0] = caught;
+  GROWABLE_HEAP_I8()[this.ptr + ExceptionInfoAttrs.CAUGHT_OFFSET >> 0] = caught;
  };
  this.get_caught = function() {
-  return GROWABLE_HEAP_I8()[this.ptr + 12 >> 0] != 0;
+  return GROWABLE_HEAP_I8()[this.ptr + ExceptionInfoAttrs.CAUGHT_OFFSET >> 0] != 0;
  };
  this.set_rethrown = function(rethrown) {
   rethrown = rethrown ? 1 : 0;
-  GROWABLE_HEAP_I8()[this.ptr + 13 >> 0] = rethrown;
+  GROWABLE_HEAP_I8()[this.ptr + ExceptionInfoAttrs.RETHROWN_OFFSET >> 0] = rethrown;
  };
  this.get_rethrown = function() {
-  return GROWABLE_HEAP_I8()[this.ptr + 13 >> 0] != 0;
+  return GROWABLE_HEAP_I8()[this.ptr + ExceptionInfoAttrs.RETHROWN_OFFSET >> 0] != 0;
  };
  this.init = function(type, destructor) {
   this.set_type(type);
@@ -3138,10 +3195,10 @@ function ExceptionInfo(excPtr) {
   this.set_rethrown(false);
  };
  this.add_ref = function() {
-  Atomics.add(GROWABLE_HEAP_I32(), this.ptr + 0 >> 2, 1);
+  Atomics.add(GROWABLE_HEAP_I32(), this.ptr + ExceptionInfoAttrs.REFCOUNT_OFFSET >> 2, 1);
  };
  this.release_ref = function() {
-  var prev = Atomics.sub(GROWABLE_HEAP_I32(), this.ptr + 0 >> 2, 1);
+  var prev = Atomics.sub(GROWABLE_HEAP_I32(), this.ptr + ExceptionInfoAttrs.REFCOUNT_OFFSET >> 2, 1);
   assert(prev > 0);
   return prev === 1;
  };
@@ -3159,13 +3216,12 @@ function CatchInfo(ptr) {
   return GROWABLE_HEAP_I32()[this.ptr >> 2];
  };
  this.set_adjusted_ptr = function(adjustedPtr) {
-  GROWABLE_HEAP_I32()[this.ptr + 4 >> 2] = adjustedPtr;
- };
- this.get_adjusted_ptr_addr = function() {
-  return this.ptr + 4;
+  var ptrSize = 4;
+  GROWABLE_HEAP_I32()[this.ptr + ptrSize >> 2] = adjustedPtr;
  };
  this.get_adjusted_ptr = function() {
-  return GROWABLE_HEAP_I32()[this.ptr + 4 >> 2];
+  var ptrSize = 4;
+  return GROWABLE_HEAP_I32()[this.ptr + ptrSize >> 2];
  };
  this.get_exception_ptr = function() {
   var isPointer = ___cxa_is_pointer_type(this.get_exception_info().get_type());
@@ -3193,14 +3249,12 @@ function exception_addRef(info) {
  info.add_ref();
 }
 
-var uncaughtExceptionCount = 0;
-
 function ___cxa_begin_catch(ptr) {
  var catchInfo = new CatchInfo(ptr);
  var info = catchInfo.get_exception_info();
  if (!info.get_caught()) {
   info.set_caught(true);
-  uncaughtExceptionCount--;
+  __ZSt18uncaught_exceptionv.uncaught_exceptions--;
  }
  info.set_rethrown(false);
  exceptionCaught.push(catchInfo);
@@ -3222,9 +3276,7 @@ function exception_decRef(info) {
  if (info.release_ref() && !info.get_rethrown()) {
   var destructor = info.get_destructor();
   if (destructor) {
-   (function(a1) {
-    return dynCall_ii.apply(null, [ destructor, a1 ]);
-   })(info.excPtr);
+   getDynCaller("ii", destructor)(info.excPtr);
   }
   ___cxa_free_exception(info.excPtr);
  }
@@ -3252,280 +3304,83 @@ function ___resumeException(catchInfoPtr) {
 function ___cxa_find_matching_catch_2() {
  var thrown = exceptionLast;
  if (!thrown) {
-  setTempRet0(0);
-  return 0 | 0;
+  return (setTempRet0(0), 0) | 0;
  }
  var info = new ExceptionInfo(thrown);
  var thrownType = info.get_type();
  var catchInfo = new CatchInfo();
  catchInfo.set_base_ptr(thrown);
- catchInfo.set_adjusted_ptr(thrown);
  if (!thrownType) {
-  setTempRet0(0);
-  return catchInfo.ptr | 0;
+  return (setTempRet0(0), catchInfo.ptr) | 0;
  }
  var typeArray = Array.prototype.slice.call(arguments);
+ var stackTop = stackSave();
+ var exceptionThrowBuf = stackAlloc(4);
+ GROWABLE_HEAP_I32()[exceptionThrowBuf >> 2] = thrown;
  for (var i = 0; i < typeArray.length; i++) {
   var caughtType = typeArray[i];
   if (caughtType === 0 || caughtType === thrownType) {
    break;
   }
-  if (___cxa_can_catch(caughtType, thrownType, catchInfo.get_adjusted_ptr_addr())) {
-   setTempRet0(caughtType);
-   return catchInfo.ptr | 0;
+  if (___cxa_can_catch(caughtType, thrownType, exceptionThrowBuf)) {
+   var adjusted = GROWABLE_HEAP_I32()[exceptionThrowBuf >> 2];
+   if (thrown !== adjusted) {
+    catchInfo.set_adjusted_ptr(adjusted);
+   }
+   return (setTempRet0(caughtType), catchInfo.ptr) | 0;
   }
  }
- setTempRet0(thrownType);
- return catchInfo.ptr | 0;
+ stackRestore(stackTop);
+ return (setTempRet0(thrownType), catchInfo.ptr) | 0;
 }
 
 function ___cxa_find_matching_catch_3() {
  var thrown = exceptionLast;
  if (!thrown) {
-  setTempRet0(0);
-  return 0 | 0;
+  return (setTempRet0(0), 0) | 0;
  }
  var info = new ExceptionInfo(thrown);
  var thrownType = info.get_type();
  var catchInfo = new CatchInfo();
  catchInfo.set_base_ptr(thrown);
- catchInfo.set_adjusted_ptr(thrown);
  if (!thrownType) {
-  setTempRet0(0);
-  return catchInfo.ptr | 0;
+  return (setTempRet0(0), catchInfo.ptr) | 0;
  }
  var typeArray = Array.prototype.slice.call(arguments);
+ var stackTop = stackSave();
+ var exceptionThrowBuf = stackAlloc(4);
+ GROWABLE_HEAP_I32()[exceptionThrowBuf >> 2] = thrown;
  for (var i = 0; i < typeArray.length; i++) {
   var caughtType = typeArray[i];
   if (caughtType === 0 || caughtType === thrownType) {
    break;
   }
-  if (___cxa_can_catch(caughtType, thrownType, catchInfo.get_adjusted_ptr_addr())) {
-   setTempRet0(caughtType);
-   return catchInfo.ptr | 0;
+  if (___cxa_can_catch(caughtType, thrownType, exceptionThrowBuf)) {
+   var adjusted = GROWABLE_HEAP_I32()[exceptionThrowBuf >> 2];
+   if (thrown !== adjusted) {
+    catchInfo.set_adjusted_ptr(adjusted);
+   }
+   return (setTempRet0(caughtType), catchInfo.ptr) | 0;
   }
  }
- setTempRet0(thrownType);
- return catchInfo.ptr | 0;
-}
-
-function ___cxa_thread_atexit(routine, arg) {
- PThread.threadExitHandlers.push(function() {
-  (function(a1) {
-   dynCall_vi.apply(null, [ routine, a1 ]);
-  })(arg);
- });
+ stackRestore(stackTop);
+ return (setTempRet0(thrownType), catchInfo.ptr) | 0;
 }
 
 function ___cxa_throw(ptr, type, destructor) {
  var info = new ExceptionInfo(ptr);
  info.init(type, destructor);
  exceptionLast = ptr;
- uncaughtExceptionCount++;
+ if (!("uncaught_exception" in __ZSt18uncaught_exceptionv)) {
+  __ZSt18uncaught_exceptionv.uncaught_exceptions = 1;
+ } else {
+  __ZSt18uncaught_exceptionv.uncaught_exceptions++;
+ }
  throw ptr;
 }
 
-function spawnThread(threadParams) {
- if (ENVIRONMENT_IS_PTHREAD) throw "Internal Error! spawnThread() can only ever be called from main application thread!";
- var worker = PThread.getNewWorker();
- if (!worker) {
-  return 6;
- }
- if (worker.pthread !== undefined) throw "Internal error!";
- if (!threadParams.pthread_ptr) throw "Internal error, no pthread ptr!";
- PThread.runningWorkers.push(worker);
- var stackHigh = threadParams.stackBase + threadParams.stackSize;
- var pthread = PThread.pthreads[threadParams.pthread_ptr] = {
-  worker: worker,
-  stackBase: threadParams.stackBase,
-  stackSize: threadParams.stackSize,
-  allocatedOwnStack: threadParams.allocatedOwnStack,
-  threadInfoStruct: threadParams.pthread_ptr
- };
- var tis = pthread.threadInfoStruct >> 2;
- Atomics.store(GROWABLE_HEAP_U32(), tis + (60 >> 2), threadParams.detached);
- Atomics.store(GROWABLE_HEAP_U32(), tis + (76 >> 2), threadParams.stackSize);
- Atomics.store(GROWABLE_HEAP_U32(), tis + (72 >> 2), stackHigh);
- Atomics.store(GROWABLE_HEAP_U32(), tis + (100 >> 2), threadParams.stackSize);
- Atomics.store(GROWABLE_HEAP_U32(), tis + (100 + 8 >> 2), stackHigh);
- Atomics.store(GROWABLE_HEAP_U32(), tis + (100 + 12 >> 2), threadParams.detached);
- worker.pthread = pthread;
- var msg = {
-  "cmd": "run",
-  "start_routine": threadParams.startRoutine,
-  "arg": threadParams.arg,
-  "threadInfoStruct": threadParams.pthread_ptr,
-  "stackBase": threadParams.stackBase,
-  "stackSize": threadParams.stackSize
- };
- worker.runPthread = function() {
-  msg.time = performance.now();
-  worker.postMessage(msg, threadParams.transferList);
- };
- if (worker.loaded) {
-  worker.runPthread();
-  delete worker.runPthread;
- }
- return 0;
-}
-
-function ___pthread_create_js(pthread_ptr, attr, start_routine, arg) {
- if (typeof SharedArrayBuffer === "undefined") {
-  err("Current environment does not support SharedArrayBuffer, pthreads are not available!");
-  return 6;
- }
- var transferList = [];
- var error = 0;
- if (ENVIRONMENT_IS_PTHREAD && (transferList.length === 0 || error)) {
-  return _emscripten_sync_run_in_main_thread_4(687865856, pthread_ptr, attr, start_routine, arg);
- }
- if (error) return error;
- var stackSize = 0;
- var stackBase = 0;
- var detached = 0;
- if (attr && attr != -1) {
-  stackSize = GROWABLE_HEAP_I32()[attr >> 2];
-  stackSize += 81920;
-  stackBase = GROWABLE_HEAP_I32()[attr + 8 >> 2];
-  detached = GROWABLE_HEAP_I32()[attr + 12 >> 2] !== 0;
- } else {
-  stackSize = 2097152;
- }
- var allocatedOwnStack = stackBase == 0;
- if (allocatedOwnStack) {
-  stackBase = _memalign(16, stackSize);
- } else {
-  stackBase -= stackSize;
-  assert(stackBase > 0);
- }
- var threadParams = {
-  stackBase: stackBase,
-  stackSize: stackSize,
-  allocatedOwnStack: allocatedOwnStack,
-  detached: detached,
-  startRoutine: start_routine,
-  pthread_ptr: pthread_ptr,
-  arg: arg,
-  transferList: transferList
- };
- if (ENVIRONMENT_IS_PTHREAD) {
-  threadParams.cmd = "spawnThread";
-  postMessage(threadParams, transferList);
-  return 0;
- }
- return spawnThread(threadParams);
-}
-
-function ___pthread_exit_done() {
- postMessage({
-  "cmd": "exit"
- });
-}
-
-function ___pthread_exit_run_handlers(status) {
- var tb = _pthread_self();
- assert(tb);
- out("Pthread 0x" + tb.toString(16) + " exited.");
- while (PThread.threadExitHandlers.length > 0) {
-  PThread.threadExitHandlers.pop()();
- }
-}
-
-function _emscripten_futex_wait(addr, val, timeout) {
- if (addr <= 0 || addr > GROWABLE_HEAP_I8().length || addr & 3 != 0) return -28;
- if (!ENVIRONMENT_IS_WEB) {
-  var ret = Atomics.wait(GROWABLE_HEAP_I32(), addr >> 2, val, timeout);
-  if (ret === "timed-out") return -73;
-  if (ret === "not-equal") return -6;
-  if (ret === "ok") return 0;
-  throw "Atomics.wait returned an unexpected value " + ret;
- } else {
-  if (Atomics.load(GROWABLE_HEAP_I32(), addr >> 2) != val) {
-   return -6;
-  }
-  var tNow = performance.now();
-  var tEnd = tNow + timeout;
-  assert(__emscripten_main_thread_futex > 0);
-  var lastAddr = Atomics.exchange(GROWABLE_HEAP_I32(), __emscripten_main_thread_futex >> 2, addr);
-  assert(lastAddr == 0);
-  while (1) {
-   tNow = performance.now();
-   if (tNow > tEnd) {
-    lastAddr = Atomics.exchange(GROWABLE_HEAP_I32(), __emscripten_main_thread_futex >> 2, 0);
-    assert(lastAddr == addr || lastAddr == 0);
-    return -73;
-   }
-   lastAddr = Atomics.exchange(GROWABLE_HEAP_I32(), __emscripten_main_thread_futex >> 2, 0);
-   assert(lastAddr == addr || lastAddr == 0);
-   if (lastAddr == 0) {
-    break;
-   }
-   _emscripten_main_thread_process_queued_calls();
-   if (Atomics.load(GROWABLE_HEAP_I32(), addr >> 2) != val) {
-    return -6;
-   }
-   lastAddr = Atomics.exchange(GROWABLE_HEAP_I32(), __emscripten_main_thread_futex >> 2, addr);
-   assert(lastAddr == 0);
-  }
-  return 0;
- }
-}
-
-function _emscripten_check_blocking_allowed() {
- if (ENVIRONMENT_IS_WORKER) return;
- warnOnce("Blocking on the main thread is very dangerous, see https://emscripten.org/docs/porting/pthreads.html#blocking-on-the-main-browser-thread");
-}
-
-function __emscripten_do_pthread_join(thread, status, block) {
- if (!thread) {
-  err("pthread_join attempted on a null thread pointer!");
-  return 71;
- }
- if (ENVIRONMENT_IS_PTHREAD && _pthread_self() == thread) {
-  err("PThread " + thread + " is attempting to join to itself!");
-  return 16;
- } else if (!ENVIRONMENT_IS_PTHREAD && _emscripten_main_browser_thread_id() == thread) {
-  err("Main thread " + thread + " is attempting to join to itself!");
-  return 16;
- }
- var self = GROWABLE_HEAP_I32()[thread + 8 >> 2];
- if (self !== thread) {
-  err("pthread_join attempted on thread " + thread + ", which does not point to a valid thread, or does not exist anymore!");
-  return 71;
- }
- var detached = Atomics.load(GROWABLE_HEAP_U32(), thread + 60 >> 2);
- if (detached) {
-  err("Attempted to join thread " + thread + ", which was already detached!");
-  return 28;
- }
- if (block) {
-  _emscripten_check_blocking_allowed();
- }
- for (;;) {
-  var threadStatus = Atomics.load(GROWABLE_HEAP_U32(), thread + 0 >> 2);
-  if (threadStatus == 1) {
-   if (status) {
-    var result = Atomics.load(GROWABLE_HEAP_U32(), thread + 88 >> 2);
-    GROWABLE_HEAP_I32()[status >> 2] = result;
-   }
-   Atomics.store(GROWABLE_HEAP_U32(), thread + 60 >> 2, 1);
-   if (!ENVIRONMENT_IS_PTHREAD) cleanupThread(thread); else postMessage({
-    "cmd": "cleanupThread",
-    "thread": thread
-   });
-   return 0;
-  }
-  if (!block) {
-   return 10;
-  }
-  _pthread_testcancel();
-  if (!ENVIRONMENT_IS_PTHREAD) _emscripten_main_thread_process_queued_calls();
-  _emscripten_futex_wait(thread + 0, threadStatus, ENVIRONMENT_IS_PTHREAD ? 100 : 1);
- }
-}
-
-function ___pthread_join_js(thread, status) {
- return __emscripten_do_pthread_join(thread, status, true);
+function ___cxa_uncaught_exceptions() {
+ return __ZSt18uncaught_exceptionv.uncaught_exceptions;
 }
 
 function __emscripten_notify_thread_queue(targetThreadId, mainThreadId) {
@@ -3556,9 +3411,57 @@ function _abort() {
  abort();
 }
 
+function _emscripten_asm_const_int(code, sigPtr, argbuf) {
+ var args = readAsmConstArgs(sigPtr, argbuf);
+ return ASM_CONSTS[code].apply(null, args);
+}
+
+function _emscripten_check_blocking_allowed() {
+ if (ENVIRONMENT_IS_WORKER) return;
+ warnOnce("Blocking on the main thread is very dangerous, see https://emscripten.org/docs/porting/pthreads.html#blocking-on-the-main-browser-thread");
+}
+
 function _emscripten_conditional_set_current_thread_status_js(expectedStatus, newStatus) {}
 
-function _emscripten_conditional_set_current_thread_status(expectedStatus, newStatus) {}
+function _emscripten_conditional_set_current_thread_status(expectedStatus, newStatus) {
+ expectedStatus = expectedStatus | 0;
+ newStatus = newStatus | 0;
+}
+
+function _emscripten_futex_wait(addr, val, timeout) {
+ if (addr <= 0 || addr > GROWABLE_HEAP_I8().length || addr & 3 != 0) return -28;
+ if (ENVIRONMENT_IS_NODE || ENVIRONMENT_IS_WORKER) {
+  var ret = Atomics.wait(GROWABLE_HEAP_I32(), addr >> 2, val, timeout);
+  if (ret === "timed-out") return -73;
+  if (ret === "not-equal") return -6;
+  if (ret === "ok") return 0;
+  throw "Atomics.wait returned an unexpected value " + ret;
+ } else {
+  var loadedVal = Atomics.load(GROWABLE_HEAP_I32(), addr >> 2);
+  if (val != loadedVal) return -6;
+  var tNow = performance.now();
+  var tEnd = tNow + timeout;
+  Atomics.store(GROWABLE_HEAP_I32(), __main_thread_futex_wait_address >> 2, addr);
+  var ourWaitAddress = addr;
+  while (addr == ourWaitAddress) {
+   tNow = performance.now();
+   if (tNow > tEnd) {
+    return -73;
+   }
+   _emscripten_main_thread_process_queued_calls();
+   addr = Atomics.load(GROWABLE_HEAP_I32(), __main_thread_futex_wait_address >> 2);
+  }
+  return 0;
+ }
+}
+
+function _emscripten_is_main_browser_thread() {
+ return __pthread_is_main_browser_thread | 0;
+}
+
+function _emscripten_is_main_runtime_thread() {
+ return __pthread_is_main_runtime_thread | 0;
+}
 
 function _emscripten_memcpy_big(dest, src, num) {
  GROWABLE_HEAP_U8().copyWithin(dest, src, src + num);
@@ -3568,19 +3471,35 @@ function _emscripten_proxy_to_main_thread_js(index, sync) {
  var numCallArgs = arguments.length - 2;
  if (numCallArgs > 20 - 1) throw "emscripten_proxy_to_main_thread_js: Too many arguments " + numCallArgs + " to proxied function idx=" + index + ", maximum supported is " + (20 - 1) + "!";
  var stack = stackSave();
- var serializedNumCallArgs = numCallArgs;
- var args = stackAlloc(serializedNumCallArgs * 8);
+ var args = stackAlloc(numCallArgs * 8);
  var b = args >> 3;
  for (var i = 0; i < numCallArgs; i++) {
-  var arg = arguments[2 + i];
-  GROWABLE_HEAP_F64()[b + i] = arg;
+  GROWABLE_HEAP_F64()[b + i] = arguments[2 + i];
  }
- var ret = _emscripten_run_in_main_runtime_thread_js(index, serializedNumCallArgs, args, sync);
+ var ret = _emscripten_run_in_main_runtime_thread_js(index, numCallArgs, args, sync);
  stackRestore(stack);
  return ret;
 }
 
 var _emscripten_receive_on_main_thread_js_callArgs = [];
+
+var readAsmConstArgsArray = [];
+
+function readAsmConstArgs(sigPtr, buf) {
+ assert(Array.isArray(readAsmConstArgsArray));
+ assert(buf % 16 == 0);
+ readAsmConstArgsArray.length = 0;
+ var ch;
+ buf >>= 2;
+ while (ch = GROWABLE_HEAP_U8()[sigPtr++]) {
+  assert(ch === 100 || ch === 102 || ch === 105);
+  var double = ch < 105;
+  if (double && buf & 1) buf++;
+  readAsmConstArgsArray.push(double ? GROWABLE_HEAP_F64()[buf++ >> 1] : GROWABLE_HEAP_I32()[buf]);
+  ++buf;
+ }
+ return readAsmConstArgsArray;
+}
 
 function _emscripten_receive_on_main_thread_js(index, numCallArgs, args) {
  _emscripten_receive_on_main_thread_js_callArgs.length = numCallArgs;
@@ -3594,19 +3513,23 @@ function _emscripten_receive_on_main_thread_js(index, numCallArgs, args) {
  return func.apply(null, _emscripten_receive_on_main_thread_js_callArgs);
 }
 
+function _emscripten_get_heap_size() {
+ return GROWABLE_HEAP_U8().length;
+}
+
 function emscripten_realloc_buffer(size) {
  try {
   wasmMemory.grow(size - buffer.byteLength + 65535 >>> 16);
   updateGlobalBufferAndViews(wasmMemory.buffer);
   return 1;
  } catch (e) {
-  err("emscripten_realloc_buffer: Attempted to grow heap from " + buffer.byteLength + " bytes to " + size + " bytes, but got error: " + e);
+  console.error("emscripten_realloc_buffer: Attempted to grow heap from " + buffer.byteLength + " bytes to " + size + " bytes, but got error: " + e);
  }
 }
 
 function _emscripten_resize_heap(requestedSize) {
- var oldSize = GROWABLE_HEAP_U8().length;
  requestedSize = requestedSize >>> 0;
+ var oldSize = _emscripten_get_heap_size();
  if (requestedSize <= oldSize) {
   return false;
  }
@@ -3615,10 +3538,11 @@ function _emscripten_resize_heap(requestedSize) {
   err("Cannot enlarge memory, asked to go up to " + requestedSize + " bytes, but the limit is " + maxHeapSize + " bytes!");
   return false;
  }
+ var minHeapSize = 16777216;
  for (var cutDown = 1; cutDown <= 4; cutDown *= 2) {
   var overGrownHeapSize = oldSize * (1 + .2 / cutDown);
   overGrownHeapSize = Math.min(overGrownHeapSize, requestedSize + 100663296);
-  var newSize = Math.min(maxHeapSize, alignUp(Math.max(requestedSize, overGrownHeapSize), 65536));
+  var newSize = Math.min(maxHeapSize, alignUp(Math.max(minHeapSize, requestedSize, overGrownHeapSize), 65536));
   var replacement = emscripten_realloc_buffer(newSize);
   if (replacement) {
    return true;
@@ -3843,22 +3767,8 @@ function _emscripten_set_canvas_element_size(target, width, height) {
 
 function _emscripten_set_current_thread_status_js(newStatus) {}
 
-function _emscripten_set_current_thread_status(newStatus) {}
-
-function _emscripten_set_timeout(cb, msecs, userData) {
- runtimeKeepalivePush();
- return setTimeout(function() {
-  runtimeKeepalivePop();
-  callUserCallback(function() {
-   (function(a1) {
-    dynCall_vi.apply(null, [ cb, a1 ]);
-   })(userData);
-  });
- }, msecs);
-}
-
-function _emscripten_unwind_to_js_event_loop() {
- throw "unwind";
+function _emscripten_set_current_thread_status(newStatus) {
+ newStatus = newStatus | 0;
 }
 
 function __webgl_enable_ANGLE_instanced_arrays(ctx) {
@@ -3917,11 +3827,13 @@ var GL = {
  framebuffers: [],
  renderbuffers: [],
  textures: [],
+ uniforms: [],
  shaders: [],
  vaos: [],
  contexts: {},
  offscreenCanvases: {},
- queries: [],
+ timerQueriesEXT: [],
+ programInfos: {},
  stringCache: {},
  unpackAlignment: 4,
  recordError: function recordError(errorCode) {
@@ -3945,13 +3857,6 @@ var GL = {
   return source;
  },
  createContext: function(canvas, webGLContextAttributes) {
-  if (!canvas.getContextSafariWebGL2Fixed) {
-   canvas.getContextSafariWebGL2Fixed = canvas.getContext;
-   canvas.getContext = function(ver, attrs) {
-    var gl = canvas.getContextSafariWebGL2Fixed(ver, attrs);
-    return ver == "webgl" == gl instanceof WebGLRenderingContext ? gl : null;
-   };
-  }
   var ctx = canvas.getContext("webgl", webGLContextAttributes);
   if (!ctx) return 0;
   var handle = GL.registerContext(ctx, webGLContextAttributes);
@@ -3996,16 +3901,55 @@ var GL = {
   __webgl_enable_ANGLE_instanced_arrays(GLctx);
   __webgl_enable_OES_vertex_array_object(GLctx);
   __webgl_enable_WEBGL_draw_buffers(GLctx);
-  {
-   GLctx.disjointTimerQueryExt = GLctx.getExtension("EXT_disjoint_timer_query");
-  }
+  GLctx.disjointTimerQueryExt = GLctx.getExtension("EXT_disjoint_timer_query");
   __webgl_enable_WEBGL_multi_draw(GLctx);
+  var automaticallyEnabledExtensions = [ "OES_texture_float", "OES_texture_half_float", "OES_standard_derivatives", "OES_vertex_array_object", "WEBGL_compressed_texture_s3tc", "WEBGL_depth_texture", "OES_element_index_uint", "EXT_texture_filter_anisotropic", "EXT_frag_depth", "WEBGL_draw_buffers", "ANGLE_instanced_arrays", "OES_texture_float_linear", "OES_texture_half_float_linear", "EXT_blend_minmax", "EXT_shader_texture_lod", "EXT_texture_norm16", "WEBGL_compressed_texture_pvrtc", "EXT_color_buffer_half_float", "WEBGL_color_buffer_float", "EXT_sRGB", "WEBGL_compressed_texture_etc1", "EXT_disjoint_timer_query", "WEBGL_compressed_texture_etc", "WEBGL_compressed_texture_astc", "EXT_color_buffer_float", "WEBGL_compressed_texture_s3tc_srgb", "EXT_disjoint_timer_query_webgl2", "WEBKIT_WEBGL_compressed_texture_pvrtc" ];
+  function shouldEnableAutomatically(extension) {
+   var ret = false;
+   automaticallyEnabledExtensions.forEach(function(include) {
+    if (extension.indexOf(include) != -1) {
+     ret = true;
+    }
+   });
+   return ret;
+  }
   var exts = GLctx.getSupportedExtensions() || [];
   exts.forEach(function(ext) {
-   if (!ext.includes("lose_context") && !ext.includes("debug")) {
+   if (automaticallyEnabledExtensions.indexOf(ext) != -1) {
     GLctx.getExtension(ext);
    }
   });
+ },
+ populateUniformTable: function(program) {
+  var p = GL.programs[program];
+  var ptable = GL.programInfos[program] = {
+   uniforms: {},
+   maxUniformLength: 0,
+   maxAttributeLength: -1,
+   maxUniformBlockNameLength: -1
+  };
+  var utable = ptable.uniforms;
+  var numUniforms = GLctx.getProgramParameter(p, 35718);
+  for (var i = 0; i < numUniforms; ++i) {
+   var u = GLctx.getActiveUniform(p, i);
+   var name = u.name;
+   ptable.maxUniformLength = Math.max(ptable.maxUniformLength, name.length + 1);
+   if (name.slice(-1) == "]") {
+    name = name.slice(0, name.lastIndexOf("["));
+   }
+   var loc = GLctx.getUniformLocation(p, name);
+   if (loc) {
+    var id = GL.getNewId(GL.uniforms);
+    utable[name] = [ u.size, id ];
+    GL.uniforms[id] = loc;
+    for (var j = 1; j < u.size; ++j) {
+     var n = name + "[" + j + "]";
+     loc = GLctx.getUniformLocation(p, n);
+     id = GL.getNewId(GL.uniforms);
+     GL.uniforms[id] = loc;
+    }
+   }
+  }
  }
 };
 
@@ -4013,24 +3957,23 @@ var __emscripten_webgl_power_preferences = [ "default", "low-power", "high-perfo
 
 function _emscripten_webgl_do_create_context(target, attributes) {
  assert(attributes);
+ var contextAttributes = {};
  var a = attributes >> 2;
+ contextAttributes["alpha"] = !!GROWABLE_HEAP_I32()[a + (0 >> 2)];
+ contextAttributes["depth"] = !!GROWABLE_HEAP_I32()[a + (4 >> 2)];
+ contextAttributes["stencil"] = !!GROWABLE_HEAP_I32()[a + (8 >> 2)];
+ contextAttributes["antialias"] = !!GROWABLE_HEAP_I32()[a + (12 >> 2)];
+ contextAttributes["premultipliedAlpha"] = !!GROWABLE_HEAP_I32()[a + (16 >> 2)];
+ contextAttributes["preserveDrawingBuffer"] = !!GROWABLE_HEAP_I32()[a + (20 >> 2)];
  var powerPreference = GROWABLE_HEAP_I32()[a + (24 >> 2)];
- var contextAttributes = {
-  "alpha": !!GROWABLE_HEAP_I32()[a + (0 >> 2)],
-  "depth": !!GROWABLE_HEAP_I32()[a + (4 >> 2)],
-  "stencil": !!GROWABLE_HEAP_I32()[a + (8 >> 2)],
-  "antialias": !!GROWABLE_HEAP_I32()[a + (12 >> 2)],
-  "premultipliedAlpha": !!GROWABLE_HEAP_I32()[a + (16 >> 2)],
-  "preserveDrawingBuffer": !!GROWABLE_HEAP_I32()[a + (20 >> 2)],
-  "powerPreference": __emscripten_webgl_power_preferences[powerPreference],
-  "failIfMajorPerformanceCaveat": !!GROWABLE_HEAP_I32()[a + (28 >> 2)],
-  majorVersion: GROWABLE_HEAP_I32()[a + (32 >> 2)],
-  minorVersion: GROWABLE_HEAP_I32()[a + (36 >> 2)],
-  enableExtensionsByDefault: GROWABLE_HEAP_I32()[a + (40 >> 2)],
-  explicitSwapControl: GROWABLE_HEAP_I32()[a + (44 >> 2)],
-  proxyContextToMainThread: GROWABLE_HEAP_I32()[a + (48 >> 2)],
-  renderViaOffscreenBackBuffer: GROWABLE_HEAP_I32()[a + (52 >> 2)]
- };
+ contextAttributes["powerPreference"] = __emscripten_webgl_power_preferences[powerPreference];
+ contextAttributes["failIfMajorPerformanceCaveat"] = !!GROWABLE_HEAP_I32()[a + (28 >> 2)];
+ contextAttributes.majorVersion = GROWABLE_HEAP_I32()[a + (32 >> 2)];
+ contextAttributes.minorVersion = GROWABLE_HEAP_I32()[a + (36 >> 2)];
+ contextAttributes.enableExtensionsByDefault = GROWABLE_HEAP_I32()[a + (40 >> 2)];
+ contextAttributes.explicitSwapControl = GROWABLE_HEAP_I32()[a + (44 >> 2)];
+ contextAttributes.proxyContextToMainThread = GROWABLE_HEAP_I32()[a + (48 >> 2)];
+ contextAttributes.renderViaOffscreenBackBuffer = GROWABLE_HEAP_I32()[a + (52 >> 2)];
  var canvas = findCanvasEventTarget(target);
  if (!canvas) {
   return 0;
@@ -4114,18 +4057,6 @@ var PATH = {
   return PATH.normalize(l + "/" + r);
  }
 };
-
-function getRandomDevice() {
- if (typeof crypto === "object" && typeof crypto["getRandomValues"] === "function") {
-  var randomBuffer = new Uint8Array(1);
-  return function() {
-   crypto.getRandomValues(randomBuffer);
-   return randomBuffer[0];
-  };
- } else return function() {
-  abort("no cryptographic support found for randomDevice. consider polyfilling it if you want to use something insecure like Math.random(), e.g. put this in a --pre-js: var crypto = { getRandomValues: function(array) { for (var i = 0; i < array.length; i++) array[i] = (Math.random()*256)|0 } };");
- };
-}
 
 var PATH_FS = {
  resolve: function() {
@@ -4302,23 +4233,6 @@ var TTY = {
  }
 };
 
-function zeroMemory(address, size) {
- GROWABLE_HEAP_U8().fill(0, address, address + size);
-}
-
-function alignMemory(size, alignment) {
- assert(alignment, "alignment argument is required");
- return Math.ceil(size / alignment) * alignment;
-}
-
-function mmapAlloc(size) {
- size = alignMemory(size, 65536);
- var ptr = _memalign(65536, size);
- if (!ptr) return 0;
- zeroMemory(ptr, size);
- return ptr;
-}
-
 var MEMFS = {
  ops_table: null,
  mount: function(mount) {
@@ -4397,9 +4311,16 @@ var MEMFS = {
   node.timestamp = Date.now();
   if (parent) {
    parent.contents[name] = node;
-   parent.timestamp = node.timestamp;
   }
   return node;
+ },
+ getFileDataAsRegularArray: function(node) {
+  if (node.contents && node.contents.subarray) {
+   var arr = [];
+   for (var i = 0; i < node.usedBytes; ++i) arr.push(node.contents[i]);
+   return arr;
+  }
+  return node.contents;
  },
  getFileDataAsTypedArray: function(node) {
   if (!node.contents) return new Uint8Array(0);
@@ -4415,20 +4336,27 @@ var MEMFS = {
   var oldContents = node.contents;
   node.contents = new Uint8Array(newCapacity);
   if (node.usedBytes > 0) node.contents.set(oldContents.subarray(0, node.usedBytes), 0);
+  return;
  },
  resizeFileStorage: function(node, newSize) {
   if (node.usedBytes == newSize) return;
   if (newSize == 0) {
    node.contents = null;
    node.usedBytes = 0;
-  } else {
+   return;
+  }
+  if (!node.contents || node.contents.subarray) {
    var oldContents = node.contents;
    node.contents = new Uint8Array(newSize);
    if (oldContents) {
     node.contents.set(oldContents.subarray(0, Math.min(newSize, node.usedBytes)));
    }
    node.usedBytes = newSize;
+   return;
   }
+  if (!node.contents) node.contents = [];
+  if (node.contents.length > newSize) node.contents.length = newSize; else while (node.contents.length < newSize) node.contents.push(0);
+  node.usedBytes = newSize;
  },
  node_ops: {
   getattr: function(node) {
@@ -4486,15 +4414,12 @@ var MEMFS = {
     }
    }
    delete old_node.parent.contents[old_node.name];
-   old_node.parent.timestamp = Date.now();
    old_node.name = new_name;
    new_dir.contents[new_name] = old_node;
-   new_dir.timestamp = old_node.parent.timestamp;
    old_node.parent = new_dir;
   },
   unlink: function(parent, name) {
    delete parent.contents[name];
-   parent.timestamp = Date.now();
   },
   rmdir: function(parent, name) {
    var node = FS.lookupNode(parent, name);
@@ -4502,7 +4427,6 @@ var MEMFS = {
     throw new FS.ErrnoError(55);
    }
    delete parent.contents[name];
-   parent.timestamp = Date.now();
   },
   readdir: function(node) {
    var entries = [ ".", ".." ];
@@ -4592,9 +4516,7 @@ var MEMFS = {
    stream.node.usedBytes = Math.max(stream.node.usedBytes, offset + length);
   },
   mmap: function(stream, address, length, position, prot, flags) {
-   if (address !== 0) {
-    throw new FS.ErrnoError(28);
-   }
+   assert(address === 0);
    if (!FS.isFile(stream.node.mode)) {
     throw new FS.ErrnoError(43);
    }
@@ -4613,7 +4535,7 @@ var MEMFS = {
      }
     }
     allocated = true;
-    ptr = mmapAlloc(length);
+    ptr = FS.mmapAlloc(length);
     if (!ptr) {
      throw new FS.ErrnoError(48);
     }
@@ -4636,22 +4558,6 @@ var MEMFS = {
   }
  }
 };
-
-function asyncLoad(url, onload, onerror, noRunDep) {
- var dep = !noRunDep ? getUniqueRunDependency("al " + url) : "";
- readAsync(url, function(arrayBuffer) {
-  assert(arrayBuffer, 'Loading data file "' + url + '" failed (no arrayBuffer).');
-  onload(new Uint8Array(arrayBuffer));
-  if (dep) removeRunDependency(dep);
- }, function(event) {
-  if (onerror) {
-   onerror();
-  } else {
-   throw 'Loading data file "' + url + '" failed.';
-  }
- });
- if (dep) addRunDependency(dep);
-}
 
 var ERRNO_MESSAGES = {
  0: "Success",
@@ -4775,8 +4681,6 @@ var ERRNO_MESSAGES = {
  156: "Level 2 not synchronized"
 };
 
-var ERRNO_CODES = {};
-
 var FS = {
  root: null,
  mounts: [],
@@ -4798,6 +4702,10 @@ var FS = {
  genericErrors: {},
  filesystems: null,
  syncFSRequests: 0,
+ handleFSError: function(e) {
+  if (!(e instanceof FS.ErrnoError)) throw e + " : " + stackTrace();
+  return setErrNo(e.errno);
+ },
  lookupPath: function(path, opts) {
   path = PATH_FS.resolve(FS.cwd(), path);
   opts = opts || {};
@@ -4908,7 +4816,6 @@ var FS = {
   return FS.lookup(parent, name);
  },
  createNode: function(parent, name, mode, rdev) {
-  assert(typeof parent === "object");
   var node = new FS.FSNode(parent, name, mode, rdev);
   FS.hashAddNode(node);
   return node;
@@ -4945,11 +4852,20 @@ var FS = {
  },
  flagModes: {
   "r": 0,
+  "rs": 1052672,
   "r+": 2,
   "w": 577,
+  "wx": 705,
+  "xw": 705,
   "w+": 578,
+  "wx+": 706,
+  "xw+": 706,
   "a": 1089,
-  "a+": 1090
+  "ax": 1217,
+  "xa": 1217,
+  "a+": 1090,
+  "ax+": 1218,
+  "xa+": 1218
  },
  modeStringToFlags: function(str) {
   var flags = FS.flagModes[str];
@@ -4969,11 +4885,11 @@ var FS = {
   if (FS.ignorePermissions) {
    return 0;
   }
-  if (perms.includes("r") && !(node.mode & 292)) {
+  if (perms.indexOf("r") !== -1 && !(node.mode & 292)) {
    return 2;
-  } else if (perms.includes("w") && !(node.mode & 146)) {
+  } else if (perms.indexOf("w") !== -1 && !(node.mode & 146)) {
    return 2;
-  } else if (perms.includes("x") && !(node.mode & 73)) {
+  } else if (perms.indexOf("x") !== -1 && !(node.mode & 73)) {
    return 2;
   }
   return 0;
@@ -5214,7 +5130,7 @@ var FS = {
    var current = FS.nameTable[hash];
    while (current) {
     var next = current.name_next;
-    if (mounts.includes(current.mount)) {
+    if (mounts.indexOf(current.mount) !== -1) {
      FS.destroyNode(current);
     }
     current = next;
@@ -5811,7 +5727,7 @@ var FS = {
  },
  readFile: function(path, opts) {
   opts = opts || {};
-  opts.flags = opts.flags || 0;
+  opts.flags = opts.flags || "r";
   opts.encoding = opts.encoding || "binary";
   if (opts.encoding !== "utf8" && opts.encoding !== "binary") {
    throw new Error('Invalid encoding type "' + opts.encoding + '"');
@@ -5832,7 +5748,7 @@ var FS = {
  },
  writeFile: function(path, data, opts) {
   opts = opts || {};
-  opts.flags = opts.flags || 577;
+  opts.flags = opts.flags || "w";
   var stream = FS.open(path, opts.flags, opts.mode);
   if (typeof data === "string") {
    var buf = new Uint8Array(lengthBytesUTF8(data) + 1);
@@ -5884,7 +5800,19 @@ var FS = {
   TTY.register(FS.makedev(6, 0), TTY.default_tty1_ops);
   FS.mkdev("/dev/tty", FS.makedev(5, 0));
   FS.mkdev("/dev/tty1", FS.makedev(6, 0));
-  var random_device = getRandomDevice();
+  var random_device;
+  if (typeof crypto === "object" && typeof crypto["getRandomValues"] === "function") {
+   var randomBuffer = new Uint8Array(1);
+   random_device = function() {
+    crypto.getRandomValues(randomBuffer);
+    return randomBuffer[0];
+   };
+  } else {}
+  if (!random_device) {
+   random_device = function() {
+    abort("no cryptographic support found for random_device. consider polyfilling it if you want to use something insecure like Math.random(), e.g. put this in a --pre-js: var crypto = { getRandomValues: function(array) { for (var i = 0; i < array.length; i++) array[i] = (Math.random()*256)|0 } };");
+   };
+  }
   FS.createDevice("/dev", "random", random_device);
   FS.createDevice("/dev", "urandom", random_device);
   FS.mkdir("/dev/shm");
@@ -5892,11 +5820,11 @@ var FS = {
  },
  createSpecialDirectories: function() {
   FS.mkdir("/proc");
-  var proc_self = FS.mkdir("/proc/self");
+  FS.mkdir("/proc/self");
   FS.mkdir("/proc/self/fd");
   FS.mount({
    mount: function() {
-    var node = FS.createNode(proc_self, "fd", 16384 | 511, 73);
+    var node = FS.createNode("/proc/self", "fd", 16384 | 511, 73);
     node.node_ops = {
      lookup: function(parent, name) {
       var fd = +name;
@@ -5937,9 +5865,9 @@ var FS = {
   } else {
    FS.symlink("/dev/tty1", "/dev/stderr");
   }
-  var stdin = FS.open("/dev/stdin", 0);
-  var stdout = FS.open("/dev/stdout", 1);
-  var stderr = FS.open("/dev/stderr", 1);
+  var stdin = FS.open("/dev/stdin", "r");
+  var stdout = FS.open("/dev/stdout", "w");
+  var stderr = FS.open("/dev/stderr", "w");
   assert(stdin.fd === 0, "invalid handle for stdin (" + stdin.fd + ")");
   assert(stdout.fd === 1, "invalid handle for stdout (" + stdout.fd + ")");
   assert(stderr.fd === 2, "invalid handle for stderr (" + stderr.fd + ")");
@@ -6012,11 +5940,23 @@ var FS = {
   if (canWrite) mode |= 146;
   return mode;
  },
+ joinPath: function(parts, forceRelative) {
+  var path = PATH.join.apply(null, parts);
+  if (forceRelative && path[0] == "/") path = path.substr(1);
+  return path;
+ },
+ absolutePath: function(relative, base) {
+  return PATH_FS.resolve(base, relative);
+ },
+ standardizePath: function(path) {
+  return PATH.normalize(path);
+ },
  findObject: function(path, dontResolveLastLink) {
   var ret = FS.analyzePath(path, dontResolveLastLink);
   if (ret.exists) {
    return ret.object;
   } else {
+   setErrNo(ret.error);
    return null;
   }
  },
@@ -6059,6 +5999,11 @@ var FS = {
   }
   return ret;
  },
+ createFolder: function(parent, name, canRead, canWrite) {
+  var path = PATH.join2(typeof parent === "string" ? parent : FS.getPath(parent), name);
+  var mode = FS.getMode(canRead, canWrite);
+  return FS.mkdir(path, mode);
+ },
  createPath: function(parent, path, canRead, canWrite) {
   parent = typeof parent === "string" ? parent : FS.getPath(parent);
   var parts = path.split("/").reverse();
@@ -6089,7 +6034,7 @@ var FS = {
     data = arr;
    }
    FS.chmod(node, mode | 146);
-   var stream = FS.open(node, 577);
+   var stream = FS.open(node, "w");
    FS.write(stream, data, 0, data.length, 0, canOwn);
    FS.close(stream);
    FS.chmod(node, mode);
@@ -6147,8 +6092,13 @@ var FS = {
   });
   return FS.mkdev(path, mode, dev);
  },
+ createLink: function(parent, name, target, canRead, canWrite) {
+  var path = PATH.join2(typeof parent === "string" ? parent : FS.getPath(parent), name);
+  return FS.symlink(target, path);
+ },
  forceLoadFile: function(obj) {
   if (obj.isDevice || obj.isFolder || obj.link || obj.contents) return true;
+  var success = true;
   if (typeof XMLHttpRequest !== "undefined") {
    throw new Error("Lazy loading should have been performed (contents set) in createLazyFile, but it was not. Lazy loading only works in web workers. Use --embed-file or --preload-file in emcc on the main thread.");
   } else if (read_) {
@@ -6156,11 +6106,13 @@ var FS = {
     obj.contents = intArrayFromString(read_(obj.url), true);
     obj.usedBytes = obj.contents.length;
    } catch (e) {
-    throw new FS.ErrnoError(29);
+    success = false;
    }
   } else {
    throw new Error("Cannot load without read() or XMLHttpRequest.");
   }
+  if (!success) setErrNo(29);
+  return success;
  },
  createLazyFile: function(parent, name, url, canRead, canWrite) {
   function LazyUint8Array() {
@@ -6278,12 +6230,16 @@ var FS = {
   keys.forEach(function(key) {
    var fn = node.stream_ops[key];
    stream_ops[key] = function forceLoadLazyFile() {
-    FS.forceLoadFile(node);
+    if (!FS.forceLoadFile(node)) {
+     throw new FS.ErrnoError(29);
+    }
     return fn.apply(null, arguments);
    };
   });
   stream_ops.read = function stream_ops_read(stream, buffer, offset, length, position) {
-   FS.forceLoadFile(node);
+   if (!FS.forceLoadFile(node)) {
+    throw new FS.ErrnoError(29);
+   }
    var contents = stream.node.contents;
    if (position >= contents.length) return 0;
    var size = Math.min(contents.length - position, length);
@@ -6330,7 +6286,7 @@ var FS = {
   }
   addRunDependency(dep);
   if (typeof url == "string") {
-   asyncLoad(url, function(byteArray) {
+   Browser.asyncLoad(url, function(byteArray) {
     processData(byteArray);
    }, onerror);
   } else {
@@ -6424,23 +6380,11 @@ var FS = {
   };
   openRequest.onerror = onerror;
  },
- absolutePath: function() {
-  abort("FS.absolutePath has been removed; use PATH_FS.resolve instead");
- },
- createFolder: function() {
-  abort("FS.createFolder has been removed; use FS.mkdir instead");
- },
- createLink: function() {
-  abort("FS.createLink has been removed; use FS.symlink instead");
- },
- joinPath: function() {
-  abort("FS.joinPath has been removed; use PATH.join instead");
- },
- mmapAlloc: function() {
-  abort("FS.mmapAlloc has been replaced by the top level function mmapAlloc");
- },
- standardizePath: function() {
-  abort("FS.standardizePath has been removed; use PATH.normalize instead");
+ mmapAlloc: function(size) {
+  var alignedSize = alignMemory(size, 16384);
+  var ptr = _malloc(alignedSize);
+  while (size < alignedSize) GROWABLE_HEAP_I8()[ptr + size++] = 0;
+  return ptr;
  }
 };
 
@@ -6448,25 +6392,19 @@ var SYSCALLS = {
  mappings: {},
  DEFAULT_POLLMASK: 5,
  umask: 511,
- calculateAt: function(dirfd, path, allowEmpty) {
-  if (path[0] === "/") {
-   return path;
-  }
-  var dir;
-  if (dirfd === -100) {
-   dir = FS.cwd();
-  } else {
-   var dirstream = FS.getStream(dirfd);
-   if (!dirstream) throw new FS.ErrnoError(8);
-   dir = dirstream.path;
-  }
-  if (path.length == 0) {
-   if (!allowEmpty) {
-    throw new FS.ErrnoError(44);
+ calculateAt: function(dirfd, path) {
+  if (path[0] !== "/") {
+   var dir;
+   if (dirfd === -100) {
+    dir = FS.cwd();
+   } else {
+    var dirstream = FS.getStream(dirfd);
+    if (!dirstream) throw new FS.ErrnoError(8);
+    dir = dirstream.path;
    }
-   return dir;
+   path = PATH.join2(dir, path);
   }
-  return PATH.join2(dir, path);
+  return path;
  },
  doStat: function(func, path, buf) {
   try {
@@ -6486,7 +6424,7 @@ var SYSCALLS = {
   GROWABLE_HEAP_I32()[buf + 24 >> 2] = stat.gid;
   GROWABLE_HEAP_I32()[buf + 28 >> 2] = stat.rdev;
   GROWABLE_HEAP_I32()[buf + 32 >> 2] = 0;
-  tempI64 = [ stat.size >>> 0, (tempDouble = stat.size, +Math.abs(tempDouble) >= 1 ? tempDouble > 0 ? (Math.min(+Math.floor(tempDouble / 4294967296), 4294967295) | 0) >>> 0 : ~~+Math.ceil((tempDouble - +(~~tempDouble >>> 0)) / 4294967296) >>> 0 : 0) ], 
+  tempI64 = [ stat.size >>> 0, (tempDouble = stat.size, +Math_abs(tempDouble) >= 1 ? tempDouble > 0 ? (Math_min(+Math_floor(tempDouble / 4294967296), 4294967295) | 0) >>> 0 : ~~+Math_ceil((tempDouble - +(~~tempDouble >>> 0)) / 4294967296) >>> 0 : 0) ], 
   GROWABLE_HEAP_I32()[buf + 40 >> 2] = tempI64[0], GROWABLE_HEAP_I32()[buf + 44 >> 2] = tempI64[1];
   GROWABLE_HEAP_I32()[buf + 48 >> 2] = 4096;
   GROWABLE_HEAP_I32()[buf + 52 >> 2] = stat.blocks;
@@ -6496,7 +6434,7 @@ var SYSCALLS = {
   GROWABLE_HEAP_I32()[buf + 68 >> 2] = 0;
   GROWABLE_HEAP_I32()[buf + 72 >> 2] = stat.ctime.getTime() / 1e3 | 0;
   GROWABLE_HEAP_I32()[buf + 76 >> 2] = 0;
-  tempI64 = [ stat.ino >>> 0, (tempDouble = stat.ino, +Math.abs(tempDouble) >= 1 ? tempDouble > 0 ? (Math.min(+Math.floor(tempDouble / 4294967296), 4294967295) | 0) >>> 0 : ~~+Math.ceil((tempDouble - +(~~tempDouble >>> 0)) / 4294967296) >>> 0 : 0) ], 
+  tempI64 = [ stat.ino >>> 0, (tempDouble = stat.ino, +Math_abs(tempDouble) >= 1 ? tempDouble > 0 ? (Math_min(+Math_floor(tempDouble / 4294967296), 4294967295) | 0) >>> 0 : ~~+Math_ceil((tempDouble - +(~~tempDouble >>> 0)) / 4294967296) >>> 0 : 0) ], 
   GROWABLE_HEAP_I32()[buf + 80 >> 2] = tempI64[0], GROWABLE_HEAP_I32()[buf + 84 >> 2] = tempI64[1];
   return 0;
  },
@@ -6619,11 +6557,251 @@ function _fd_write(fd, iov, iovcnt, pnum) {
 }
 
 function _getTempRet0() {
- return getTempRet0();
+ return getTempRet0() | 0;
 }
 
-function _setTempRet0(val) {
- setTempRet0(val);
+function _pthread_cleanup_pop(execute) {
+ var routine = PThread.threadExitHandlers.pop();
+ if (execute) routine();
+}
+
+function _pthread_cleanup_push(routine, arg) {
+ PThread.threadExitHandlers.push(function() {
+  getDynCaller("vi", routine)(arg);
+ });
+}
+
+function spawnThread(threadParams) {
+ if (ENVIRONMENT_IS_PTHREAD) throw "Internal Error! spawnThread() can only ever be called from main application thread!";
+ var worker = PThread.getNewWorker();
+ if (worker.pthread !== undefined) throw "Internal error!";
+ if (!threadParams.pthread_ptr) throw "Internal error, no pthread ptr!";
+ PThread.runningWorkers.push(worker);
+ var tlsMemory = _malloc(128 * 4);
+ for (var i = 0; i < 128; ++i) {
+  GROWABLE_HEAP_I32()[tlsMemory + i * 4 >> 2] = 0;
+ }
+ var stackHigh = threadParams.stackBase + threadParams.stackSize;
+ var pthread = PThread.pthreads[threadParams.pthread_ptr] = {
+  worker: worker,
+  stackBase: threadParams.stackBase,
+  stackSize: threadParams.stackSize,
+  allocatedOwnStack: threadParams.allocatedOwnStack,
+  thread: threadParams.pthread_ptr,
+  threadInfoStruct: threadParams.pthread_ptr
+ };
+ var tis = pthread.threadInfoStruct >> 2;
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (0 >> 2), 0);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (4 >> 2), 0);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (8 >> 2), 0);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (68 >> 2), threadParams.detached);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (104 >> 2), tlsMemory);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (48 >> 2), 0);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (40 >> 2), pthread.threadInfoStruct);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (44 >> 2), 42);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (108 >> 2), threadParams.stackSize);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (84 >> 2), threadParams.stackSize);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (80 >> 2), stackHigh);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (108 + 8 >> 2), stackHigh);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (108 + 12 >> 2), threadParams.detached);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (108 + 20 >> 2), threadParams.schedPolicy);
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (108 + 24 >> 2), threadParams.schedPrio);
+ var global_libc = _emscripten_get_global_libc();
+ var global_locale = global_libc + 40;
+ Atomics.store(GROWABLE_HEAP_U32(), tis + (176 >> 2), global_locale);
+ worker.pthread = pthread;
+ var msg = {
+  "cmd": "run",
+  "start_routine": threadParams.startRoutine,
+  "arg": threadParams.arg,
+  "threadInfoStruct": threadParams.pthread_ptr,
+  "selfThreadId": threadParams.pthread_ptr,
+  "parentThreadId": threadParams.parent_pthread_ptr,
+  "stackBase": threadParams.stackBase,
+  "stackSize": threadParams.stackSize
+ };
+ worker.runPthread = function() {
+  msg.time = performance.now();
+  worker.postMessage(msg, threadParams.transferList);
+ };
+ if (worker.loaded) {
+  worker.runPthread();
+  delete worker.runPthread;
+ }
+}
+
+function _pthread_getschedparam(thread, policy, schedparam) {
+ if (!policy && !schedparam) return ERRNO_CODES.EINVAL;
+ if (!thread) {
+  err("pthread_getschedparam called with a null thread pointer!");
+  return ERRNO_CODES.ESRCH;
+ }
+ var self = GROWABLE_HEAP_I32()[thread + 12 >> 2];
+ if (self !== thread) {
+  err("pthread_getschedparam attempted on thread " + thread + ", which does not point to a valid thread, or does not exist anymore!");
+  return ERRNO_CODES.ESRCH;
+ }
+ var schedPolicy = Atomics.load(GROWABLE_HEAP_U32(), thread + 108 + 20 >> 2);
+ var schedPrio = Atomics.load(GROWABLE_HEAP_U32(), thread + 108 + 24 >> 2);
+ if (policy) GROWABLE_HEAP_I32()[policy >> 2] = schedPolicy;
+ if (schedparam) GROWABLE_HEAP_I32()[schedparam >> 2] = schedPrio;
+ return 0;
+}
+
+function _pthread_self() {
+ return __pthread_ptr | 0;
+}
+
+Module["_pthread_self"] = _pthread_self;
+
+function resetPrototype(constructor, attrs) {
+ var object = Object.create(constructor.prototype);
+ for (var key in attrs) {
+  if (attrs.hasOwnProperty(key)) {
+   object[key] = attrs[key];
+  }
+ }
+ return object;
+}
+
+function _pthread_create(pthread_ptr, attr, start_routine, arg) {
+ if (typeof SharedArrayBuffer === "undefined") {
+  err("Current environment does not support SharedArrayBuffer, pthreads are not available!");
+  return 6;
+ }
+ if (!pthread_ptr) {
+  err("pthread_create called with a null thread pointer!");
+  return 28;
+ }
+ var transferList = [];
+ var error = 0;
+ if (ENVIRONMENT_IS_PTHREAD && (transferList.length === 0 || error)) {
+  return _emscripten_sync_run_in_main_thread_4(687865856, pthread_ptr, attr, start_routine, arg);
+ }
+ if (error) return error;
+ var stackSize = 0;
+ var stackBase = 0;
+ var detached = 0;
+ var schedPolicy = 0;
+ var schedPrio = 0;
+ if (attr) {
+  stackSize = GROWABLE_HEAP_I32()[attr >> 2];
+  stackSize += 81920;
+  stackBase = GROWABLE_HEAP_I32()[attr + 8 >> 2];
+  detached = GROWABLE_HEAP_I32()[attr + 12 >> 2] !== 0;
+  var inheritSched = GROWABLE_HEAP_I32()[attr + 16 >> 2] === 0;
+  if (inheritSched) {
+   var prevSchedPolicy = GROWABLE_HEAP_I32()[attr + 20 >> 2];
+   var prevSchedPrio = GROWABLE_HEAP_I32()[attr + 24 >> 2];
+   var parentThreadPtr = PThread.currentProxiedOperationCallerThread ? PThread.currentProxiedOperationCallerThread : _pthread_self();
+   _pthread_getschedparam(parentThreadPtr, attr + 20, attr + 24);
+   schedPolicy = GROWABLE_HEAP_I32()[attr + 20 >> 2];
+   schedPrio = GROWABLE_HEAP_I32()[attr + 24 >> 2];
+   GROWABLE_HEAP_I32()[attr + 20 >> 2] = prevSchedPolicy;
+   GROWABLE_HEAP_I32()[attr + 24 >> 2] = prevSchedPrio;
+  } else {
+   schedPolicy = GROWABLE_HEAP_I32()[attr + 20 >> 2];
+   schedPrio = GROWABLE_HEAP_I32()[attr + 24 >> 2];
+  }
+ } else {
+  stackSize = 2097152;
+ }
+ var allocatedOwnStack = stackBase == 0;
+ if (allocatedOwnStack) {
+  stackBase = _memalign(16, stackSize);
+ } else {
+  stackBase -= stackSize;
+  assert(stackBase > 0);
+ }
+ var threadInfoStruct = _malloc(232);
+ for (var i = 0; i < 232 >> 2; ++i) GROWABLE_HEAP_U32()[(threadInfoStruct >> 2) + i] = 0;
+ GROWABLE_HEAP_I32()[pthread_ptr >> 2] = threadInfoStruct;
+ GROWABLE_HEAP_I32()[threadInfoStruct + 12 >> 2] = threadInfoStruct;
+ var headPtr = threadInfoStruct + 156;
+ GROWABLE_HEAP_I32()[headPtr >> 2] = headPtr;
+ var threadParams = {
+  stackBase: stackBase,
+  stackSize: stackSize,
+  allocatedOwnStack: allocatedOwnStack,
+  schedPolicy: schedPolicy,
+  schedPrio: schedPrio,
+  detached: detached,
+  startRoutine: start_routine,
+  pthread_ptr: threadInfoStruct,
+  parent_pthread_ptr: _pthread_self(),
+  arg: arg,
+  transferList: transferList
+ };
+ if (ENVIRONMENT_IS_PTHREAD) {
+  threadParams.cmd = "spawnThread";
+  postMessage(threadParams, transferList);
+ } else {
+  spawnThread(threadParams);
+ }
+ return 0;
+}
+
+function __pthread_testcancel_js() {
+ if (!ENVIRONMENT_IS_PTHREAD) return;
+ if (!threadInfoStruct) return;
+ var cancelDisabled = Atomics.load(GROWABLE_HEAP_U32(), threadInfoStruct + 60 >> 2);
+ if (cancelDisabled) return;
+ var canceled = Atomics.load(GROWABLE_HEAP_U32(), threadInfoStruct + 0 >> 2);
+ if (canceled == 2) throw "Canceled!";
+}
+
+function __emscripten_do_pthread_join(thread, status, block) {
+ if (!thread) {
+  err("pthread_join attempted on a null thread pointer!");
+  return ERRNO_CODES.ESRCH;
+ }
+ if (ENVIRONMENT_IS_PTHREAD && selfThreadId == thread) {
+  err("PThread " + thread + " is attempting to join to itself!");
+  return ERRNO_CODES.EDEADLK;
+ } else if (!ENVIRONMENT_IS_PTHREAD && PThread.mainThreadBlock == thread) {
+  err("Main thread " + thread + " is attempting to join to itself!");
+  return ERRNO_CODES.EDEADLK;
+ }
+ var self = GROWABLE_HEAP_I32()[thread + 12 >> 2];
+ if (self !== thread) {
+  err("pthread_join attempted on thread " + thread + ", which does not point to a valid thread, or does not exist anymore!");
+  return ERRNO_CODES.ESRCH;
+ }
+ var detached = Atomics.load(GROWABLE_HEAP_U32(), thread + 68 >> 2);
+ if (detached) {
+  err("Attempted to join thread " + thread + ", which was already detached!");
+  return ERRNO_CODES.EINVAL;
+ }
+ if (block) {
+  _emscripten_check_blocking_allowed();
+ }
+ for (;;) {
+  var threadStatus = Atomics.load(GROWABLE_HEAP_U32(), thread + 0 >> 2);
+  if (threadStatus == 1) {
+   var threadExitCode = Atomics.load(GROWABLE_HEAP_U32(), thread + 4 >> 2);
+   if (status) GROWABLE_HEAP_I32()[status >> 2] = threadExitCode;
+   Atomics.store(GROWABLE_HEAP_U32(), thread + 68 >> 2, 1);
+   if (!ENVIRONMENT_IS_PTHREAD) cleanupThread(thread); else postMessage({
+    "cmd": "cleanupThread",
+    "thread": thread
+   });
+   return 0;
+  }
+  if (!block) {
+   return ERRNO_CODES.EBUSY;
+  }
+  __pthread_testcancel_js();
+  if (!ENVIRONMENT_IS_PTHREAD) _emscripten_main_thread_process_queued_calls();
+  _emscripten_futex_wait(thread + 0, threadStatus, ENVIRONMENT_IS_PTHREAD ? 100 : 1);
+ }
+}
+
+function _pthread_join(thread, status) {
+ return __emscripten_do_pthread_join(thread, status, true);
+}
+
+function _setTempRet0($i) {
+ setTempRet0($i | 0);
 }
 
 function runAndAbortIfError(func) {
@@ -6638,8 +6816,7 @@ var Asyncify = {
  State: {
   Normal: 0,
   Unwinding: 1,
-  Rewinding: 2,
-  Disabled: 3
+  Rewinding: 2
  },
  state: 0,
  StackSize: 4096,
@@ -6649,7 +6826,8 @@ var Asyncify = {
  callStackNameToId: {},
  callStackIdToName: {},
  callStackId: 0,
- asyncPromiseHandlers: null,
+ afterUnwind: null,
+ asyncFinalizers: [],
  sleepCallbacks: [],
  getCallStackId: function(funcName) {
   var id = Asyncify.callStackNameToId[funcName];
@@ -6661,7 +6839,7 @@ var Asyncify = {
   return id;
  },
  instrumentWasmImports: function(imports) {
-  var ASYNCIFY_IMPORTS = [ "env.await_something", "env.invoke_*", "env.__call_main", "env.emscripten_sleep", "env.emscripten_wget", "env.emscripten_wget_data", "env.emscripten_idb_load", "env.emscripten_idb_store", "env.emscripten_idb_delete", "env.emscripten_idb_exists", "env.emscripten_idb_load_blob", "env.emscripten_idb_store_blob", "env.SDL_Delay", "env.emscripten_scan_registers", "env.emscripten_lazy_load_code", "env.emscripten_fiber_swap", "wasi_snapshot_preview1.fd_sync", "env.__wasi_fd_sync", "env._emval_await", "env.dlopen", "env.__asyncjs__*" ].map(function(x) {
+  var ASYNCIFY_IMPORTS = [ "env.await_something", "env.invoke_*", "env.__call_main", "env.emscripten_sleep", "env.emscripten_wget", "env.emscripten_wget_data", "env.emscripten_idb_load", "env.emscripten_idb_store", "env.emscripten_idb_delete", "env.emscripten_idb_exists", "env.emscripten_idb_load_blob", "env.emscripten_idb_store_blob", "env.SDL_Delay", "env.emscripten_scan_registers", "env.emscripten_lazy_load_code", "env.emscripten_fiber_swap", "wasi_snapshot_preview1.fd_sync", "env.__wasi_fd_sync", "env._emval_await" ].map(function(x) {
    return x.split(".")[1];
   });
   for (var x in imports) {
@@ -6673,8 +6851,8 @@ var Asyncify = {
       try {
        return original.apply(null, arguments);
       } finally {
-       if (Asyncify.state !== originalAsyncifyState && ASYNCIFY_IMPORTS.indexOf(x) < 0 && !x.startsWith("__asyncjs__") && !(x.startsWith("invoke_") && true)) {
-        throw new Error("import " + x + " was not in ASYNCIFY_IMPORTS, but changed the state");
+       if (Asyncify.state !== originalAsyncifyState && ASYNCIFY_IMPORTS.indexOf(x) < 0 && !(x.startsWith("invoke_") && true)) {
+        throw "import " + x + " was not in ASYNCIFY_IMPORTS, but changed the state";
        }
       }
      };
@@ -6693,11 +6871,10 @@ var Asyncify = {
       try {
        return original.apply(null, arguments);
       } finally {
-       if (!ABORT) {
-        var y = Asyncify.exportCallStack.pop();
-        assert(y === x);
-        Asyncify.maybeStopUnwind();
-       }
+       if (ABORT) return;
+       var y = Asyncify.exportCallStack.pop();
+       assert(y === x);
+       Asyncify.maybeStopUnwind();
       }
      };
     } else {
@@ -6709,23 +6886,16 @@ var Asyncify = {
  },
  maybeStopUnwind: function() {
   if (Asyncify.currData && Asyncify.state === Asyncify.State.Unwinding && Asyncify.exportCallStack.length === 0) {
-   runtimeKeepalivePush();
    Asyncify.state = Asyncify.State.Normal;
    runAndAbortIfError(Module["_asyncify_stop_unwind"]);
    if (typeof Fibers !== "undefined") {
     Fibers.trampoline();
    }
+   if (Asyncify.afterUnwind) {
+    Asyncify.afterUnwind();
+    Asyncify.afterUnwind = null;
+   }
   }
- },
- whenDone: function() {
-  assert(Asyncify.currData, "Tried to wait for an async operation when none is in progress.");
-  assert(!Asyncify.asyncPromiseHandlers, "Cannot have multiple async operations in flight at once");
-  return new Promise(function(resolve, reject) {
-   Asyncify.asyncPromiseHandlers = {
-    resolve: resolve,
-    reject: reject
-   };
-  });
  },
  allocateData: function() {
   var ptr = _malloc(12 + Asyncify.StackSize);
@@ -6748,19 +6918,14 @@ var Asyncify = {
   var func = Module["asm"][name];
   return func;
  },
- doRewind: function(ptr) {
-  var start = Asyncify.getDataRewindFunc(ptr);
-  runtimeKeepalivePop();
-  return start();
- },
  handleSleep: function(startAsync) {
-  assert(Asyncify.state !== Asyncify.State.Disabled, "Asyncify cannot be done during or after the runtime exits");
   if (ABORT) return;
+  noExitRuntime = true;
   if (Asyncify.state === Asyncify.State.Normal) {
    var reachedCallback = false;
    var reachedAfterCallback = false;
    startAsync(function(handleSleepReturnValue) {
-    assert(!handleSleepReturnValue || typeof handleSleepReturnValue === "number" || typeof handleSleepReturnValue === "boolean");
+    assert(!handleSleepReturnValue || typeof handleSleepReturnValue === "number");
     if (ABORT) return;
     Asyncify.handleSleepReturnValue = handleSleepReturnValue || 0;
     reachedCallback = true;
@@ -6775,24 +6940,14 @@ var Asyncify = {
     if (typeof Browser !== "undefined" && Browser.mainLoop.func) {
      Browser.mainLoop.resume();
     }
-    var asyncWasmReturnValue, isError = false;
-    try {
-     asyncWasmReturnValue = Asyncify.doRewind(Asyncify.currData);
-    } catch (err) {
-     asyncWasmReturnValue = err;
-     isError = true;
-    }
-    var handled = false;
+    var start = Asyncify.getDataRewindFunc(Asyncify.currData);
+    var asyncWasmReturnValue = start();
     if (!Asyncify.currData) {
-     var asyncPromiseHandlers = Asyncify.asyncPromiseHandlers;
-     if (asyncPromiseHandlers) {
-      Asyncify.asyncPromiseHandlers = null;
-      (isError ? asyncPromiseHandlers.reject : asyncPromiseHandlers.resolve)(asyncWasmReturnValue);
-      handled = true;
-     }
-    }
-    if (isError && !handled) {
-     throw asyncWasmReturnValue;
+     var asyncFinalizers = Asyncify.asyncFinalizers;
+     Asyncify.asyncFinalizers = [];
+     asyncFinalizers.forEach(function(func) {
+      func(asyncWasmReturnValue);
+     });
     }
    });
    reachedAfterCallback = true;
@@ -6812,7 +6967,7 @@ var Asyncify = {
    _free(Asyncify.currData);
    Asyncify.currData = null;
    Asyncify.sleepCallbacks.forEach(function(func) {
-    callUserCallback(func);
+    func();
    });
   } else {
    abort("invalid state: " + Asyncify.state);
@@ -6858,7 +7013,7 @@ Module["createContext"] = function Module_createContext(canvas, useWebGL, setInM
  return Browser.createContext(canvas, useWebGL, setInModule, webGLContextAttributes);
 };
 
-if (!ENVIRONMENT_IS_PTHREAD) PThread.initMainThreadBlock();
+if (!ENVIRONMENT_IS_PTHREAD) PThread.initMainThreadBlock(); else PThread.initWorker();
 
 var GLctx;
 
@@ -6914,6 +7069,8 @@ FS.FSNode = FSNode;
 
 FS.staticInit();
 
+Module["FS_createFolder"] = FS.createFolder;
+
 Module["FS_createPath"] = FS.createPath;
 
 Module["FS_createDataFile"] = FS.createDataFile;
@@ -6922,133 +7079,11 @@ Module["FS_createPreloadedFile"] = FS.createPreloadedFile;
 
 Module["FS_createLazyFile"] = FS.createLazyFile;
 
+Module["FS_createLink"] = FS.createLink;
+
 Module["FS_createDevice"] = FS.createDevice;
 
 Module["FS_unlink"] = FS.unlink;
-
-ERRNO_CODES = {
- "EPERM": 63,
- "ENOENT": 44,
- "ESRCH": 71,
- "EINTR": 27,
- "EIO": 29,
- "ENXIO": 60,
- "E2BIG": 1,
- "ENOEXEC": 45,
- "EBADF": 8,
- "ECHILD": 12,
- "EAGAIN": 6,
- "EWOULDBLOCK": 6,
- "ENOMEM": 48,
- "EACCES": 2,
- "EFAULT": 21,
- "ENOTBLK": 105,
- "EBUSY": 10,
- "EEXIST": 20,
- "EXDEV": 75,
- "ENODEV": 43,
- "ENOTDIR": 54,
- "EISDIR": 31,
- "EINVAL": 28,
- "ENFILE": 41,
- "EMFILE": 33,
- "ENOTTY": 59,
- "ETXTBSY": 74,
- "EFBIG": 22,
- "ENOSPC": 51,
- "ESPIPE": 70,
- "EROFS": 69,
- "EMLINK": 34,
- "EPIPE": 64,
- "EDOM": 18,
- "ERANGE": 68,
- "ENOMSG": 49,
- "EIDRM": 24,
- "ECHRNG": 106,
- "EL2NSYNC": 156,
- "EL3HLT": 107,
- "EL3RST": 108,
- "ELNRNG": 109,
- "EUNATCH": 110,
- "ENOCSI": 111,
- "EL2HLT": 112,
- "EDEADLK": 16,
- "ENOLCK": 46,
- "EBADE": 113,
- "EBADR": 114,
- "EXFULL": 115,
- "ENOANO": 104,
- "EBADRQC": 103,
- "EBADSLT": 102,
- "EDEADLOCK": 16,
- "EBFONT": 101,
- "ENOSTR": 100,
- "ENODATA": 116,
- "ETIME": 117,
- "ENOSR": 118,
- "ENONET": 119,
- "ENOPKG": 120,
- "EREMOTE": 121,
- "ENOLINK": 47,
- "EADV": 122,
- "ESRMNT": 123,
- "ECOMM": 124,
- "EPROTO": 65,
- "EMULTIHOP": 36,
- "EDOTDOT": 125,
- "EBADMSG": 9,
- "ENOTUNIQ": 126,
- "EBADFD": 127,
- "EREMCHG": 128,
- "ELIBACC": 129,
- "ELIBBAD": 130,
- "ELIBSCN": 131,
- "ELIBMAX": 132,
- "ELIBEXEC": 133,
- "ENOSYS": 52,
- "ENOTEMPTY": 55,
- "ENAMETOOLONG": 37,
- "ELOOP": 32,
- "EOPNOTSUPP": 138,
- "EPFNOSUPPORT": 139,
- "ECONNRESET": 15,
- "ENOBUFS": 42,
- "EAFNOSUPPORT": 5,
- "EPROTOTYPE": 67,
- "ENOTSOCK": 57,
- "ENOPROTOOPT": 50,
- "ESHUTDOWN": 140,
- "ECONNREFUSED": 14,
- "EADDRINUSE": 3,
- "ECONNABORTED": 13,
- "ENETUNREACH": 40,
- "ENETDOWN": 38,
- "ETIMEDOUT": 73,
- "EHOSTDOWN": 142,
- "EHOSTUNREACH": 23,
- "EINPROGRESS": 26,
- "EALREADY": 7,
- "EDESTADDRREQ": 17,
- "EMSGSIZE": 35,
- "EPROTONOSUPPORT": 66,
- "ESOCKTNOSUPPORT": 137,
- "EADDRNOTAVAIL": 4,
- "ENETRESET": 39,
- "EISCONN": 30,
- "ENOTCONN": 53,
- "ETOOMANYREFS": 141,
- "EUSERS": 136,
- "EDQUOT": 19,
- "ESTALE": 72,
- "ENOTSUP": 138,
- "ENOMEDIUM": 148,
- "EILSEQ": 25,
- "EOVERFLOW": 61,
- "ECANCELED": 11,
- "ENOTRECOVERABLE": 56,
- "EOWNERDEAD": 62,
- "ESTRPIPE": 135
-};
 
 var proxiedFunctionTable = [ null, _atexit, _emscripten_set_canvas_element_size_main_thread, _fd_write ];
 
@@ -7077,55 +7112,14 @@ function intArrayToString(array) {
  return ret.join("");
 }
 
-var decodeBase64 = typeof atob === "function" ? atob : function(input) {
- var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
- var output = "";
- var chr1, chr2, chr3;
- var enc1, enc2, enc3, enc4;
- var i = 0;
- input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
- do {
-  enc1 = keyStr.indexOf(input.charAt(i++));
-  enc2 = keyStr.indexOf(input.charAt(i++));
-  enc3 = keyStr.indexOf(input.charAt(i++));
-  enc4 = keyStr.indexOf(input.charAt(i++));
-  chr1 = enc1 << 2 | enc2 >> 4;
-  chr2 = (enc2 & 15) << 4 | enc3 >> 2;
-  chr3 = (enc3 & 3) << 6 | enc4;
-  output = output + String.fromCharCode(chr1);
-  if (enc3 !== 64) {
-   output = output + String.fromCharCode(chr2);
-  }
-  if (enc4 !== 64) {
-   output = output + String.fromCharCode(chr3);
-  }
- } while (i < input.length);
- return output;
-};
-
-function intArrayFromBase64(s) {
- try {
-  var decoded = decodeBase64(s);
-  var bytes = new Uint8Array(decoded.length);
-  for (var i = 0; i < decoded.length; ++i) {
-   bytes[i] = decoded.charCodeAt(i);
-  }
-  return bytes;
- } catch (_) {
-  throw new Error("Converting base64 string to bytes failed.");
+if (!ENVIRONMENT_IS_PTHREAD) __ATINIT__.push({
+ func: function() {
+  ___wasm_call_ctors();
  }
-}
-
-function tryParseAsDataURI(filename) {
- if (!isDataURI(filename)) {
-  return;
- }
- return intArrayFromBase64(filename.slice(dataURIPrefix.length));
-}
+});
 
 var asmLibraryArg = {
  "__assert_fail": ___assert_fail,
- "__asyncjs__await_something": __asyncjs__await_something,
  "__clock_gettime": ___clock_gettime,
  "__cxa_allocate_exception": ___cxa_allocate_exception,
  "__cxa_atexit": ___cxa_atexit,
@@ -7134,29 +7128,27 @@ var asmLibraryArg = {
  "__cxa_find_matching_catch_2": ___cxa_find_matching_catch_2,
  "__cxa_find_matching_catch_3": ___cxa_find_matching_catch_3,
  "__cxa_free_exception": ___cxa_free_exception,
- "__cxa_thread_atexit": ___cxa_thread_atexit,
  "__cxa_throw": ___cxa_throw,
- "__pthread_create_js": ___pthread_create_js,
- "__pthread_exit_done": ___pthread_exit_done,
- "__pthread_exit_run_handlers": ___pthread_exit_run_handlers,
- "__pthread_join_js": ___pthread_join_js,
+ "__cxa_uncaught_exceptions": ___cxa_uncaught_exceptions,
+ "__indirect_function_table": wasmTable,
  "__resumeException": ___resumeException,
  "_emscripten_notify_thread_queue": __emscripten_notify_thread_queue,
  "abort": _abort,
+ "await_something": await_something,
+ "emscripten_asm_const_int": _emscripten_asm_const_int,
  "emscripten_check_blocking_allowed": _emscripten_check_blocking_allowed,
  "emscripten_conditional_set_current_thread_status": _emscripten_conditional_set_current_thread_status,
  "emscripten_futex_wait": _emscripten_futex_wait,
  "emscripten_futex_wake": _emscripten_futex_wake,
  "emscripten_get_now": _emscripten_get_now,
+ "emscripten_is_main_browser_thread": _emscripten_is_main_browser_thread,
+ "emscripten_is_main_runtime_thread": _emscripten_is_main_runtime_thread,
  "emscripten_memcpy_big": _emscripten_memcpy_big,
  "emscripten_receive_on_main_thread_js": _emscripten_receive_on_main_thread_js,
  "emscripten_resize_heap": _emscripten_resize_heap,
  "emscripten_set_canvas_element_size": _emscripten_set_canvas_element_size,
  "emscripten_set_current_thread_status": _emscripten_set_current_thread_status,
- "emscripten_set_timeout": _emscripten_set_timeout,
- "emscripten_unwind_to_js_event_loop": _emscripten_unwind_to_js_event_loop,
  "emscripten_webgl_create_context": _emscripten_webgl_create_context,
- "exit": _exit,
  "fd_write": _fd_write,
  "getTempRet0": _getTempRet0,
  "initPthreadsJS": initPthreadsJS,
@@ -7169,6 +7161,11 @@ var asmLibraryArg = {
  "invoke_vii": invoke_vii,
  "invoke_viii": invoke_viii,
  "memory": wasmMemory || Module["wasmMemory"],
+ "pthread_cleanup_pop": _pthread_cleanup_pop,
+ "pthread_cleanup_push": _pthread_cleanup_push,
+ "pthread_create": _pthread_create,
+ "pthread_join": _pthread_join,
+ "pthread_self": _pthread_self,
  "setTempRet0": _setTempRet0
 };
 
@@ -7180,43 +7177,19 @@ var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__w
 
 var _main = Module["_main"] = createExportWrapper("main");
 
-var _emscripten_tls_init = Module["_emscripten_tls_init"] = createExportWrapper("emscripten_tls_init");
-
-var _emscripten_current_thread_process_queued_calls = Module["_emscripten_current_thread_process_queued_calls"] = createExportWrapper("emscripten_current_thread_process_queued_calls");
-
-var _emscripten_main_browser_thread_id = Module["_emscripten_main_browser_thread_id"] = createExportWrapper("emscripten_main_browser_thread_id");
-
-var _emscripten_sync_run_in_main_thread_2 = Module["_emscripten_sync_run_in_main_thread_2"] = createExportWrapper("emscripten_sync_run_in_main_thread_2");
-
-var _emscripten_sync_run_in_main_thread_4 = Module["_emscripten_sync_run_in_main_thread_4"] = createExportWrapper("emscripten_sync_run_in_main_thread_4");
-
-var _emscripten_main_thread_process_queued_calls = Module["_emscripten_main_thread_process_queued_calls"] = createExportWrapper("emscripten_main_thread_process_queued_calls");
-
-var _emscripten_run_in_main_runtime_thread_js = Module["_emscripten_run_in_main_runtime_thread_js"] = createExportWrapper("emscripten_run_in_main_runtime_thread_js");
-
-var __emscripten_call_on_thread = Module["__emscripten_call_on_thread"] = createExportWrapper("_emscripten_call_on_thread");
+var _emscripten_get_global_libc = Module["_emscripten_get_global_libc"] = createExportWrapper("emscripten_get_global_libc");
 
 var ___emscripten_pthread_data_constructor = Module["___emscripten_pthread_data_constructor"] = createExportWrapper("__emscripten_pthread_data_constructor");
-
-var __emscripten_thread_exit = Module["__emscripten_thread_exit"] = createExportWrapper("_emscripten_thread_exit");
-
-var ___pthread_tsd_run_dtors = Module["___pthread_tsd_run_dtors"] = createExportWrapper("__pthread_tsd_run_dtors");
-
-var _malloc = Module["_malloc"] = createExportWrapper("malloc");
-
-var _pthread_self = Module["_pthread_self"] = createExportWrapper("pthread_self");
-
-var _free = Module["_free"] = createExportWrapper("free");
-
-var __emscripten_thread_init = Module["__emscripten_thread_init"] = createExportWrapper("_emscripten_thread_init");
-
-var _pthread_testcancel = Module["_pthread_testcancel"] = createExportWrapper("pthread_testcancel");
 
 var ___errno_location = Module["___errno_location"] = createExportWrapper("__errno_location");
 
 var _fflush = Module["_fflush"] = createExportWrapper("fflush");
 
-var _emscripten_get_global_libc = Module["_emscripten_get_global_libc"] = createExportWrapper("emscripten_get_global_libc");
+var _free = Module["_free"] = createExportWrapper("free");
+
+var _malloc = Module["_malloc"] = createExportWrapper("malloc");
+
+var _setThrew = Module["_setThrew"] = createExportWrapper("setThrew");
 
 var stackSave = Module["stackSave"] = createExportWrapper("stackSave");
 
@@ -7224,27 +7197,7 @@ var stackRestore = Module["stackRestore"] = createExportWrapper("stackRestore");
 
 var stackAlloc = Module["stackAlloc"] = createExportWrapper("stackAlloc");
 
-var _emscripten_stack_init = Module["_emscripten_stack_init"] = function() {
- return (_emscripten_stack_init = Module["_emscripten_stack_init"] = Module["asm"]["emscripten_stack_init"]).apply(null, arguments);
-};
-
-var _emscripten_stack_set_limits = Module["_emscripten_stack_set_limits"] = function() {
- return (_emscripten_stack_set_limits = Module["_emscripten_stack_set_limits"] = Module["asm"]["emscripten_stack_set_limits"]).apply(null, arguments);
-};
-
-var _emscripten_stack_get_free = Module["_emscripten_stack_get_free"] = function() {
- return (_emscripten_stack_get_free = Module["_emscripten_stack_get_free"] = Module["asm"]["emscripten_stack_get_free"]).apply(null, arguments);
-};
-
-var _emscripten_stack_get_base = Module["_emscripten_stack_get_base"] = function() {
- return (_emscripten_stack_get_base = Module["_emscripten_stack_get_base"] = Module["asm"]["emscripten_stack_get_base"]).apply(null, arguments);
-};
-
-var _emscripten_stack_get_end = Module["_emscripten_stack_get_end"] = function() {
- return (_emscripten_stack_get_end = Module["_emscripten_stack_get_end"] = Module["asm"]["emscripten_stack_get_end"]).apply(null, arguments);
-};
-
-var _setThrew = Module["_setThrew"] = createExportWrapper("setThrew");
+var __ZSt18uncaught_exceptionv = Module["__ZSt18uncaught_exceptionv"] = createExportWrapper("_ZSt18uncaught_exceptionv");
 
 var ___cxa_demangle = Module["___cxa_demangle"] = createExportWrapper("__cxa_demangle");
 
@@ -7254,31 +7207,73 @@ var ___cxa_is_pointer_type = Module["___cxa_is_pointer_type"] = createExportWrap
 
 var _memalign = Module["_memalign"] = createExportWrapper("memalign");
 
+var _emscripten_main_browser_thread_id = Module["_emscripten_main_browser_thread_id"] = createExportWrapper("emscripten_main_browser_thread_id");
+
+var ___pthread_tsd_run_dtors = Module["___pthread_tsd_run_dtors"] = createExportWrapper("__pthread_tsd_run_dtors");
+
+var _emscripten_main_thread_process_queued_calls = Module["_emscripten_main_thread_process_queued_calls"] = createExportWrapper("emscripten_main_thread_process_queued_calls");
+
+var _emscripten_current_thread_process_queued_calls = Module["_emscripten_current_thread_process_queued_calls"] = createExportWrapper("emscripten_current_thread_process_queued_calls");
+
+var _emscripten_register_main_browser_thread_id = Module["_emscripten_register_main_browser_thread_id"] = createExportWrapper("emscripten_register_main_browser_thread_id");
+
+var _do_emscripten_dispatch_to_thread = Module["_do_emscripten_dispatch_to_thread"] = createExportWrapper("do_emscripten_dispatch_to_thread");
+
+var _emscripten_async_run_in_main_thread = Module["_emscripten_async_run_in_main_thread"] = createExportWrapper("emscripten_async_run_in_main_thread");
+
+var _emscripten_sync_run_in_main_thread = Module["_emscripten_sync_run_in_main_thread"] = createExportWrapper("emscripten_sync_run_in_main_thread");
+
+var _emscripten_sync_run_in_main_thread_0 = Module["_emscripten_sync_run_in_main_thread_0"] = createExportWrapper("emscripten_sync_run_in_main_thread_0");
+
+var _emscripten_sync_run_in_main_thread_1 = Module["_emscripten_sync_run_in_main_thread_1"] = createExportWrapper("emscripten_sync_run_in_main_thread_1");
+
+var _emscripten_sync_run_in_main_thread_2 = Module["_emscripten_sync_run_in_main_thread_2"] = createExportWrapper("emscripten_sync_run_in_main_thread_2");
+
+var _emscripten_sync_run_in_main_thread_xprintf_varargs = Module["_emscripten_sync_run_in_main_thread_xprintf_varargs"] = createExportWrapper("emscripten_sync_run_in_main_thread_xprintf_varargs");
+
+var _emscripten_sync_run_in_main_thread_3 = Module["_emscripten_sync_run_in_main_thread_3"] = createExportWrapper("emscripten_sync_run_in_main_thread_3");
+
+var _emscripten_sync_run_in_main_thread_4 = Module["_emscripten_sync_run_in_main_thread_4"] = createExportWrapper("emscripten_sync_run_in_main_thread_4");
+
+var _emscripten_sync_run_in_main_thread_5 = Module["_emscripten_sync_run_in_main_thread_5"] = createExportWrapper("emscripten_sync_run_in_main_thread_5");
+
+var _emscripten_sync_run_in_main_thread_6 = Module["_emscripten_sync_run_in_main_thread_6"] = createExportWrapper("emscripten_sync_run_in_main_thread_6");
+
+var _emscripten_sync_run_in_main_thread_7 = Module["_emscripten_sync_run_in_main_thread_7"] = createExportWrapper("emscripten_sync_run_in_main_thread_7");
+
+var _emscripten_run_in_main_runtime_thread_js = Module["_emscripten_run_in_main_runtime_thread_js"] = createExportWrapper("emscripten_run_in_main_runtime_thread_js");
+
+var __emscripten_call_on_thread = Module["__emscripten_call_on_thread"] = createExportWrapper("_emscripten_call_on_thread");
+
+var _emscripten_tls_init = Module["_emscripten_tls_init"] = createExportWrapper("emscripten_tls_init");
+
 var dynCall_v = Module["dynCall_v"] = createExportWrapper("dynCall_v");
 
 var dynCall_vi = Module["dynCall_vi"] = createExportWrapper("dynCall_vi");
 
-var dynCall_ii = Module["dynCall_ii"] = createExportWrapper("dynCall_ii");
-
-var dynCall_iiii = Module["dynCall_iiii"] = createExportWrapper("dynCall_iiii");
-
 var dynCall_vii = Module["dynCall_vii"] = createExportWrapper("dynCall_vii");
 
+var dynCall_viii = Module["dynCall_viii"] = createExportWrapper("dynCall_viii");
+
 var dynCall_i = Module["dynCall_i"] = createExportWrapper("dynCall_i");
+
+var dynCall_ii = Module["dynCall_ii"] = createExportWrapper("dynCall_ii");
+
+var dynCall_iii = Module["dynCall_iii"] = createExportWrapper("dynCall_iii");
+
+var dynCall_iiii = Module["dynCall_iiii"] = createExportWrapper("dynCall_iiii");
 
 var dynCall_jiji = Module["dynCall_jiji"] = createExportWrapper("dynCall_jiji");
 
 var dynCall_iidiiii = Module["dynCall_iidiiii"] = createExportWrapper("dynCall_iidiiii");
-
-var dynCall_iii = Module["dynCall_iii"] = createExportWrapper("dynCall_iii");
-
-var dynCall_viii = Module["dynCall_viii"] = createExportWrapper("dynCall_viii");
 
 var dynCall_viiiiii = Module["dynCall_viiiiii"] = createExportWrapper("dynCall_viiiiii");
 
 var dynCall_viiiii = Module["dynCall_viiiii"] = createExportWrapper("dynCall_viiiii");
 
 var dynCall_viiii = Module["dynCall_viiii"] = createExportWrapper("dynCall_viiii");
+
+var __growWasmMemory = Module["__growWasmMemory"] = createExportWrapper("__growWasmMemory");
 
 var _asyncify_start_unwind = Module["_asyncify_start_unwind"] = createExportWrapper("asyncify_start_unwind");
 
@@ -7287,10 +7282,6 @@ var _asyncify_stop_unwind = Module["_asyncify_stop_unwind"] = createExportWrappe
 var _asyncify_start_rewind = Module["_asyncify_start_rewind"] = createExportWrapper("asyncify_start_rewind");
 
 var _asyncify_stop_rewind = Module["_asyncify_stop_rewind"] = createExportWrapper("asyncify_stop_rewind");
-
-var __emscripten_allow_main_runtime_queued_calls = Module["__emscripten_allow_main_runtime_queued_calls"] = 16288;
-
-var __emscripten_main_thread_futex = Module["__emscripten_main_thread_futex"] = 16972;
 
 function invoke_vi(index, a1) {
  var sp = stackSave();
@@ -7347,6 +7338,17 @@ function invoke_i(index) {
  }
 }
 
+function invoke_v(index) {
+ var sp = stackSave();
+ try {
+  dynCall_v(index);
+ } catch (e) {
+  stackRestore(sp);
+  if (e !== e + 0 && e !== "longjmp") throw e;
+  _setThrew(1, 0);
+ }
+}
+
 function invoke_iii(index, a1, a2) {
  var sp = stackSave();
  try {
@@ -7369,108 +7371,95 @@ function invoke_viii(index, a1, a2, a3) {
  }
 }
 
-function invoke_v(index) {
- var sp = stackSave();
- try {
-  dynCall_v(index);
- } catch (e) {
-  stackRestore(sp);
-  if (e !== e + 0 && e !== "longjmp") throw e;
-  _setThrew(1, 0);
- }
-}
-
 if (!Object.getOwnPropertyDescriptor(Module, "intArrayFromString")) Module["intArrayFromString"] = function() {
- abort("'intArrayFromString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'intArrayFromString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "intArrayToString")) Module["intArrayToString"] = function() {
- abort("'intArrayToString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'intArrayToString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "ccall")) Module["ccall"] = function() {
- abort("'ccall' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'ccall' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "cwrap")) Module["cwrap"] = function() {
- abort("'cwrap' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'cwrap' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "setValue")) Module["setValue"] = function() {
- abort("'setValue' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'setValue' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getValue")) Module["getValue"] = function() {
- abort("'getValue' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getValue' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "allocate")) Module["allocate"] = function() {
- abort("'allocate' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'allocate' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "UTF8ArrayToString")) Module["UTF8ArrayToString"] = function() {
- abort("'UTF8ArrayToString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'UTF8ArrayToString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "UTF8ToString")) Module["UTF8ToString"] = function() {
- abort("'UTF8ToString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'UTF8ToString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stringToUTF8Array")) Module["stringToUTF8Array"] = function() {
- abort("'stringToUTF8Array' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stringToUTF8Array' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stringToUTF8")) Module["stringToUTF8"] = function() {
- abort("'stringToUTF8' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stringToUTF8' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "lengthBytesUTF8")) Module["lengthBytesUTF8"] = function() {
- abort("'lengthBytesUTF8' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'lengthBytesUTF8' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stackTrace")) Module["stackTrace"] = function() {
- abort("'stackTrace' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stackTrace' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "addOnPreRun")) Module["addOnPreRun"] = function() {
- abort("'addOnPreRun' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'addOnPreRun' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "addOnInit")) Module["addOnInit"] = function() {
- abort("'addOnInit' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'addOnInit' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "addOnPreMain")) Module["addOnPreMain"] = function() {
- abort("'addOnPreMain' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'addOnPreMain' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "addOnExit")) Module["addOnExit"] = function() {
- abort("'addOnExit' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'addOnExit' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "addOnPostRun")) Module["addOnPostRun"] = function() {
- abort("'addOnPostRun' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'addOnPostRun' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeStringToMemory")) Module["writeStringToMemory"] = function() {
- abort("'writeStringToMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeStringToMemory' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeArrayToMemory")) Module["writeArrayToMemory"] = function() {
- abort("'writeArrayToMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeArrayToMemory' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeAsciiToMemory")) Module["writeAsciiToMemory"] = function() {
- abort("'writeAsciiToMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeAsciiToMemory' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 Module["addRunDependency"] = addRunDependency;
 
 Module["removeRunDependency"] = removeRunDependency;
 
-if (!Object.getOwnPropertyDescriptor(Module, "FS_createFolder")) Module["FS_createFolder"] = function() {
- abort("'FS_createFolder' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
+Module["FS_createFolder"] = FS.createFolder;
 
 Module["FS_createPath"] = FS.createPath;
 
@@ -7480,810 +7469,558 @@ Module["FS_createPreloadedFile"] = FS.createPreloadedFile;
 
 Module["FS_createLazyFile"] = FS.createLazyFile;
 
-if (!Object.getOwnPropertyDescriptor(Module, "FS_createLink")) Module["FS_createLink"] = function() {
- abort("'FS_createLink' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
+Module["FS_createLink"] = FS.createLink;
 
 Module["FS_createDevice"] = FS.createDevice;
 
 Module["FS_unlink"] = FS.unlink;
 
 if (!Object.getOwnPropertyDescriptor(Module, "getLEB")) Module["getLEB"] = function() {
- abort("'getLEB' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getLEB' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getFunctionTables")) Module["getFunctionTables"] = function() {
- abort("'getFunctionTables' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getFunctionTables' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "alignFunctionTables")) Module["alignFunctionTables"] = function() {
- abort("'alignFunctionTables' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'alignFunctionTables' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "registerFunctions")) Module["registerFunctions"] = function() {
- abort("'registerFunctions' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'registerFunctions' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "addFunction")) Module["addFunction"] = function() {
- abort("'addFunction' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'addFunction' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "removeFunction")) Module["removeFunction"] = function() {
- abort("'removeFunction' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'removeFunction' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getFuncWrapper")) Module["getFuncWrapper"] = function() {
- abort("'getFuncWrapper' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getFuncWrapper' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "prettyPrint")) Module["prettyPrint"] = function() {
- abort("'prettyPrint' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'prettyPrint' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
+};
+
+if (!Object.getOwnPropertyDescriptor(Module, "makeBigInt")) Module["makeBigInt"] = function() {
+ abort("'makeBigInt' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "dynCall")) Module["dynCall"] = function() {
- abort("'dynCall' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'dynCall' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getCompilerSetting")) Module["getCompilerSetting"] = function() {
- abort("'getCompilerSetting' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getCompilerSetting' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "print")) Module["print"] = function() {
- abort("'print' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'print' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "printErr")) Module["printErr"] = function() {
- abort("'printErr' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'printErr' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getTempRet0")) Module["getTempRet0"] = function() {
- abort("'getTempRet0' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getTempRet0' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "setTempRet0")) Module["setTempRet0"] = function() {
- abort("'setTempRet0' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'setTempRet0' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "callMain")) Module["callMain"] = function() {
- abort("'callMain' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'callMain' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "abort")) Module["abort"] = function() {
- abort("'abort' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-Module["keepRuntimeAlive"] = keepRuntimeAlive;
-
-if (!Object.getOwnPropertyDescriptor(Module, "zeroMemory")) Module["zeroMemory"] = function() {
- abort("'zeroMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'abort' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stringToNewUTF8")) Module["stringToNewUTF8"] = function() {
- abort("'stringToNewUTF8' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "setFileTime")) Module["setFileTime"] = function() {
- abort("'setFileTime' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stringToNewUTF8' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "emscripten_realloc_buffer")) Module["emscripten_realloc_buffer"] = function() {
- abort("'emscripten_realloc_buffer' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'emscripten_realloc_buffer' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "ENV")) Module["ENV"] = function() {
- abort("'ENV' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'ENV' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "ERRNO_CODES")) Module["ERRNO_CODES"] = function() {
- abort("'ERRNO_CODES' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'ERRNO_CODES' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "ERRNO_MESSAGES")) Module["ERRNO_MESSAGES"] = function() {
- abort("'ERRNO_MESSAGES' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'ERRNO_MESSAGES' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "setErrNo")) Module["setErrNo"] = function() {
- abort("'setErrNo' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "inetPton4")) Module["inetPton4"] = function() {
- abort("'inetPton4' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "inetNtop4")) Module["inetNtop4"] = function() {
- abort("'inetNtop4' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "inetPton6")) Module["inetPton6"] = function() {
- abort("'inetPton6' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "inetNtop6")) Module["inetNtop6"] = function() {
- abort("'inetNtop6' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "readSockaddr")) Module["readSockaddr"] = function() {
- abort("'readSockaddr' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "writeSockaddr")) Module["writeSockaddr"] = function() {
- abort("'writeSockaddr' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'setErrNo' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "DNS")) Module["DNS"] = function() {
- abort("'DNS' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "getHostByName")) Module["getHostByName"] = function() {
- abort("'getHostByName' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'DNS' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "GAI_ERRNO_MESSAGES")) Module["GAI_ERRNO_MESSAGES"] = function() {
- abort("'GAI_ERRNO_MESSAGES' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'GAI_ERRNO_MESSAGES' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "Protocols")) Module["Protocols"] = function() {
- abort("'Protocols' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'Protocols' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "Sockets")) Module["Sockets"] = function() {
- abort("'Sockets' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "getRandomDevice")) Module["getRandomDevice"] = function() {
- abort("'getRandomDevice' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'Sockets' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "traverseStack")) Module["traverseStack"] = function() {
- abort("'traverseStack' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'traverseStack' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "UNWIND_CACHE")) Module["UNWIND_CACHE"] = function() {
- abort("'UNWIND_CACHE' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'UNWIND_CACHE' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "withBuiltinMalloc")) Module["withBuiltinMalloc"] = function() {
- abort("'withBuiltinMalloc' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'withBuiltinMalloc' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "readAsmConstArgsArray")) Module["readAsmConstArgsArray"] = function() {
- abort("'readAsmConstArgsArray' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'readAsmConstArgsArray' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "readAsmConstArgs")) Module["readAsmConstArgs"] = function() {
- abort("'readAsmConstArgs' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'readAsmConstArgs' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "mainThreadEM_ASM")) Module["mainThreadEM_ASM"] = function() {
- abort("'mainThreadEM_ASM' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'mainThreadEM_ASM' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "jstoi_q")) Module["jstoi_q"] = function() {
- abort("'jstoi_q' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'jstoi_q' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "jstoi_s")) Module["jstoi_s"] = function() {
- abort("'jstoi_s' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'jstoi_s' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getExecutableName")) Module["getExecutableName"] = function() {
- abort("'getExecutableName' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getExecutableName' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "listenOnce")) Module["listenOnce"] = function() {
- abort("'listenOnce' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'listenOnce' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "autoResumeAudioContext")) Module["autoResumeAudioContext"] = function() {
- abort("'autoResumeAudioContext' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'autoResumeAudioContext' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "dynCallLegacy")) Module["dynCallLegacy"] = function() {
- abort("'dynCallLegacy' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'dynCallLegacy' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getDynCaller")) Module["getDynCaller"] = function() {
- abort("'getDynCaller' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getDynCaller' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "dynCall")) Module["dynCall"] = function() {
- abort("'dynCall' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'dynCall' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "callRuntimeCallbacks")) Module["callRuntimeCallbacks"] = function() {
- abort("'callRuntimeCallbacks' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'callRuntimeCallbacks' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
-if (!Object.getOwnPropertyDescriptor(Module, "handleException")) Module["handleException"] = function() {
- abort("'handleException' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "runtimeKeepalivePush")) Module["runtimeKeepalivePush"] = function() {
- abort("'runtimeKeepalivePush' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "runtimeKeepalivePop")) Module["runtimeKeepalivePop"] = function() {
- abort("'runtimeKeepalivePop' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "callUserCallback")) Module["callUserCallback"] = function() {
- abort("'callUserCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "maybeExit")) Module["maybeExit"] = function() {
- abort("'maybeExit' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "safeSetTimeout")) Module["safeSetTimeout"] = function() {
- abort("'safeSetTimeout' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "asmjsMangle")) Module["asmjsMangle"] = function() {
- abort("'asmjsMangle' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "asyncLoad")) Module["asyncLoad"] = function() {
- abort("'asyncLoad' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "alignMemory")) Module["alignMemory"] = function() {
- abort("'alignMemory' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "mmapAlloc")) Module["mmapAlloc"] = function() {
- abort("'mmapAlloc' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+if (!Object.getOwnPropertyDescriptor(Module, "abortStackOverflow")) Module["abortStackOverflow"] = function() {
+ abort("'abortStackOverflow' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "reallyNegative")) Module["reallyNegative"] = function() {
- abort("'reallyNegative' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'reallyNegative' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "unSign")) Module["unSign"] = function() {
- abort("'unSign' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'unSign' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "reSign")) Module["reSign"] = function() {
- abort("'reSign' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'reSign' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "formatString")) Module["formatString"] = function() {
- abort("'formatString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'formatString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "PATH")) Module["PATH"] = function() {
- abort("'PATH' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'PATH' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "PATH_FS")) Module["PATH_FS"] = function() {
- abort("'PATH_FS' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'PATH_FS' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SYSCALLS")) Module["SYSCALLS"] = function() {
- abort("'SYSCALLS' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SYSCALLS' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "syscallMmap2")) Module["syscallMmap2"] = function() {
- abort("'syscallMmap2' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'syscallMmap2' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "syscallMunmap")) Module["syscallMunmap"] = function() {
- abort("'syscallMunmap' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "getSocketFromFD")) Module["getSocketFromFD"] = function() {
- abort("'getSocketFromFD' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "getSocketAddress")) Module["getSocketAddress"] = function() {
- abort("'getSocketAddress' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'syscallMunmap' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "JSEvents")) Module["JSEvents"] = function() {
- abort("'JSEvents' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerKeyEventCallback")) Module["registerKeyEventCallback"] = function() {
- abort("'registerKeyEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'JSEvents' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "specialHTMLTargets")) Module["specialHTMLTargets"] = function() {
- abort("'specialHTMLTargets' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'specialHTMLTargets' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "maybeCStringToJsString")) Module["maybeCStringToJsString"] = function() {
- abort("'maybeCStringToJsString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'maybeCStringToJsString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "findEventTarget")) Module["findEventTarget"] = function() {
- abort("'findEventTarget' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'findEventTarget' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "findCanvasEventTarget")) Module["findCanvasEventTarget"] = function() {
- abort("'findCanvasEventTarget' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "getBoundingClientRect")) Module["getBoundingClientRect"] = function() {
- abort("'getBoundingClientRect' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillMouseEventData")) Module["fillMouseEventData"] = function() {
- abort("'fillMouseEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerMouseEventCallback")) Module["registerMouseEventCallback"] = function() {
- abort("'registerMouseEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerWheelEventCallback")) Module["registerWheelEventCallback"] = function() {
- abort("'registerWheelEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerUiEventCallback")) Module["registerUiEventCallback"] = function() {
- abort("'registerUiEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerFocusEventCallback")) Module["registerFocusEventCallback"] = function() {
- abort("'registerFocusEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillDeviceOrientationEventData")) Module["fillDeviceOrientationEventData"] = function() {
- abort("'fillDeviceOrientationEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerDeviceOrientationEventCallback")) Module["registerDeviceOrientationEventCallback"] = function() {
- abort("'registerDeviceOrientationEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillDeviceMotionEventData")) Module["fillDeviceMotionEventData"] = function() {
- abort("'fillDeviceMotionEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerDeviceMotionEventCallback")) Module["registerDeviceMotionEventCallback"] = function() {
- abort("'registerDeviceMotionEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "screenOrientation")) Module["screenOrientation"] = function() {
- abort("'screenOrientation' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillOrientationChangeEventData")) Module["fillOrientationChangeEventData"] = function() {
- abort("'fillOrientationChangeEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerOrientationChangeEventCallback")) Module["registerOrientationChangeEventCallback"] = function() {
- abort("'registerOrientationChangeEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillFullscreenChangeEventData")) Module["fillFullscreenChangeEventData"] = function() {
- abort("'fillFullscreenChangeEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerFullscreenChangeEventCallback")) Module["registerFullscreenChangeEventCallback"] = function() {
- abort("'registerFullscreenChangeEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerRestoreOldStyle")) Module["registerRestoreOldStyle"] = function() {
- abort("'registerRestoreOldStyle' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "hideEverythingExceptGivenElement")) Module["hideEverythingExceptGivenElement"] = function() {
- abort("'hideEverythingExceptGivenElement' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "restoreHiddenElements")) Module["restoreHiddenElements"] = function() {
- abort("'restoreHiddenElements' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "setLetterbox")) Module["setLetterbox"] = function() {
- abort("'setLetterbox' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "currentFullscreenStrategy")) Module["currentFullscreenStrategy"] = function() {
- abort("'currentFullscreenStrategy' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "restoreOldWindowedStyle")) Module["restoreOldWindowedStyle"] = function() {
- abort("'restoreOldWindowedStyle' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "softFullscreenResizeWebGLRenderTarget")) Module["softFullscreenResizeWebGLRenderTarget"] = function() {
- abort("'softFullscreenResizeWebGLRenderTarget' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "doRequestFullscreen")) Module["doRequestFullscreen"] = function() {
- abort("'doRequestFullscreen' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillPointerlockChangeEventData")) Module["fillPointerlockChangeEventData"] = function() {
- abort("'fillPointerlockChangeEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerPointerlockChangeEventCallback")) Module["registerPointerlockChangeEventCallback"] = function() {
- abort("'registerPointerlockChangeEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerPointerlockErrorEventCallback")) Module["registerPointerlockErrorEventCallback"] = function() {
- abort("'registerPointerlockErrorEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "requestPointerLock")) Module["requestPointerLock"] = function() {
- abort("'requestPointerLock' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillVisibilityChangeEventData")) Module["fillVisibilityChangeEventData"] = function() {
- abort("'fillVisibilityChangeEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerVisibilityChangeEventCallback")) Module["registerVisibilityChangeEventCallback"] = function() {
- abort("'registerVisibilityChangeEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerTouchEventCallback")) Module["registerTouchEventCallback"] = function() {
- abort("'registerTouchEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillGamepadEventData")) Module["fillGamepadEventData"] = function() {
- abort("'fillGamepadEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerGamepadEventCallback")) Module["registerGamepadEventCallback"] = function() {
- abort("'registerGamepadEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerBeforeUnloadEventCallback")) Module["registerBeforeUnloadEventCallback"] = function() {
- abort("'registerBeforeUnloadEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "fillBatteryEventData")) Module["fillBatteryEventData"] = function() {
- abort("'fillBatteryEventData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "battery")) Module["battery"] = function() {
- abort("'battery' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "registerBatteryEventCallback")) Module["registerBatteryEventCallback"] = function() {
- abort("'registerBatteryEventCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "setCanvasElementSize")) Module["setCanvasElementSize"] = function() {
- abort("'setCanvasElementSize' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "getCanvasElementSize")) Module["getCanvasElementSize"] = function() {
- abort("'getCanvasElementSize' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'findCanvasEventTarget' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "polyfillSetImmediate")) Module["polyfillSetImmediate"] = function() {
- abort("'polyfillSetImmediate' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'polyfillSetImmediate' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "demangle")) Module["demangle"] = function() {
- abort("'demangle' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'demangle' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "demangleAll")) Module["demangleAll"] = function() {
- abort("'demangleAll' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'demangleAll' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "jsStackTrace")) Module["jsStackTrace"] = function() {
- abort("'jsStackTrace' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'jsStackTrace' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stackTrace")) Module["stackTrace"] = function() {
- abort("'stackTrace' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stackTrace' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getEnvStrings")) Module["getEnvStrings"] = function() {
- abort("'getEnvStrings' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getEnvStrings' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "checkWasiClock")) Module["checkWasiClock"] = function() {
- abort("'checkWasiClock' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'checkWasiClock' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeI53ToI64")) Module["writeI53ToI64"] = function() {
- abort("'writeI53ToI64' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeI53ToI64' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeI53ToI64Clamped")) Module["writeI53ToI64Clamped"] = function() {
- abort("'writeI53ToI64Clamped' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeI53ToI64Clamped' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeI53ToI64Signaling")) Module["writeI53ToI64Signaling"] = function() {
- abort("'writeI53ToI64Signaling' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeI53ToI64Signaling' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeI53ToU64Clamped")) Module["writeI53ToU64Clamped"] = function() {
- abort("'writeI53ToU64Clamped' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeI53ToU64Clamped' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeI53ToU64Signaling")) Module["writeI53ToU64Signaling"] = function() {
- abort("'writeI53ToU64Signaling' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeI53ToU64Signaling' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "readI53FromI64")) Module["readI53FromI64"] = function() {
- abort("'readI53FromI64' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'readI53FromI64' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "readI53FromU64")) Module["readI53FromU64"] = function() {
- abort("'readI53FromU64' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'readI53FromU64' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "convertI32PairToI53")) Module["convertI32PairToI53"] = function() {
- abort("'convertI32PairToI53' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'convertI32PairToI53' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "convertU32PairToI53")) Module["convertU32PairToI53"] = function() {
- abort("'convertU32PairToI53' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "uncaughtExceptionCount")) Module["uncaughtExceptionCount"] = function() {
- abort("'uncaughtExceptionCount' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'convertU32PairToI53' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "exceptionLast")) Module["exceptionLast"] = function() {
- abort("'exceptionLast' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'exceptionLast' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "exceptionCaught")) Module["exceptionCaught"] = function() {
- abort("'exceptionCaught' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'exceptionCaught' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
+};
+
+if (!Object.getOwnPropertyDescriptor(Module, "ExceptionInfoAttrs")) Module["ExceptionInfoAttrs"] = function() {
+ abort("'ExceptionInfoAttrs' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "ExceptionInfo")) Module["ExceptionInfo"] = function() {
- abort("'ExceptionInfo' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'ExceptionInfo' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "CatchInfo")) Module["CatchInfo"] = function() {
- abort("'CatchInfo' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'CatchInfo' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "exception_addRef")) Module["exception_addRef"] = function() {
- abort("'exception_addRef' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'exception_addRef' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "exception_decRef")) Module["exception_decRef"] = function() {
- abort("'exception_decRef' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'exception_decRef' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "Browser")) Module["Browser"] = function() {
- abort("'Browser' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'Browser' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "funcWrappers")) Module["funcWrappers"] = function() {
- abort("'funcWrappers' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'funcWrappers' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "getFuncWrapper")) Module["getFuncWrapper"] = function() {
- abort("'getFuncWrapper' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'getFuncWrapper' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "setMainLoop")) Module["setMainLoop"] = function() {
- abort("'setMainLoop' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "wget")) Module["wget"] = function() {
- abort("'wget' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'setMainLoop' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "tempFixedLengthArray")) Module["tempFixedLengthArray"] = function() {
- abort("'tempFixedLengthArray' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'tempFixedLengthArray' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "miniTempWebGLFloatBuffers")) Module["miniTempWebGLFloatBuffers"] = function() {
- abort("'miniTempWebGLFloatBuffers' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'miniTempWebGLFloatBuffers' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "heapObjectForWebGLType")) Module["heapObjectForWebGLType"] = function() {
- abort("'heapObjectForWebGLType' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'heapObjectForWebGLType' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "heapAccessShiftForWebGLHeap")) Module["heapAccessShiftForWebGLHeap"] = function() {
- abort("'heapAccessShiftForWebGLHeap' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'heapAccessShiftForWebGLHeap' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "GL")) Module["GL"] = function() {
- abort("'GL' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'GL' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "emscriptenWebGLGet")) Module["emscriptenWebGLGet"] = function() {
- abort("'emscriptenWebGLGet' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'emscriptenWebGLGet' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "computeUnpackAlignedImageSize")) Module["computeUnpackAlignedImageSize"] = function() {
- abort("'computeUnpackAlignedImageSize' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'computeUnpackAlignedImageSize' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "emscriptenWebGLGetTexPixelData")) Module["emscriptenWebGLGetTexPixelData"] = function() {
- abort("'emscriptenWebGLGetTexPixelData' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'emscriptenWebGLGetTexPixelData' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "emscriptenWebGLGetUniform")) Module["emscriptenWebGLGetUniform"] = function() {
- abort("'emscriptenWebGLGetUniform' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "webglGetUniformLocation")) Module["webglGetUniformLocation"] = function() {
- abort("'webglGetUniformLocation' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "webglPrepareUniformLocationsBeforeFirstUse")) Module["webglPrepareUniformLocationsBeforeFirstUse"] = function() {
- abort("'webglPrepareUniformLocationsBeforeFirstUse' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "webglGetLeftBracePos")) Module["webglGetLeftBracePos"] = function() {
- abort("'webglGetLeftBracePos' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'emscriptenWebGLGetUniform' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "emscriptenWebGLGetVertexAttrib")) Module["emscriptenWebGLGetVertexAttrib"] = function() {
- abort("'emscriptenWebGLGetVertexAttrib' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'emscriptenWebGLGetVertexAttrib' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "writeGLArray")) Module["writeGLArray"] = function() {
- abort("'writeGLArray' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'writeGLArray' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 Module["FS"] = FS;
 
 if (!Object.getOwnPropertyDescriptor(Module, "MEMFS")) Module["MEMFS"] = function() {
- abort("'MEMFS' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'MEMFS' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "TTY")) Module["TTY"] = function() {
- abort("'TTY' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'TTY' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "PIPEFS")) Module["PIPEFS"] = function() {
- abort("'PIPEFS' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'PIPEFS' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SOCKFS")) Module["SOCKFS"] = function() {
- abort("'SOCKFS' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
-};
-
-if (!Object.getOwnPropertyDescriptor(Module, "_setNetworkCallback")) Module["_setNetworkCallback"] = function() {
- abort("'_setNetworkCallback' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SOCKFS' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "AL")) Module["AL"] = function() {
- abort("'AL' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'AL' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SDL_unicode")) Module["SDL_unicode"] = function() {
- abort("'SDL_unicode' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SDL_unicode' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SDL_ttfContext")) Module["SDL_ttfContext"] = function() {
- abort("'SDL_ttfContext' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SDL_ttfContext' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SDL_audio")) Module["SDL_audio"] = function() {
- abort("'SDL_audio' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SDL_audio' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SDL")) Module["SDL"] = function() {
- abort("'SDL' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SDL' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "SDL_gfx")) Module["SDL_gfx"] = function() {
- abort("'SDL_gfx' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'SDL_gfx' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "GLUT")) Module["GLUT"] = function() {
- abort("'GLUT' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'GLUT' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "EGL")) Module["EGL"] = function() {
- abort("'EGL' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'EGL' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "GLFW_Window")) Module["GLFW_Window"] = function() {
- abort("'GLFW_Window' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'GLFW_Window' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "GLFW")) Module["GLFW"] = function() {
- abort("'GLFW' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'GLFW' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "GLEW")) Module["GLEW"] = function() {
- abort("'GLEW' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'GLEW' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "IDBStore")) Module["IDBStore"] = function() {
- abort("'IDBStore' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'IDBStore' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "runAndAbortIfError")) Module["runAndAbortIfError"] = function() {
- abort("'runAndAbortIfError' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'runAndAbortIfError' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "Asyncify")) Module["Asyncify"] = function() {
- abort("'Asyncify' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'Asyncify' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "Fibers")) Module["Fibers"] = function() {
- abort("'Fibers' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'Fibers' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 Module["PThread"] = PThread;
 
 if (!Object.getOwnPropertyDescriptor(Module, "killThread")) Module["killThread"] = function() {
- abort("'killThread' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'killThread' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "cleanupThread")) Module["cleanupThread"] = function() {
- abort("'cleanupThread' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'cleanupThread' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "cancelThread")) Module["cancelThread"] = function() {
- abort("'cancelThread' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'cancelThread' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "spawnThread")) Module["spawnThread"] = function() {
- abort("'spawnThread' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'spawnThread' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
+};
+
+if (!Object.getOwnPropertyDescriptor(Module, "registerPthreadPtr")) Module["registerPthreadPtr"] = function() {
+ abort("'registerPthreadPtr' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "establishStackSpace")) Module["establishStackSpace"] = function() {
- abort("'establishStackSpace' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'establishStackSpace' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
-if (!Object.getOwnPropertyDescriptor(Module, "invokeEntryPoint")) Module["invokeEntryPoint"] = function() {
- abort("'invokeEntryPoint' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+if (!Object.getOwnPropertyDescriptor(Module, "getNoExitRuntime")) Module["getNoExitRuntime"] = function() {
+ abort("'getNoExitRuntime' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
+};
+
+if (!Object.getOwnPropertyDescriptor(Module, "resetPrototype")) Module["resetPrototype"] = function() {
+ abort("'resetPrototype' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "warnOnce")) Module["warnOnce"] = function() {
- abort("'warnOnce' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'warnOnce' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stackSave")) Module["stackSave"] = function() {
- abort("'stackSave' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stackSave' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stackRestore")) Module["stackRestore"] = function() {
- abort("'stackRestore' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stackRestore' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stackAlloc")) Module["stackAlloc"] = function() {
- abort("'stackAlloc' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stackAlloc' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "AsciiToString")) Module["AsciiToString"] = function() {
- abort("'AsciiToString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'AsciiToString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stringToAscii")) Module["stringToAscii"] = function() {
- abort("'stringToAscii' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stringToAscii' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "UTF16ToString")) Module["UTF16ToString"] = function() {
- abort("'UTF16ToString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'UTF16ToString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stringToUTF16")) Module["stringToUTF16"] = function() {
- abort("'stringToUTF16' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stringToUTF16' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "lengthBytesUTF16")) Module["lengthBytesUTF16"] = function() {
- abort("'lengthBytesUTF16' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'lengthBytesUTF16' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "UTF32ToString")) Module["UTF32ToString"] = function() {
- abort("'UTF32ToString' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'UTF32ToString' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "stringToUTF32")) Module["stringToUTF32"] = function() {
- abort("'stringToUTF32' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'stringToUTF32' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "lengthBytesUTF32")) Module["lengthBytesUTF32"] = function() {
- abort("'lengthBytesUTF32' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'lengthBytesUTF32' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "allocateUTF8")) Module["allocateUTF8"] = function() {
- abort("'allocateUTF8' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'allocateUTF8' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 if (!Object.getOwnPropertyDescriptor(Module, "allocateUTF8OnStack")) Module["allocateUTF8OnStack"] = function() {
- abort("'allocateUTF8OnStack' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ abort("'allocateUTF8OnStack' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
 };
 
 Module["writeStackCookie"] = writeStackCookie;
@@ -8292,6 +8029,8 @@ Module["checkStackCookie"] = checkStackCookie;
 
 Module["PThread"] = PThread;
 
+Module["_pthread_self"] = _pthread_self;
+
 Module["wasmMemory"] = wasmMemory;
 
 Module["ExitStatus"] = ExitStatus;
@@ -8299,14 +8038,21 @@ Module["ExitStatus"] = ExitStatus;
 if (!Object.getOwnPropertyDescriptor(Module, "ALLOC_NORMAL")) Object.defineProperty(Module, "ALLOC_NORMAL", {
  configurable: true,
  get: function() {
-  abort("'ALLOC_NORMAL' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+  abort("'ALLOC_NORMAL' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
  }
 });
 
 if (!Object.getOwnPropertyDescriptor(Module, "ALLOC_STACK")) Object.defineProperty(Module, "ALLOC_STACK", {
  configurable: true,
  get: function() {
-  abort("'ALLOC_STACK' was not exported. add it to EXPORTED_RUNTIME_METHODS (see the FAQ)");
+  abort("'ALLOC_STACK' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
+ }
+});
+
+if (!Object.getOwnPropertyDescriptor(Module, "ALLOC_NONE")) Object.defineProperty(Module, "ALLOC_NONE", {
+ configurable: true,
+ get: function() {
+  abort("'ALLOC_NONE' was not exported. add it to EXTRA_EXPORTED_RUNTIME_METHODS (see the FAQ)");
  }
 });
 
@@ -8339,18 +8085,26 @@ function callMain(args) {
  GROWABLE_HEAP_I32()[(argv >> 2) + argc] = 0;
  try {
   var ret = entryFunction(argc, argv);
-  exit(ret, true);
-  return ret;
+  if (!noExitRuntime) {
+   exit(ret, true);
+  }
  } catch (e) {
-  return handleException(e);
+  if (e instanceof ExitStatus) {
+   return;
+  } else if (e == "unwind") {
+   noExitRuntime = true;
+   return;
+  } else {
+   var toLog = e;
+   if (e && typeof e === "object" && e.stack) {
+    toLog = [ e, e.stack ];
+   }
+   err("exception thrown: " + toLog);
+   quit_(1, e);
+  }
  } finally {
   calledMain = true;
  }
-}
-
-function stackCheckInit() {
- _emscripten_stack_init();
- writeStackCookie();
 }
 
 function run(args) {
@@ -8358,19 +8112,9 @@ function run(args) {
  if (runDependencies > 0) {
   return;
  }
- stackCheckInit();
- if (ENVIRONMENT_IS_PTHREAD) {
-  readyPromiseResolve(Module);
-  initRuntime();
-  postMessage({
-   "cmd": "loaded"
-  });
-  return;
- }
+ writeStackCookie();
  preRun();
- if (runDependencies > 0) {
-  return;
- }
+ if (runDependencies > 0) return;
  function doRun() {
   if (calledRun) return;
   calledRun = true;
@@ -8400,8 +8144,8 @@ function run(args) {
 Module["run"] = run;
 
 function checkUnflushedContent() {
- var oldOut = out;
- var oldErr = err;
+ var print = out;
+ var printErr = err;
  var has = false;
  out = err = function(x) {
   has = true;
@@ -8420,29 +8164,19 @@ function checkUnflushedContent() {
    }
   });
  } catch (e) {}
- out = oldOut;
- err = oldErr;
+ out = print;
+ err = printErr;
  if (has) {
   warnOnce("stdio streams had content in them that was not flushed. you should set EXIT_RUNTIME to 1 (see the FAQ), or make sure to emit a newline when you printf etc.");
  }
 }
 
 function exit(status, implicit) {
- EXITSTATUS = status;
  checkUnflushedContent();
- if (!implicit) {
-  if (ENVIRONMENT_IS_PTHREAD) {
-   err("Pthread 0x" + _pthread_self().toString(16) + " called exit(), posting exitProcess.");
-   postMessage({
-    "cmd": "exitProcess",
-    "returnCode": status
-   });
-   throw new ExitStatus(status);
-  } else {
-   err("main thread called exit: keepRuntimeAlive=" + keepRuntimeAlive() + " (counter=" + runtimeKeepaliveCounter + ")");
-  }
+ if (implicit && noExitRuntime && status === 0) {
+  return;
  }
- if (keepRuntimeAlive()) {
+ if (noExitRuntime) {
   if (!implicit) {
    var msg = "program exited (with status: " + status + "), but EXIT_RUNTIME is not set, so halting execution but not exiting the runtime or preventing further async execution (build with EXIT_RUNTIME=1, if you want a true shutdown)";
    readyPromiseReject(msg);
@@ -8450,19 +8184,12 @@ function exit(status, implicit) {
   }
  } else {
   PThread.terminateAllThreads();
+  EXITSTATUS = status;
   exitRuntime();
- }
- procExit(status);
-}
-
-function procExit(code) {
- EXITSTATUS = code;
- if (!keepRuntimeAlive()) {
-  PThread.terminateAllThreads();
-  if (Module["onExit"]) Module["onExit"](code);
+  if (Module["onExit"]) Module["onExit"](status);
   ABORT = true;
  }
- quit_(code, new ExitStatus(code));
+ quit_(status, new ExitStatus(status));
 }
 
 if (Module["preInit"]) {
@@ -8476,12 +8203,13 @@ var shouldRunNow = true;
 
 if (Module["noInitialRun"]) shouldRunNow = false;
 
-if (ENVIRONMENT_IS_PTHREAD) {
- noExitRuntime = false;
- PThread.initWorker();
-}
+if (!ENVIRONMENT_IS_PTHREAD) noExitRuntime = true;
 
-run();
+if (!ENVIRONMENT_IS_PTHREAD) {
+ run();
+} else {
+ readyPromiseResolve(Module);
+}
 
 
   return test.ready
@@ -8489,8 +8217,9 @@ run();
 );
 })();
 if (typeof exports === 'object' && typeof module === 'object')
-  module.exports = test;
-else if (typeof define === 'function' && define['amd'])
-  define([], function() { return test; });
-else if (typeof exports === 'object')
-  exports["test"] = test;
+      module.exports = test;
+    else if (typeof define === 'function' && define['amd'])
+      define([], function() { return test; });
+    else if (typeof exports === 'object')
+      exports["test"] = test;
+    
