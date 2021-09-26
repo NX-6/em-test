@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# source ../emsdk/emsdk_env.sh
+
+emcc src/hello.cpp \
+      --use-preload-plugins \
+      -std=c++11 \
+      -pthread \
+      -fexceptions \
+      -O3 \
+      -o public/js/test.js \
+      -s EXPORTED_RUNTIME_METHODS=['FS'] \
+      -s MODULARIZE=1 \
+      -s EXPORT_NAME=test \
+      -s ASSERTIONS=1 \
+      -s PTHREAD_POOL_SIZE=2 \
+      -s ASYNCIFY \
+      -s ASYNCIFY_IMPORTS=['await_something'] \
+      -s PTHREADS_DEBUG=1 \
+      -s ALLOW_MEMORY_GROWTH=1 \
+      -s WASM_MEM_MAX=1999MB \
+      -s ENVIRONMENT=web,worker \
+      -s DEMANGLE_SUPPORT=1

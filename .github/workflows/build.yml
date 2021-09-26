@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ./build-gh-artifact.sh test-js ${{ secrets.GITHUB_TOKEN }}
-      - run: mv out ../public/js
+      - run: mv out/* ../public/js
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
